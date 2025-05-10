@@ -1,0 +1,23 @@
+{
+  "name": "brads-boilerplate-theme",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/index.css -o ./build/index.css --minify",
+    "start": "npx tailwindcss -i ./src/index.css -o ./build/index.css --watch --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "globals": "^16.1.0",
+    "tailwindcss": "^4.1.6"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "flowbite": "^3.1.2"
+  }
+}
