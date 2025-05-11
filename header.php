@@ -1,10 +1,22 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+
 <header>
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div class="flex items-center justify-between mx-auto max-w-screen-xl">
 
             <!-- Left: Logo and Name -->
             <div class="flex items-center flex-shrink-0">
-                <a href="<?php echo pll_home_url(); ?>" class="flex items-center">
+                <a href="<?php echo home_url(); ?>" class="flex items-center">
                     <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9" alt="SBL Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Sønderborg Bueskyttelaug</span>
                 </a>
@@ -13,10 +25,10 @@
             <!-- Center: Main Navigation (Desktop only) -->
             <div class="hidden lg:flex justify-center flex-1">
                 <ul class="flex flex-row space-x-8 font-medium text-gray-700">
-                    <li><a href="<?php echo pll_home_url(); ?>" class="hover:text-blue-700">Home</a></li>
-                    <li><a href="<?php echo pll_get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-700">About us</a></li>
-                    <li><a href="<?php echo pll_get_permalink(get_option('page_for_posts')); ?>" class="hover:text-blue-700">Blog</a></li>
-                    <li><a href="<?php echo pll_get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-700">How to join</a></li>
+                    <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-700">Home</a></li>
+                    <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-700">About us</a></li>
+                    <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-blue-700">Blog</a></li>
+                    <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-700">How to join</a></li>
                     <li><a href="#" class="hover:text-blue-700">Contact</a></li>
                 </ul>
             </div>
@@ -24,6 +36,10 @@
             <!-- Right: Language Switcher -->
             <div class="flex items-center space-x-4">
                 <?php
+                function get_custom_lang_flag_svg($lang_slug) {
+                    return get_template_directory_uri() . '/assets/flags/' . $lang_slug . '.svg';
+                }
+
                 if (function_exists('pll_the_languages')) :
                     $langs_array = pll_the_languages([
                         'dropdown' => 1,
@@ -81,10 +97,10 @@
         <!-- Mobile Navigation -->
         <div class="hidden justify-between items-center w-full lg:hidden" id="mobile-menu-2">
             <ul class="flex flex-col mt-4 font-medium text-gray-700 space-y-2">
-                <li><a href="<?php echo pll_home_url(); ?>" class="block py-2 px-4 hover:bg-gray-100">Home</a></li>
-                <li><a href="<?php echo pll_get_permalink(get_page_by_path('about-us')); ?>" class="block py-2 px-4 hover:bg-gray-100">About us</a></li>
-                <li><a href="<?php echo pll_get_permalink(get_option('page_for_posts')); ?>" class="block py-2 px-4 hover:bg-gray-100">Blog</a></li>
-                <li><a href="<?php echo pll_get_permalink(get_page_by_path('how-to-join')); ?>" class="block py-2 px-4 hover:bg-gray-100">How to join</a></li>
+                <li><a href="<?php echo home_url(); ?>" class="block py-2 px-4 hover:bg-gray-100">Home</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="block py-2 px-4 hover:bg-gray-100">About us</a></li>
+                <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="block py-2 px-4 hover:bg-gray-100">Blog</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="block py-2 px-4 hover:bg-gray-100">How to join</a></li>
                 <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Contact</a></li>
             </ul>
         </div>
