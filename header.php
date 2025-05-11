@@ -71,14 +71,11 @@
                     </li>
                 </ul>
 
-          <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-              <div class="language-switcher inline-block">
-                  <button class="text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">
-                      <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
-                  </button>
-              </div>
-          <?php endif; ?>
-
+            <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+                <div class="language-switcher">
+                    <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
+                </div>
+            <?php endif; ?>
             </div>
 
         </div>
