@@ -1,10 +1,13 @@
 <footer class="bg-white rounded-lg shadow-sm m-4 w-[80vw] mx-auto">
-    <div class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center text-center">
-        <span class="text-sm text-gray-500 sm:text-center mb-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 flex justify-between items-center">
+        <!-- Left Section: Copyright and Name -->
+        <span class="text-sm text-gray-500 sm:text-left">
             Copyright © 2025
             <a href="<?php echo home_url(); ?>" class="hover:underline">Sønderborg Bueskyttelaug</a>
         </span>
-        <ul class="flex flex-wrap justify-center items-center gap-4 text-sm font-medium text-gray-500">
+
+        <!-- Right Section: Links -->
+        <ul class="flex gap-4 text-sm font-medium text-gray-500">
             <li>
                 <a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:underline">About us</a>
             </li>
@@ -23,6 +26,7 @@
         </ul>
     </div>
 </footer>
+
 
 <?php wp_footer(); ?>
 </body>
