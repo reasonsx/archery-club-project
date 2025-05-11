@@ -4,9 +4,6 @@
 # Node.js dependencies
 node_modules/
 
-# Build output
-build/
-
 # JetBrains IDE settings
 .idea/
 
