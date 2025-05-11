@@ -45,7 +45,7 @@ get_header(); ?>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
         <a href="#">
-            <img class="rounded-t-lg w-full h-12 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png" alt="" />
+            <img class="rounded-t-lg w-full h-1/2 object-cover" src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png" alt="" />
         </a>
         <div class="p-5">
             <a href="#">
