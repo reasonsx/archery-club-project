@@ -42,7 +42,7 @@ get_header(); ?>
     <h1 class="text-4xl">Learn more about archery</h1>
 </section>
 
-<section class="h-96 flex justify-center">
+<section class="h-96 flex flex-col justify-center mx-40">
     <h1 class="text-4xl">Contact us</h1>
         <p>The club can be contacted on the chairman's phone number 24 60 94 76,
            on the club's email formand@s-bl.dk or down at the club,
