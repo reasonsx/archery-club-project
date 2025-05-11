@@ -28,7 +28,7 @@ get_header(); ?>
 
     <section class="h-96 flex items-center">
         <h1 class="text-4xl">Images gallery</h1>
-        <div id="gallery" class="relative w-full" data-carousel="slide">
+        <div id="gallery" class="relative w-[50vw]" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <!-- Item 1 -->
