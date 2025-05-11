@@ -42,5 +42,34 @@ get_header(); ?>
 
 
     </div>
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Hero</h1>
+</section>
+
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">About</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Images gallery</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Archery benefits</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">What is archery about</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Learn more about archery</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Contact us</h1>
+</section>
+
 
 <?php get_footer();
