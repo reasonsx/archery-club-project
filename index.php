@@ -38,7 +38,7 @@ get_header(); ?>
     <h1 class="text-4xl">What is archery about</h1>
 </section>
 
-<section class="flex flex-col justify-center">
+<section class="flex flex-col justify-center w-auto mx-auto">
     <h1 class="text-4xl">Learn more about archery</h1>
 
 
