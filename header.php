@@ -85,11 +85,15 @@
                     ?>
                     <div class="relative inline-block text-left">
                         <!-- Trigger Button -->
-                        <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
+                        <button id="langDropdownButton"
                                 class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
                                 type="button">
-                            <?= esc_html(strtoupper($current_lang)); ?>
-                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <?php
+                            $current = $langs_array[$current_lang];
+                            echo $current['flag']; // Flag image (HTML)
+                            echo '<span class="ml-2">' . esc_html($current['name']) . '</span>';
+                            ?>
+                            <svg class="w-2.5 h-2.5 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="m1 1 4 4 4-4"/>
@@ -103,8 +107,9 @@
                                 <?php foreach ($langs_array as $lang) : ?>
                                     <li>
                                         <a href="<?= esc_url($lang['url']); ?>"
-                                           class="block px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
-                                            <?= esc_html(strtoupper($lang['slug'])); ?>
+                                           class="flex items-center px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
+                                            <?= $lang['flag']; ?>
+                                            <span class="ml-2"><?= esc_html($lang['name']); ?></span>
                                         </a>
                                     </li>
                                 <?php endforeach; ?>
@@ -112,8 +117,15 @@
                         </div>
                     </div>
 
-                  
+                    <!-- Toggle Script -->
+                    <script>
+                        document.getElementById('langDropdownButton').addEventListener('click', function () {
+                            const menu = document.getElementById('langDropdown');
+                            menu.classList.toggle('hidden');
+                        });
+                    </script>
                 <?php endif; ?>
+
 
 
                 <!--                --><?php //if (function_exists('pll_the_languages')) : ?>
