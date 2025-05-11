@@ -75,6 +75,14 @@
                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Contact</a>
                     </li>
                 </ul>
+                <?php
+                function get_custom_lang_flag_svg($lang_slug) {
+                    // Adjust this path to your actual flag location
+                    $flag_path = get_template_directory_uri() . '/assets/flags/' . $lang_slug . '.svg';
+                    return $flag_path;
+                }
+                ?>
+
                 <?php if (function_exists('pll_the_languages')) :
                     $langs_array = pll_the_languages([
                         'dropdown' => 1,
@@ -88,9 +96,7 @@
                         <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
                                 class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
                                 type="button">
-                            <?php if (!empty($langs_array[$current_lang]['flag'])) : ?>
-                                <img src="<?= esc_url($langs_array[$current_lang]['flag']); ?>" alt="<?= esc_attr($langs_array[$current_lang]['name']); ?>" class="w-5 h-4 mr-2">
-                            <?php endif; ?>
+                            <img src="<?= esc_url(get_custom_lang_flag_svg($current_lang)); ?>" alt="" class="w-5 h-4 mr-2">
                             <?= esc_html($langs_array[$current_lang]['name']); ?>
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 10 6">
@@ -107,9 +113,7 @@
                                     <li>
                                         <a href="<?= esc_url($lang['url']); ?>"
                                            class="flex items-center px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
-                                            <?php if (!empty($lang['flag'])) : ?>
-                                                <img src="<?= esc_url($lang['flag']); ?>" alt="<?= esc_attr($lang['name']); ?>" class="w-5 h-4 mr-2">
-                                            <?php endif; ?>
+                                            <img src="<?= esc_url(get_custom_lang_flag_svg($lang['slug'])); ?>" alt="" class="w-5 h-4 mr-2">
                                             <span><?= esc_html($lang['name']); ?></span>
                                         </a>
                                     </li>
@@ -118,6 +122,7 @@
                         </div>
                     </div>
                 <?php endif; ?>
+
 
 
 
