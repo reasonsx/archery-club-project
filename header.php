@@ -78,7 +78,7 @@
                 <?php if (function_exists('pll_the_languages')) :
                     $langs_array = pll_the_languages([
                         'dropdown' => 1,
-                        'hide_current' => 0, // show current lang
+                        'hide_current' => 0, // SHOW current language too
                         'raw' => 1
                     ]);
                     $current_lang = pll_current_language();
@@ -88,7 +88,7 @@
                         <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
                                 class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
                                 type="button">
-                            <?= strtoupper($current_lang); ?>
+                            <?= esc_html(strtoupper($current_lang)); ?>
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -101,20 +101,22 @@
                              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 mt-2">
                             <ul class="py-2 text-sm text-gray-700" aria-labelledby="langDropdownButton">
                                 <?php foreach ($langs_array as $lang) : ?>
-                                    <?php if (!$lang['current_lang']) : ?>
-                                        <li>
-                                            <a href="<?= esc_url($lang['url']); ?>" class="block px-4 py-2 hover:bg-gray-100">
-                                                <?= esc_html(strtoupper($lang['slug'])); ?>
-                                            </a>
-                                        </li>
-                                    <?php endif; ?>
+                                    <li>
+                                        <a href="<?= esc_url($lang['url']); ?>"
+                                           class="block px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
+                                            <?= esc_html(strtoupper($lang['slug'])); ?>
+                                        </a>
+                                    </li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
+
+                  
                 <?php endif; ?>
 
-<!--                --><?php //if (function_exists('pll_the_languages')) : ?>
+
+                <!--                --><?php //if (function_exists('pll_the_languages')) : ?>
 <!--                    <div class="language-switcher">-->
 <!--                        --><?php //pll_the_languages(array('dropdown' => 1)); ?>
 <!--                    </div>-->
