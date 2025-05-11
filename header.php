@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 
     <?php wp_head(); ?>
 </head>
@@ -16,7 +17,8 @@
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <!-- Logo -->
             <a href="<?php echo home_url(); ?>" class="flex items-center">
-                <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
+                <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9"
+                     alt="Flowbite Logo"/>
                 <span class="self-center text-xl font-semibold whitespace-nowrap">Sønderborg Bueskyttelaug</span>
             </a>
             <div class="flex items-center lg:order-2">
@@ -55,28 +57,94 @@
                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Home</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink( get_page_by_path( 'about-us' ) ); ?>"
-                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">About us</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">About
+                            us</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"
+                        <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>"
                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Blog</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink( get_page_by_path( 'how-to-join' ) ); ?>"
-                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">How to join</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">How
+                            to join</a>
                     </li>
                     <li>
                         <a href="#"
                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Contact</a>
                     </li>
                 </ul>
+                <?php if (function_exists('pll_the_languages')) :
+                    $langs_array = pll_the_languages([
+                        'dropdown' => 1,
+                        'hide_current' => 0, // show current lang
+                        'raw' => 1
+                    ]);
+                    $current_lang = pll_current_language();
+                    ?>
+                    <div class="relative inline-block text-left">
+                        <!-- Trigger Button -->
+                        <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
+                                class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                                type="button">
+                            <?= strtoupper($current_lang); ?>
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
 
-            <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-                <div class="language-switcher">
-                    <?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
-                </div>
-            <?php endif; ?>
+                        <!-- Dropdown Menu -->
+                        <div id="langDropdown"
+                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 mt-2">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="langDropdownButton">
+                                <?php foreach ($langs_array as $lang) : ?>
+                                    <?php if (!$lang['current_lang']) : ?>
+                                        <li>
+                                            <a href="<?= esc_url($lang['url']); ?>" class="block px-4 py-2 hover:bg-gray-100">
+                                                <?= esc_html(strtoupper($lang['slug'])); ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+<!--                --><?php //if (function_exists('pll_the_languages')) : ?>
+<!--                    <div class="language-switcher">-->
+<!--                        --><?php //pll_the_languages(array('dropdown' => 1)); ?>
+<!--                    </div>-->
+<!--                --><?php //endif; ?>
+<!---->
+<!---->
+<!--                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"-->
+<!--                        class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"-->
+<!--                        type="button">Dropdown button-->
+<!--                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"-->
+<!--                         viewBox="0 0 10 6">-->
+<!--                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                              d="m1 1 4 4 4-4"/>-->
+<!--                    </svg>-->
+<!--                </button>-->
+<!---->
+<!--                <!-- Dropdown menu -->-->
+<!--                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">-->
+<!--                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">-->
+<!--                        <li>-->
+<!--                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>-->
+<!--                        </li>-->
+<!---->
+<!--                    </ul>-->
+<!--                </div>-->
+
+
             </div>
 
         </div>
