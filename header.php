@@ -88,6 +88,9 @@
                         <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
                                 class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
                                 type="button">
+                            <?php if (!empty($langs_array[$current_lang]['flag'])) : ?>
+                                <img src="<?= esc_url($langs_array[$current_lang]['flag']); ?>" alt="<?= esc_attr($langs_array[$current_lang]['name']); ?>" class="w-5 h-4 mr-2">
+                            <?php endif; ?>
                             <?= esc_html($langs_array[$current_lang]['name']); ?>
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 10 6">
@@ -104,7 +107,10 @@
                                     <li>
                                         <a href="<?= esc_url($lang['url']); ?>"
                                            class="flex items-center px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
-                                            <span class="ml-2"><?= esc_html($lang['name']); ?></span>
+                                            <?php if (!empty($lang['flag'])) : ?>
+                                                <img src="<?= esc_url($lang['flag']); ?>" alt="<?= esc_attr($lang['name']); ?>" class="w-5 h-4 mr-2">
+                                            <?php endif; ?>
+                                            <span><?= esc_html($lang['name']); ?></span>
                                         </a>
                                     </li>
                                 <?php endforeach; ?>
@@ -112,6 +118,7 @@
                         </div>
                     </div>
                 <?php endif; ?>
+
 
 
             </div>
