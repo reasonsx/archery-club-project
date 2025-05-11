@@ -7,4 +7,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    justify-content: center;
 }
