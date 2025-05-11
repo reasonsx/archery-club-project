@@ -104,7 +104,6 @@
                                     <li>
                                         <a href="<?= esc_url($lang['url']); ?>"
                                            class="flex items-center px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
-                                            <?= $lang['flag']; ?>
                                             <span class="ml-2"><?= esc_html($lang['name']); ?></span>
                                         </a>
                                     </li>
