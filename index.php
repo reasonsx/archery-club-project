@@ -26,7 +26,7 @@ get_header(); ?>
         <h1 class="text-4xl">About</h1>
     </section>
 
-    <section class="h-96 flex items-center">
+    <section class="flex flex-col items-center">
         <h1 class="text-4xl">Images gallery</h1>
         <div id="gallery" class="relative w-[50vw]" data-carousel="slide">
             <!-- Carousel wrapper -->
