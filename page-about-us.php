@@ -38,7 +38,7 @@ get_header(); ?>
     <ol class="relative border-s border-gray-200">
         <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400">February 2022</time>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400">January 1, 1900</time>
             <h3 class="text-lg font-semibold text-gray-900">Title</h3>
             <p class="mb-4 text-base font-normal text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">
@@ -50,7 +50,7 @@ get_header(); ?>
         </li>
         <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400">March 2022</time>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400">January 1, 1900</time>
             <h3 class="text-lg font-semibold text-gray-900">Title</h3>
             <p class="text-base font-normal text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </li>
