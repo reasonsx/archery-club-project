@@ -56,7 +56,7 @@ get_header(); ?>
         </li>
         <li class="ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400">April 2022</time>
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400">May 29th, 1954</time>
             <h3 class="text-lg font-semibold text-gray-900">E-Commerce UI code in Tailwind CSS</h3>
             <p class="text-base font-normal text-gray-500">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
         </li>
