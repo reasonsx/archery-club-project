@@ -22,12 +22,12 @@
                 <span class="self-center text-xl font-semibold whitespace-nowrap">Sønderborg Bueskyttelaug</span>
             </a>
             <div class="flex items-center lg:order-2">
-                <a href="#"
-                   class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Log
-                    in</a>
-                <a href="#"
-                   class="text-white bg-red-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Get
-                    started</a>
+<!--                <a href="#"-->
+<!--                   class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Log-->
+<!--                    in</a>-->
+<!--                <a href="#"-->
+<!--                   class="text-white bg-red-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Get-->
+<!--                    started</a>-->
 
                 <!-- Mobile menu button -->
                 <button data-collapse-toggle="mobile-menu-2" type="button"
