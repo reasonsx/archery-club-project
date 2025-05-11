@@ -75,43 +75,45 @@
                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Contact</a>
                     </li>
                 </ul>
-                <?php if ( function_exists( 'pll_get_the_languages' ) ) :
-                    $languages = pll_get_the_languages( array( 'raw' => 1 ) );
-                    if ( ! empty( $languages ) ) : ?>
+                <?php if (function_exists('pll_the_languages')) :
+                    $langs_array = pll_the_languages([
+                        'dropdown' => 1,
+                        'hide_current' => 0, // SHOW current language too
+                        'raw' => 1
+                    ]);
+                    $current_lang = pll_current_language();
+                    ?>
+                    <div class="relative inline-block text-left">
+                        <!-- Trigger Button -->
+                        <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
+                                class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                                type="button">
+                            <?= esc_html(strtoupper($current_lang)); ?>
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
 
-                        <div class="relative inline-block text-left">
-                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    type="button">
-                                <?php
-                                // Show full name of the current language
-                                $current_lang = pll_current_language();
-                                echo esc_html( $languages[ $current_lang ]['name'] );
-                                ?>
-                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="m1 1 4 4 4-4"/>
-                                </svg>
-                            </button>
-
-                            <div id="dropdown"
-                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                                    <?php foreach ( $languages as $lang ) : ?>
-                                        <li>
-                                            <a href="<?php echo esc_url( $lang['url'] ); ?>"
-                                               class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                                <?php echo esc_html( $lang['name'] ); ?>
-                                            </a>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
+                        <!-- Dropdown Menu -->
+                        <div id="langDropdown"
+                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 mt-2">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="langDropdownButton">
+                                <?php foreach ($langs_array as $lang) : ?>
+                                    <li>
+                                        <a href="<?= esc_url($lang['url']); ?>"
+                                           class="block px-4 py-2 hover:bg-gray-100 <?= $lang['slug'] === $current_lang ? 'font-bold text-blue-700' : '' ?>">
+                                            <?= esc_html(strtoupper($lang['slug'])); ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
+                    </div>
 
-                    <?php endif; endif; ?>
 
+                <?php endif; ?>
 
 
                 <!--                --><?php //if (function_exists('pll_the_languages')) : ?>
