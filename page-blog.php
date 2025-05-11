@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div class="content">
-    <h1>Blog</h1>
+    <h1 class="text-3xl font-bold mb-6"><?php the_title(); ?></h1>
 
     <?php
     // WordPress loop to display blog posts
