@@ -62,8 +62,8 @@ TEST IF IT WORKS
                            aria-current="page">About us</a>
                     </li>
                     <li>
-                        <a href="#"
-                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"><?php echo get_permalink( get_option( 'page_for_posts' ) ); ?></a>
+                        <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Blog</a>
                     </li>
                     <li>
                         <a href="#"
