@@ -51,7 +51,7 @@
                     <div class="relative inline-block text-left">
                         <!-- Trigger Button -->
                         <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
-                                class="cursor-pointer text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-400 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                                class="cursor-pointer text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-400 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center w-36"
                                 type="button">
                             <img src="<?= esc_url(get_custom_lang_flag_svg($current_lang)); ?>" alt="" class="w-5 h-5 mr-2">
                             <?= esc_html($langs_array[$current_lang]['name']); ?>
