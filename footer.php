@@ -6,6 +6,9 @@
         <li>
             <a href="<?php echo get_permalink( get_page_by_path( 'about-us' ) ); ?>" class="hover:underline me-4 md:me-6">About us</a>
         </li>
+    <li>
+            <a href="https://www.facebook.com/profile.php?id=100057323084944#" class="hover:underline me-4 md:me-6">Facebook</a>
+        </li>
         <li>
             <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="hover:underline me-4 md:me-6">Blog</a>
         </li>
