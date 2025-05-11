@@ -22,6 +22,35 @@ get_header(); ?>
 
 <section class="h-96 flex justify-center">
     <h1 class="text-4xl">How do I join?</h1>
+        <p>Do you want to be an archer?
+           We have an introduction evening
+           on Tuesday, May 13th at 6 – 7 pm.
+           <br>
+           <br>
+           As there is limited space, registration
+           to formand@s-bl.dk is necessary.
+        </p>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Where??</h1>
+        <p>Outdoor training takes place
+           at Ingolf Nielsens Vej, 6400 Sønderborg
+           on Mondays and Thursdays.
+        </p>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">When?</h1>
+        <p>Training times
+           Monday
+             All shooters:
+                      6:00 PM - 7:30 PM
+            <br>
+           Thursday
+           All shooters:
+                      6:00 PM - 7:30 PM
+        </p>
 </section>
 
 <?php get_footer(); ?>
