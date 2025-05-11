@@ -77,7 +77,7 @@
                 </ul>
                 <?php
                 function get_custom_lang_flag_svg($lang_slug) {
-                    $flag_path = get_template_directory_uri() . '/assets/flags/' . $lang_slug . '.svg';
+                    $flag_path = get_template_directory_uri() . '/assets/flag' . $lang_slug . '.svg';
                     return $flag_path;
                 }
                 ?>
