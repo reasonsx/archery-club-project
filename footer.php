@@ -1,4 +1,4 @@
-<footer class="bg-white rounded-lg shadow-sm m-4 ">
+<footer class="bg-white rounded-lg shadow-sm m-4 w-[80vw]">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center ">Copyright © 2025 <a href="<?php echo home_url(); ?>" class="hover:underline">Sønderborg Bueskyttelaug</a>
     </span>
