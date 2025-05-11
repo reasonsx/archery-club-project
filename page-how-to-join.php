@@ -14,4 +14,14 @@ get_header(); ?>
     </div>
 </main>
 
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">Hero</h1>
+</section>
+
+
+<section class="h-96 flex justify-center">
+    <h1 class="text-4xl">How do I join?</h1>
+</section>
+
 <?php get_footer(); ?>
