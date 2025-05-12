@@ -132,6 +132,7 @@ get_header(); ?>
 
         <h2 id="accordion-collapse-heading-3">
             <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3"
                     data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                     aria-controls="accordion-collapse-body-3">
                 <span>What are the differences between Flowbite and Tailwind UI?</span>
