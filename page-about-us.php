@@ -84,7 +84,7 @@ get_header(); ?>
     <h1 class="text-4xl">Meet our members</h1>
 </section>
 
-<section class="max-w-screen-xl mx-auto">
+<section class="max-w-screen-lg mx-auto">
     <div class="mx-auto max-w-screen-xl text-center">
         <div class="mx-auto mb-8 max-w-screen-sm">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Equipment</h2>
