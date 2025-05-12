@@ -107,7 +107,7 @@ get_header(); ?>
             <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
         </div>
         <!-- Right column -->
-        <div class="flex gap-4">
+        <div class="flex flex-col gap-4">
             <h1 class="text-4xl mb-4">Contact us</h1>
 
             <div>
