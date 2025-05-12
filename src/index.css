@@ -7,17 +7,15 @@
 
 @layer base {
     h1 {
-        @apply text-4xl;
-        @apply font-bold;
+        @apply text-4xl font-bold;
     }
 
     h5 {
         @apply text-xl;
     }
-}
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fefff6;
+    body {
+        @apply flex flex-col min-h-screen font-sans bg-[#fefff6];
+        font-family: 'Montserrat', sans-serif;
+    }
 }
-
