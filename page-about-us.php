@@ -55,7 +55,7 @@ get_header(); ?>
         </ol>
     </div>
 
-    <div class="flex flex-col justify-start">
+    <div class="flex flex-col justify-start h-auto">
         <h1>Our story</h1>
         <p>Sønderborg Archery Guild was founded on May 29, 1954 and is a member of Archery Denmark.
             <br>
