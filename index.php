@@ -107,7 +107,7 @@ get_header(); ?>
             <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
         </div>
         <!-- Right column -->
-        <div class="gap-4">
+        <div class="flex gap-4">
             <h1 class="text-4xl mb-4">Contact us</h1>
 
             <div>
@@ -124,6 +124,7 @@ get_header(); ?>
             <h5 class="text-xl">Phone:</h5>
             <p>24 60 94 76</p>
             </div>
+
             <div class="w-full aspect-video">
                 <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.907243191857!2d9.792260512861683!3d54.93122567267775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b33765aef272b5%3A0x3052c789389961fb!2sIngolf%20Nielsens%20Vej%2C%206400%20S%C3%B8nderborg!5e1!3m2!1spl!2sdk!4v1747050757834!5m2!1spl!2sdk"
