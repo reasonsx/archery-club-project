@@ -17,16 +17,16 @@ get_header(); ?>
 <!--        </div>-->
     </div>
 
-    <section class="h-96 w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
+    <section class="max-w-screen-xl h-96 w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
         <h1 class="text-4xl text-white drop-shadow-lg">Hero</h1>
     </section>
 
 
-    <section class="h-96 flex justify-center">
+    <section class="max-w-screen-xl h-96 flex justify-center">
         <h1 class="text-4xl">About</h1>
     </section>
 
-    <section class="flex flex-col items-center w-auto mx-auto">
+    <section class="max-w-screen-xl flex flex-col items-center">
         <h1 class="text-4xl">Images gallery</h1>
         <div id="gallery" class="relative w-[50vw]" data-carousel="slide">
             <!-- Carousel wrapper -->
