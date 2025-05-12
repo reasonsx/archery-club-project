@@ -2,7 +2,7 @@
 
 <main class="grid h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
     <div class="text-center">
-        <p class="font-semibold text-blue-600">404</p>
+        <p class="font-semibold text-blue-400">404</p>
         <h1>Page not found</h1>
         <p class="mt-6">Sorry, we couldn’t find the page you’re looking for.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
