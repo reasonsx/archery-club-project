@@ -61,7 +61,7 @@ get_header(); ?>
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
             <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200  gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 cursor-pointer gap-3"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
                 <span>What is Flowbite?</span>
@@ -85,7 +85,7 @@ get_header(); ?>
 
         <h2 id="accordion-collapse-heading-2">
             <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 cursor-pointer gap-3"
                     data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
                     aria-controls="accordion-collapse-body-2">
                 <span>Is there a Figma file available?</span>
@@ -108,7 +108,7 @@ get_header(); ?>
 
         <h2 id="accordion-collapse-heading-3">
             <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 cursor-pointer gap-3"
                     data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                     aria-controls="accordion-collapse-body-3">
                 <span>What are the differences between Flowbite and Tailwind UI?</span>
