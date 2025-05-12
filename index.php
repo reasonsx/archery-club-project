@@ -64,15 +64,15 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="max-w-screen-lg mx-auto h-96 flex items-center">
+    <section class="max-w-screen-xl mx-auto h-96 flex items-center">
         <h1 class="text-4xl">Archery benefits</h1>
     </section>
 
-    <section class="max-w-screen-lg mx-auto h-96 flex justify-center">
+    <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
         <h1 class="text-4xl">What is archery about</h1>
     </section>
 
-    <section class="max-w-screen-lg mx-auto flex flex-col items-center">
+    <section class="max-w-screen-xl mx-auto flex flex-col items-center">
         <h1 class="text-4xl">Learn more about archery</h1>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
             <a href="#">
