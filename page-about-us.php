@@ -165,7 +165,7 @@ get_header(); ?>
 
 <section class="max-w-screen-xl mx-auto">
     <section class="bg-white ">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-xl text-center">
             <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Equipment</h2>
                 <p class="font-light text-gray-500 sm:text-xl ">Learn what equipment is needed what it's used for</p>
