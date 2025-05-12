@@ -100,7 +100,7 @@ get_header(); ?>
 
     </section>
 
-    <section class="h-96 flex flex-col justify-center mx-40">
+    <section class="max-w-screen-xl mx-auto h-96 flex flex-col justify-center">
         <h1 class="text-4xl text-center">Contact us</h1>
         <p>The club can be contacted on the chairman's phone number 24 60 94 76,
             on the club's email formand@s-bl.dk or down at the club,
