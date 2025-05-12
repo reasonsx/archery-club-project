@@ -103,32 +103,7 @@ get_header(); ?>
         <!-- Left column -->
         <div>
             <h5>CONTACT FORM</h5>
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                    [text* your-name class:"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"]
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
-                    [email* your-email class:"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"]
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                    [text your-subject class:"w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"]
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
-                    [textarea your-message class:"w-full p-3 border border-gray-300 rounded-md h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"]
-                </div>
-
-                <div>
-                    [submit class:"bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"]
-                </div>
-            </div>
-
+            <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
         </div>
 
         <!-- Right column -->
