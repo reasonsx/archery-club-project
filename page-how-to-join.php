@@ -20,7 +20,7 @@ get_header(); ?>
 </section>
 
 
-<section class="h-96 flex justify-center flex-col mx-40">
+<section class="max-w-screen-xl mx-auto h-auto flex justify-center flex-col">
     <h1 class="text-4xl">How do I join?</h1>
         <p>Do you want to be an archer?
            We have an introduction evening
@@ -32,7 +32,7 @@ get_header(); ?>
         </p>
 </section>
 
-<section class="h-96 flex justify-center flex-col mx-40">
+<section class="max-w-screen-xl mx-auto h-auto flex justify-center flex-col">
     <h1 class="text-4xl">Where??</h1>
         <p>Outdoor training takes place
            at Ingolf Nielsens Vej, 6400 Sønderborg
