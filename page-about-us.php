@@ -180,6 +180,7 @@ get_header(); ?>
                         <a href="#">Bonnie Green</a>
                     </h3>
                     <p>CEO/Co-founder</p>
+                    <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place during the shot.</p>
 
                 </div>
 
