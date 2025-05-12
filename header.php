@@ -34,7 +34,7 @@
             </div>
 
             <!-- Right: Language Switcher -->
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4 justify-end lg:justify-start">
                 <?php
                 function get_custom_lang_flag_svg($lang_slug) {
                     return get_template_directory_uri() . '/assets/flags/' . $lang_slug . '.svg';
