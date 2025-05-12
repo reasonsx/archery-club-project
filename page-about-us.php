@@ -18,20 +18,7 @@ get_header(); ?>
 
 
 <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-    <div>
-        <h1 class="text-4xl">Our story</h1>
-        <p>Sønderborg Archery Guild was founded on May 29, 1954 and is a member of Archery Denmark.
-            <br>
-            <br>
-            The primary focus is target shooting with all bow types:
-            longbows, recurve bows and compound bows.
-            <br>
-            <br>
-            We are a club with room for those who want to shoot for
-            fun and exercise, but also those who want to train to be at
-            an elite level in archery and, for example, become Danish Champion.
-        </p>
-    </div>
+
 
     <div>
         <ol class="relative border-s border-gray-200">
@@ -66,6 +53,21 @@ get_header(); ?>
                     is a member of Archery Denmark.</p>
             </li>
         </ol>
+    </div>
+
+    <div>
+        <h1 class="text-4xl">Our story</h1>
+        <p>Sønderborg Archery Guild was founded on May 29, 1954 and is a member of Archery Denmark.
+            <br>
+            <br>
+            The primary focus is target shooting with all bow types:
+            longbows, recurve bows and compound bows.
+            <br>
+            <br>
+            We are a club with room for those who want to shoot for
+            fun and exercise, but also those who want to train to be at
+            an elite level in archery and, for example, become Danish Champion.
+        </p>
     </div>
 </section>
 
