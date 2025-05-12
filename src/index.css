@@ -5,7 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply text-4xl;
+    }
+
+    h5 {
+        @apply text-xl;
+    }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fefff6;
 }
+

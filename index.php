@@ -108,20 +108,20 @@ get_header(); ?>
         </div>
         <!-- Right column -->
         <div class="flex flex-col gap-4">
-            <h1 class="text-4xl">Contact us</h1>
+            <h1>Contact us</h1>
 
-            <div>
-            <h5 class="text-xl">Address:</h5>
+            <div class="flex">
+            <h5>Address:</h5>
             <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
             </div>
 
-            <div>
-            <h5 class="text-xl">Email:</h5>
+            <div class="flex">
+            <h5>Email:</h5>
             <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
             </div>
 
-            <div>
-            <h5 class="text-xl">Phone:</h5>
+            <div class="flex">
+            <h5>Phone:</h5>
             <p>24 60 94 76</p>
             </div>
 
