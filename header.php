@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> class="bg-[#e9e9e1]">
 
 <header>
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
