@@ -99,15 +99,24 @@ get_header(); ?>
         </div>
 
     </section>
+    <section class="max-w-screen-xl mx-auto h-96 grid grid-cols-2 items-center gap-8">
+        <!-- Left column -->
+        <div>
+            <h1 class="text-4xl mb-4">Contact us</h1>
+            <p>
+                The club can be contacted on the chairman's phone number <strong>24 60 94 76</strong>,
+                on the club's email <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>,
+                or down at the club, where you can find us Monday 6 – 7:30 PM and Thursday 6 – 7:30 PM.
+            </p>
+        </div>
 
-    <section class="max-w-screen-xl mx-auto h-96 flex flex-col justify-center">
-        <h1 class="text-4xl text-center">Contact us</h1>
-        <p>The club can be contacted on the chairman's phone number 24 60 94 76,
-            on the club's email formand@s-bl.dk or down at the club,
-            where you can find us Monday 6 – 7:30 PM and Thursday 6 – 7:30 PM.
-        </p>
-
+        <!-- Right column -->
+        <div>
+            <!-- Add an image, a form, a map, or anything else -->
+            <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
+        </div>
     </section>
+
 
 
 <?php get_footer();
