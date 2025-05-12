@@ -171,16 +171,18 @@ get_header(); ?>
                 <p class="font-light text-gray-500 sm:text-xl ">Learn what equipment is needed what it's used for</p>
             </div>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class="text-center text-gray-500 ">
-                    <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png');">
+                <div class="text-center text-gray-500">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
+                        <img class="w-36 h-36 rounded-full"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png" alt="Finger Sling">
+                    </div>
                     <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
                         <a href="#">Finger Sling</a>
                     </h3>
                     <p>Mandatory</p>
                     <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place during the shot.</p>
-
                 </div>
+
 
                 <div class="text-center text-gray-500 ">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
