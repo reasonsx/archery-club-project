@@ -110,17 +110,17 @@ get_header(); ?>
         <div class="flex flex-col gap-4">
             <h1>Contact us</h1>
 
-            <div class="flex">
+            <div class="flex gap-2">
             <h5>Address:</h5>
             <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
             </div>
 
-            <div class="flex">
+            <div class="flex gap-2">
             <h5>Email:</h5>
             <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
             </div>
 
-            <div class="flex">
+            <div class="flex gap-2">
             <h5>Phone:</h5>
             <p>24 60 94 76</p>
             </div>
