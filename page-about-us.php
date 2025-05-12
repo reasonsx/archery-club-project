@@ -173,8 +173,8 @@ get_header(); ?>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div class="text-center text-gray-500 ">
                     <img class="mx-auto mb-4 w-36 h-36 rounded-full"
-                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                         alt="Bonnie Avatar">
+                         src="/assets/images/finger-sling.png"
+                         alt="Finger Sling">
                     <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
                         <a href="#">Finger Sling</a>
                     </h3>
