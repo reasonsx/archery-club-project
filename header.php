@@ -25,11 +25,11 @@
             <!-- Center: Main Navigation (Desktop only) -->
             <div class="hidden lg:flex justify-center flex-1">
                 <ul class="flex flex-row space-x-8 font-medium text-gray-700">
-                    <li><a href="<?php echo home_url(); ?>" class="hover:font-bold">Home</a></li>
-                    <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:font-bold"><?php echo get_the_title(get_page_by_path('about-us')); ?></a></li>
-                    <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:font-bold">Blog</a></li>
-                    <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:font-bold">How to join</a></li>
-                    <li><a href="#" class="hover:font-bold">Contact</a></li>
+                    <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-400">About us</a></li>
+                    <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-blue-400">Blog</a></li>
+                    <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-400">How to join</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Contact</a></li>
                 </ul>
             </div>
 
