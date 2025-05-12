@@ -135,4 +135,5 @@ get_header(); ?>
     <h1 class="text-4xl">Meet our members</h1>
 </section>
 
+
 <?php get_footer(); ?>

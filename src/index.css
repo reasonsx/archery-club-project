@@ -18,5 +18,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fefff6;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* equivalent to Tailwind's gap-8 */
 }
 
