@@ -69,7 +69,7 @@ get_header(); ?>
             an elite level in archery and, for example, become Danish Champion.
         </p>
         <button type="button" class="dark">
-            Alternative
+            How to join?
         </button>
     </div>
 </section>
