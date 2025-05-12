@@ -109,6 +109,9 @@ get_header(); ?>
         <!-- Right column -->
         <div>
             <h1 class="text-4xl mb-4">Contact us</h1>
+
+            <h5 class="text-xl">Address:</h5>
+            <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
             <p>
                 The club can be contacted on the chairman's phone number <strong>24 60 94 76</strong>,
                 on the club's email <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>,
