@@ -179,7 +179,7 @@ get_header(); ?>
                     <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
                         <a href="#">Bonnie Green</a>
                     </h3>
-                    <p>CEO/Co-founder</p>
+                    <p>Finger Sling</p>
                     <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place during the shot.</p>
 
                 </div>
