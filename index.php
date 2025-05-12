@@ -103,6 +103,7 @@ get_header(); ?>
         <!-- Left column -->
         <div>
             <h5>CONTACT FORM</h5>
+            <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
         </div>
 
         <!-- Right column -->
