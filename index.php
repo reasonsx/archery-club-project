@@ -4,22 +4,19 @@ get_header(); ?>
 
     <div class="max-w-4xl mx-auto px-4">
 
-        <div class="prose max-w-full">
-            <?php if (have_posts()) {
-                while (have_posts()) {
-                    the_post(); ?>
-                    <div>
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <?php echo wp_trim_words(get_the_content(), 40, '...') ?>
-                    </div>
-                <?php }
-            } ?>
-        </div>
+<!--        <div class="prose max-w-full">-->
+<!--            --><?php //if (have_posts()) {
+//                while (have_posts()) {
+//                    the_post(); ?>
+<!--                    <div>-->
+<!--                        <h3><a href="--><?php //the_permalink(); ?><!--">--><?php //the_title(); ?><!--</a></h3>-->
+<!--                        --><?php //echo wp_trim_words(get_the_content(), 40, '...') ?>
+<!--                    </div>-->
+<!--                --><?php //}
+//            } ?>
+<!--        </div>-->
     </div>
 
-<!--    <section class="h-96 flex justify-center">-->
-<!--        <h1 class="text-4xl">Hero</h1>-->
-<!--    </section>-->
     <section class="h-96 w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
         <h1 class="text-4xl text-white drop-shadow-lg">Hero</h1>
     </section>
