@@ -12,7 +12,7 @@
 
 <header>
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
-        <div class="flex items-center justify-between mx-auto max-w-screen-xl">
+        <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">
 
             <!-- Left: Logo and Name -->
             <div class="flex items-center flex-shrink-0">
@@ -48,6 +48,8 @@
                     ]);
                     $current_lang = pll_current_language();
                     ?>
+
+
                     <div class="relative inline-block text-left">
                         <!-- Trigger Button -->
                         <button id="langDropdownButton" data-dropdown-toggle="langDropdown"
@@ -92,6 +94,7 @@
                     </svg>
                 </button>
             </div>
+
         </div>
 
         <!-- Mobile Navigation -->
