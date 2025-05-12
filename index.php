@@ -64,7 +64,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="max-w-screen-lg h-96 flex justify-center">
+    <section class="max-w-screen-lg mx-auto h-96 flex items-center">
         <h1 class="text-4xl">Archery benefits</h1>
     </section>
 
