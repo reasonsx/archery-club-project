@@ -99,13 +99,12 @@ get_header(); ?>
         </div>
 
     </section>
-    <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-2 items-center gap-8">
+    <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <!-- Left column -->
-
         <div>
-            <!-- Add an image, a form, a map, or anything else -->
-            <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
+            <h5>CONTACT FORM</h5>
         </div>
+
         <!-- Right column -->
         <div class="flex flex-col gap-4">
             <h1>Contact us</h1>
@@ -136,7 +135,6 @@ get_header(); ?>
 
         </div>
     </section>
-
 
 
 <?php get_footer();
