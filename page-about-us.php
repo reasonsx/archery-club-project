@@ -167,11 +167,11 @@ get_header(); ?>
     <div class="mx-auto max-w-screen-xl text-center">
         <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Equipment</h2>
-            <p class="font-light text-gray-500 sm:text-xl ">Learn what equipment is needed what it's used for</p>
+            <h5 class="text-gray-500">Learn what equipment is needed what it's used for</h5>
         </div>
 
 
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div class="text-center text-gray-500">
                 <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-300 flex items-center justify-center">
                     <img class="w-36 h-36 object-contain rounded-full"
