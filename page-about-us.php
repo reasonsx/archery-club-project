@@ -68,7 +68,7 @@ get_header(); ?>
             fun and exercise, but also those who want to train to be at
             an elite level in archery and, for example, become Danish Champion.
         </p>
-        <button type="button">
+        <button type="button" class="dark">
             Alternative
         </button>
     </div>
