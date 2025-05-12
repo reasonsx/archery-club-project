@@ -99,7 +99,7 @@ get_header(); ?>
         </div>
 
     </section>
-    <section class="max-w-screen-xl mx-auto h-96 grid grid-cols-2 items-center gap-8">
+    <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-2 items-center gap-8">
         <!-- Left column -->
 
         <div>
