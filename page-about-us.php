@@ -68,7 +68,9 @@ get_header(); ?>
             fun and exercise, but also those who want to train to be at
             an elite level in archery and, for example, become Danish Champion.
         </p>
-        <button type="button" class="w-auto py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Alternative</button>
+        <button type="button">
+            Alternative
+        </button>
     </div>
 </section>
 
@@ -222,7 +224,6 @@ get_header(); ?>
                 <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
                     during the shot.</p>
             </div>
-
 
 
         </div>
