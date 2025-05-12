@@ -101,6 +101,12 @@ get_header(); ?>
     </section>
     <section class="max-w-screen-xl mx-auto h-96 grid grid-cols-2 items-center gap-8">
         <!-- Left column -->
+
+        <div>
+            <!-- Add an image, a form, a map, or anything else -->
+            <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
+        </div>
+        <!-- Right column -->
         <div>
             <h1 class="text-4xl mb-4">Contact us</h1>
             <p>
@@ -108,12 +114,16 @@ get_header(); ?>
                 on the club's email <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>,
                 or down at the club, where you can find us Monday 6 – 7:30 PM and Thursday 6 – 7:30 PM.
             </p>
-        </div>
+            <div class="w-full aspect-video">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.907243191857!2d9.792260512861683!3d54.93122567267775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b33765aef272b5%3A0x3052c789389961fb!2sIngolf%20Nielsens%20Vej%2C%206400%20S%C3%B8nderborg!5e1!3m2!1spl!2sdk!4v1747050757834!5m2!1spl!2sdk"
+                        class="w-full h-full border-0 rounded-xl shadow-md"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
-        <!-- Right column -->
-        <div>
-            <!-- Add an image, a form, a map, or anything else -->
-            <img src="/assets/images/home-hero.jpg" alt="Club photo" class="w-full h-auto rounded-xl shadow-md">
         </div>
     </section>
 
