@@ -66,7 +66,7 @@ get_header(); ?>
 
 </section>
 
-<section class="flex flex-col items-center w-[60vw] mx-auto">
+<section class="flex flex-col max-w-screen-xl mx-auto h-auto">
 
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
