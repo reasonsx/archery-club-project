@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 text-center">
+<section class="grid h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 text-center">
         <p class="font-semibold text-blue-400">404</p>
         <h1>Page not found</h1>
         <p class="mt-6">Sorry, we couldn’t find the page you’re looking for.</p>
