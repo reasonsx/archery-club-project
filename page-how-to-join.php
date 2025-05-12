@@ -53,7 +53,7 @@ get_header(); ?>
         </p>
 </section>
 
-<section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+<section class="max-w-screen-xl mx-auto h-auto">
     <div>
         <h1>FAQ</h1>
     </div>
