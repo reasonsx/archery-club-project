@@ -173,8 +173,8 @@ get_header(); ?>
 
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div class="text-center text-gray-500">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-300 flex items-center justify-center">
-                    <img class="w-36 h-36 object-contain rounded-full"
+                <div class="mx-auto mb-4 w-36 h-36 rounded-full bg-blue-300 flex items-center justify-center">
+                    <img class="w-40 h-40 object-contain rounded-full"
                          src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
                          alt="Finger Sling">
                 </div>
