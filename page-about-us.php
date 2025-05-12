@@ -62,7 +62,6 @@ get_header(); ?>
             </li>
         </ol>
     </div>
-
 </section>
 
 <section class="flex flex-col items-center w-auto mx-auto">
@@ -73,7 +72,7 @@ get_header(); ?>
 
 </section>
 
-<section class="flex flex-col max-w-screen-xl mx-auto h-auto">
+<section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
@@ -127,7 +126,9 @@ get_header(); ?>
         </div>
     </div>
 
-
+    <div>
+        <h1>FAQ</h1>
+    </div>
 </section>
 
 <section class="h-96 flex justify-center">
