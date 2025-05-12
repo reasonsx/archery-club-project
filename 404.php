@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+<section class="grid h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
     <div class="text-center">
         <p class="font-semibold text-blue-400">404</p>
         <h1>Page not found</h1>
