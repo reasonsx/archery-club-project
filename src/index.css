@@ -4,8 +4,15 @@
 @tailwind utilities;
 
 @layer base {
+    p {
+        @apply text-gray-500;
+    }
     h1 {
         @apply text-4xl;
+        @apply font-bold;
+    }
+    h3 {
+        @apply text-2xl;
         @apply font-bold;
     }
 
