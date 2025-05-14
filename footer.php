@@ -67,10 +67,10 @@
                     <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <span>Winter: <br>Indoor training at Humlehøjhallen (Stråbjergvej 1, 6400 Sønderborg)</span>
+                            <span>Winter:<br>Indoor training at Humlehøjhallen (Stråbjergvej 1, 6400 Sønderborg)</span>
                         </li>
                         <li class="mb-4">
-                            <span>Summer: Outdoor range at Ingolf Nielsens Vej, 6400 Sønderborg</span>
+                            <span>Summer:<br>Outdoor range at Ingolf Nielsens Vej, 6400 Sønderborg</span>
                         </li>
                     </ul>
                 </div>
