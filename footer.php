@@ -6,10 +6,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Times</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <span>Monday: 18:00 – 19:30</span>
+                            <span>Monday:</span><br><span>18:00 – 19:30</span>
                         </li>
                         <li class="mb-4">
-                            <span>Thursday: 18:00 – 19:30</span>
+                            <span>Thursday:</span><br><span>18:00 – 19:30</span>
                         </li>
                     </ul>
                 </div>
