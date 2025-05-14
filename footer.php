@@ -1,8 +1,7 @@
 <footer class="p-4 bg-white sm:p-6">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
-            <div class="grid max-sm:grid-cols-2 gap-8 sm:gap-6 grid-cols-4">
-
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-4">
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
