@@ -60,13 +60,13 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
+                            <a href="https://bueskydningdanmark.dk/" class="hover:underline">Archery Denmark</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            <a href="https://www.worldarchery.sport/" class="hover:underline">Archery International</a>
                         </li>
                     </ul>
                 </div>
