@@ -54,14 +54,6 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="https://www.facebook.com/profile.php?id=100057323084944#" class="hover:underline ">Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
@@ -72,7 +64,14 @@
                         </li>
                     </ul>
                 </div>
-
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="https://www.facebook.com/profile.php?id=100057323084944#" class="hover:underline ">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
