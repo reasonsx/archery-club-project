@@ -62,9 +62,6 @@
                             <span class="font-semibold">Thursday:</span> 18:00 – 19:30
                         </li>
                         <li class="mb-4">
-                            <span class="font-semibold">Closed:</span> Tuesday, Wednesday, Friday, Saturday, Sunday
-                        </li>
-                        <li class="mb-4">
                             <a href="https://www.facebook.com/profile.php?id=100057323084944#" target="_blank" class="hover:underline">Facebook</a>
                         </li>
                     </ul>
