@@ -114,7 +114,7 @@
                    class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a></li>
             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
         </ul>
-        <hr class="my-6 border-gray-200 w-full px-4"/>
+        <hr class="my-6 border-gray-200 w-auto px-4"/>
         <?php if (function_exists('pll_the_languages')) : ?>
             <div class="mt-4 px-4">
                 <h3 class="text-sm font-semibold text-gray-700 mb-2">Language</h3>
