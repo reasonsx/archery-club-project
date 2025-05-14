@@ -50,7 +50,6 @@ get_header(); ?>
             <p><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <p><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
             <p><?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?></p>
-            <p><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <p><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
             <p><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             <p><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
