@@ -104,7 +104,7 @@
     </nav>
     <!-- Mobile Navigation -->
     <div class="hidden justify-between items-center w-full lg:hidden" id="mobile-menu-2">
-        <ul class="flex flex-col mt-4 font-medium text-gray-700 space-y-2">
+        <ul class="flex flex-col font-medium text-gray-700 space-y-2">
             <li><a href="<?php echo home_url(); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Home</a></li>
             <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>"
                    class="block py-2 px-4 hover:bg-gray-100 rounded-lg">About us</a></li>
