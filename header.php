@@ -12,7 +12,6 @@
 <body <?php body_class(); ?>>
 <header class="sticky top-0 bg-white z-50 shadow-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 sm:p-6 lg:px-8">
-
         <!-- Logo -->
         <div class="flex lg:flex-1">
             <a href="<?php echo home_url(); ?>" class="flex items-center">
@@ -104,18 +103,34 @@
 
     </nav>
     <!-- Mobile Navigation -->
+    <div class="hidden justify-between items-center w-full lg:hidden" id="mobile-menu-2">
+        <ul class="flex flex-col mt-4 font-medium text-gray-700 space-y-2">
+            <li><a href="<?php echo home_url(); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Home</a></li>
+            <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>"
+                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">About us</a></li>
+            <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>"
+                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Blog</a></li>
+            <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>"
+                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
+        </ul>
+        <?php if (function_exists('pll_the_languages')) : ?>
+            <div class="mt-4 px-4">
+                <h3 class="text-sm font-semibold text-gray-700 mb-2">Language</h3>
+                <ul class="space-y-2">
+                    <?php foreach ($langs_array as $lang) : ?>
+                        <li>
+                            <a href="<?= esc_url($lang['url']); ?>"
+                               class="flex items-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg <?= $lang['slug'] === $current_lang ? 'font-bold' : '' ?>">
+                                <img src="<?= esc_url(get_custom_lang_flag_svg($lang['slug'])); ?>" alt=""
+                                     class="w-5 h-5 mr-2">
+                                <span><?= esc_html($lang['name']); ?></span>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endif; ?>
 
+    </div>
 </header>
-
-<div class="hidden justify-between items-center w-full lg:hidden sticky top-[88px] bg-white" id="mobile-menu-2">
-    <ul class="flex flex-col mt-4 font-medium text-gray-700 space-y-2">
-        <li><a href="<?php echo home_url(); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Home</a></li>
-        <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>"
-               class="block py-2 px-4 hover:bg-gray-100 rounded-lg">About us</a></li>
-        <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>"
-               class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Blog</a></li>
-        <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>"
-               class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a></li>
-        <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
-    </ul>
-</div>
