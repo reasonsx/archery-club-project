@@ -8,7 +8,7 @@ get_header(); ?>
 <?php $hero_title = get_field('join_hero_title'); ?>
 <?php $hero_description = get_field('join_hero_description'); ?>
 
-<section class="h-screen bg-[url('/assets/svgs/pattern_big.svg')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
+<section class="h-screen bg-[url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
   <h1 class="text-4xl text-black font-bold"><?php 
     if ($hero_title) {
         echo nl2br(esc_html($hero_title));
