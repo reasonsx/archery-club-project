@@ -99,9 +99,8 @@
                       clip-rule="evenodd"></path>
             </svg>
         </button>
-
-
     </nav>
+
     <!-- Mobile Navigation -->
     <div class="hidden justify-between items-center w-full lg:hidden py-2" id="mobile-menu-2">
         <ul class="flex flex-col font-medium text-gray-700 space-y-2">
@@ -115,23 +114,22 @@
             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
         </ul>
         <div class="mx-4">
-            <hr class="my-2 border-gray-500 w-full" />
+            <hr class="my-2 border-gray-500 w-full"/>
         </div>
         <?php if (function_exists('pll_the_languages')) : ?>
-            <div">
-                <ul class="space-y-2">
-                    <?php foreach ($langs_array as $lang) : ?>
-                        <li>
-                            <a href="<?= esc_url($lang['url']); ?>"
-                               class="flex items-center px-3 py-2  rounded-lg <?= $lang['slug'] === $current_lang ? 'font-bold' : '' ?>">
-                                <img src="<?= esc_url(get_custom_lang_flag_svg($lang['slug'])); ?>" alt=""
-                                     class="w-5 h-5 mr-2">
-                                <span><?= esc_html($lang['name']); ?></span>
-                            </a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-        <?php endif; ?>
+        <ul class="space-y-2">
+            <?php foreach ($langs_array as $lang) : ?>
+                <li>
+                    <a href="<?= esc_url($lang['url']); ?>"
+                       class="flex items-center px-3 py-2  rounded-lg <?= $lang['slug'] === $current_lang ? 'font-bold' : '' ?>">
+                        <img src="<?= esc_url(get_custom_lang_flag_svg($lang['slug'])); ?>" alt=""
+                             class="w-5 h-5 mr-2">
+                        <span><?= esc_html($lang['name']); ?></span>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php endif; ?>
 
 </header>
