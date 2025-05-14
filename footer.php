@@ -44,7 +44,7 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <span class="font-semibold">Phone:</span> <a href="tel:+4524609476" class="hover:underline">24 60 94 76</a>
+                            <span class="font-semibold">Phone:</span> <a href="tel:+4524609476" class="hover:underline"><br>24 60 94 76</a>
                         </li>
                         <li>
                             <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
