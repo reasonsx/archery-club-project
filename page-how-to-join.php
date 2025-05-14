@@ -20,7 +20,7 @@ get_header(); ?>
 
 
     <!-- Image on Right with Yellow Circle Background -->
-    <div class="w-full md:w-auto relative flex items-end justify-center h-full">
+    <div class="w-full md:w-1/2 md:h-1/2 relative flex items-end justify-center h-full">
       <!-- Yellow Circle -->
       <div class="w-96 h-96 bg-[#FDD576] rounded-full absolute top-1/2 md:top-auto md:bottom-0 transform -translate-y-1/2 md:translate-y-0 z-0"></div>
 
