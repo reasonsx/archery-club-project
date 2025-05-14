@@ -79,13 +79,13 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Pricing</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <span>500 DKK per 6 months (Ages 8–17)</span>
+                            <span>Ages 8–17: 500 DKK per 6 months</span>
                         </li>
                         <li class="mb-4">
-                            <span>625 DKK per 6 months (18+ Adults)</span>
+                            <span>Adults: 625 DKK per 6 months</span>
                         </li>
                         <li class="mb-4">
-                            <span>50 DKK per month for equipment rental (Adults only)</span>
+                            <span>Equipment rental: 50 DKK per month (Adults only)</span>
                         </li>
                         <li class="mb-4">
                             <span>Introduction Evening: Free trial session</span>
