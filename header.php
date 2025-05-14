@@ -34,27 +34,18 @@
                     </svg>
                 </button>
 
-                <!--
-                  'Product' flyout menu, show/hide based on flyout menu state.
-
-                  Entering: "transition ease-out duration-200"
-                    From: "opacity-0 translate-y-1"
-                    To: "opacity-100 translate-y-0"
-                  Leaving: "transition ease-in duration-150"
-                    From: "opacity-100 translate-y-0"
-                    To: "opacity-0 translate-y-1"
-                -->
-
             </div>
 
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
         </div>
+
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
     </nav>
+
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
@@ -103,7 +94,7 @@
     </div>
 </header>
 <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">
 
             <!-- Left: Logo and Name -->
