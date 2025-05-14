@@ -53,10 +53,19 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Times</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="https://www.facebook.com/profile.php?id=100057323084944#" target="_blank" class="hover:underline ">Facebook</a>
+                            <span class="font-semibold">Monday:</span> 18:00 – 19:30
+                        </li>
+                        <li class="mb-4">
+                            <span class="font-semibold">Thursday:</span> 18:00 – 19:30
+                        </li>
+                        <li class="mb-4">
+                            <span class="font-semibold">Closed:</span> Tuesday, Wednesday, Friday, Saturday, Sunday
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://www.facebook.com/profile.php?id=100057323084944#" target="_blank" class="hover:underline">Facebook</a>
                         </li>
                     </ul>
                 </div>
