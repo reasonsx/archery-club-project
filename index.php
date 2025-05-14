@@ -17,7 +17,7 @@ get_header(); ?>
 <!--        </div>-->
     </div>
 
-    <section class="h-96 w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
+    <section class="h-[80vh] w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
         <h1 class="text-4xl text-white drop-shadow-lg">Hero</h1>
     </section>
 
