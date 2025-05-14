@@ -76,7 +76,7 @@ get_header(); ?>
     </section>
 
 
-    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
+    <section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
         <div class="mx-auto max-w-screen-sm text-center">
             <h1 class="text-gray-900">Learn more about archery</h1>
         </div>
@@ -104,7 +104,7 @@ get_header(); ?>
                     </a>
                 </div>
             </div>
-           
+
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
                 <a href="#">
                     <img class="rounded-t-lg w-full h-40 object-cover"
