@@ -11,7 +11,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="sticky top-0 bg-white z-50 shadow-md">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 sm:p-6 lg:px-8">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 sm:p-6 lg:px-0">
         <!-- Logo -->
         <div class="flex lg:flex-1">
             <a href="<?php echo home_url(); ?>" class="flex items-center">
