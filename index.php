@@ -110,9 +110,6 @@ get_header(); ?>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center ">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full flex items-center justify-center">
-                        <img class="w-38 h-38 object-contain rounded-full"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/frontpage/shooting-guy.png"
-                             alt="Archery guy">
                     </div>
                     <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Coaching</h3>
                     <p>Guidance from skilled coaches to help you improve safely and effectively.</p>
@@ -120,31 +117,22 @@ get_header(); ?>
 
                 <div class="text-center ">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                        <img class="w-38 h-38 object-contain rounded-full"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                             alt="Finger Sling">
                     </div>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Indoors and outdoors training</h3>
                     <p>Practice all year round — rain or shine — with our indoor and outdoor facilities.</p>
                 </div>
 
                 <div class="text-center ">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                        <img class="w-38 h-38 object-contain rounded-full"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                             alt="Finger Sling">
                     </div>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Physical and mental benefits</h3>
                     <p>Boost focus, coordination, and overall well-being through archery.</p>
                 </div>
 
                 <div class="text-center ">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                        <img class="w-38 h-38 object-contain rounded-full"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                             alt="Finger Sling">
                     </div>
-                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Participation in tournaments</h3>
                     <p>Challenge yourself and grow by joining local and national competitions.</p>
                 </div>
 
