@@ -40,14 +40,16 @@
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+
+
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="tel:+4524609476" class="hover:underline">+45 24 60 94 76</a>
+                            <a href="https://bueskydningdanmark.dk/" class="hover:underline">Archery Denmark</a>
                         </li>
                         <li>
-                            <a href="mailto:formand@s-bl.dk" class="hover:underline">formand@s-bl.dk</a>
+                            <a href="https://www.worldarchery.sport/" class="hover:underline">Archery International</a>
                         </li>
                     </ul>
                 </div>
@@ -60,16 +62,17 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="https://bueskydningdanmark.dk/" class="hover:underline">Archery Denmark</a>
+                            <a href="tel:+4524609476" class="hover:underline">+45 24 60 94 76</a>
                         </li>
                         <li>
-                            <a href="https://www.worldarchery.sport/" class="hover:underline">Archery International</a>
+                            <a href="mailto:formand@s-bl.dk" class="hover:underline">formand@s-bl.dk</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
