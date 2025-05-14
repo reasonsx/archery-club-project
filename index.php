@@ -109,7 +109,7 @@ get_header(); ?>
 
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center ">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full flex items-center justify-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
                     </div>
                     <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Coaching</h3>
                     <p>Guidance from skilled coaches to help you improve safely and effectively.</p>
