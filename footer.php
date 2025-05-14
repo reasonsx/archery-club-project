@@ -70,7 +70,7 @@
                             <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
                         </li>
                         <li class="mb-4">
-                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej, 6400 Sønderborg</span>
+                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
                         </li>
                     </ul>
                 </div>
