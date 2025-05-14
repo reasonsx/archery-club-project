@@ -53,6 +53,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
