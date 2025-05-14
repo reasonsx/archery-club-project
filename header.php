@@ -114,6 +114,7 @@
                    class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a></li>
             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
         </ul>
+        <hr class="my-6 border-gray-200 w-full"/>
         <?php if (function_exists('pll_the_languages')) : ?>
             <div class="mt-4 px-4">
                 <h3 class="text-sm font-semibold text-gray-700 mb-2">Language</h3>
@@ -121,7 +122,7 @@
                     <?php foreach ($langs_array as $lang) : ?>
                         <li>
                             <a href="<?= esc_url($lang['url']); ?>"
-                               class="flex items-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg <?= $lang['slug'] === $current_lang ? 'font-bold' : '' ?>">
+                               class="flex items-center px-3 py-2  rounded-lg <?= $lang['slug'] === $current_lang ? 'font-bold' : '' ?>">
                                 <img src="<?= esc_url(get_custom_lang_flag_svg($lang['slug'])); ?>" alt=""
                                      class="w-5 h-5 mr-2">
                                 <span><?= esc_html($lang['name']); ?></span>
