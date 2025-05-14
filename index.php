@@ -132,7 +132,7 @@ get_header(); ?>
     </section>
 
 
-    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0">
+    <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
         <div class="mx-auto mb-8 max-w-screen-sm text-center">
             <h1 class="mb-4 text-gray-900">Contact us</h1>
         </div>
