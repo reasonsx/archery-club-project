@@ -33,12 +33,12 @@
 <footer class="p-4 bg-white sm:p-6">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
-                </a>
-            </div>
+<!--            <div class="mb-6 md:mb-0">-->
+<!--                <a href="https://flowbite.com" class="flex items-center">-->
+<!--                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />-->
+<!--                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>-->
+<!--                </a>-->
+<!--            </div>-->
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 
                 <div>
@@ -60,6 +60,17 @@
                         </li>
                         <li class="mb-4">
                             <span>Thursday: 18:00 – 19:30</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
                         </li>
                     </ul>
                 </div>
