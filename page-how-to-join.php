@@ -11,7 +11,7 @@ get_header(); ?>
 <?php $next_event_text = get_field('next_event_text'); ?>
 <?php $next_event_date = get_field('next_event_date'); ?>
 <?php $following_event_text = get_field('following_event_text'); ?>
-<?php $following_event_date = get_field('following_event_date'); ?>
+<?php $ready_to_join = get_field('ready_to_join'); ?>
 
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
@@ -26,7 +26,7 @@ get_header(); ?>
 
       <!-- Image -->
       <img src="<?php echo $hero_image['sizes']['large']; ?>" alt="<?php echo $hero_image['alt']; ?>"
-           class="w-[90%] md:w-auto h-auto md:h-[90vh] object-contain relative z-10" />
+           class="w-[50%] md:w-auto h-auto md:h-[90vh] object-contain relative z-10" />
     </div>
 
     <!-- Text on Left (stacks on top in mobile) -->
@@ -45,6 +45,13 @@ get_header(); ?>
     <div class="flex flex-row gap-5">
         <div class="flex flex-col items-center w-auto mx-auto">
             <h1><?php the_title(); ?></h1>
+            <p><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
+            <p><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
+            <p><?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?></p>
+            <p><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
+            <p><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
+            <p><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+            <p><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
         <div class="flex flex-col items-center w-auto mx-auto">
             contact form will be here
