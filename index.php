@@ -133,7 +133,7 @@ get_header(); ?>
         <div class="mx-auto mb-8 max-w-screen-sm text-center">
             <h1 class="mb-4 text-gray-900">Contact us</h1>
         </div>
-        <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         <!-- Left column -->
         <div>
             <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
