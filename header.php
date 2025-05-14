@@ -98,7 +98,7 @@
 <!--        <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">-->
 
             <!-- Left: Logo and Name -->
-            <div class="flex items-center flex-shrink-0">
+            <div class="flex lg:flex-1">
                 <a href="<?php echo home_url(); ?>" class="flex items-center">
                     <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9" alt="SBL Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Sønderborg Bueskyttelaug</span>
@@ -106,7 +106,7 @@
             </div>
 
             <!-- Center: Main Navigation (Desktop only) -->
-            <div class="hidden lg:flex justify-center flex-1">
+            <div class="hidden lg:flex lg:gap-x-12">
                 <ul class="flex flex-row space-x-8 font-medium text-gray-700">
                     <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-400">Home</a></li>
                     <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-400">About us</a></li>
