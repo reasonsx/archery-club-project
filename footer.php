@@ -33,12 +33,12 @@
 <footer class="p-4 bg-white sm:p-6">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
-                </a>
-            </div>
+<!--            <div class="mb-6 md:mb-0">-->
+<!--                <a href="https://flowbite.com" class="flex items-center">-->
+<!--                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />-->
+<!--                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>-->
+<!--                </a>-->
+<!--            </div>-->
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 
                 <div>
