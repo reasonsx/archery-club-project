@@ -151,6 +151,7 @@ get_header(); ?>
             <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
             </div>
 
+
             <div>
             <h5>Phone:</h5>
             <p>24 60 94 76</p>
