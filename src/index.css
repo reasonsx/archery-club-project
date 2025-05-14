@@ -41,4 +41,14 @@ h3 {
     font-style: normal;
 }
 
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    @apply w-full p-2 border border-gray-300 rounded-md mb-4;
+}
+
+.wpcf7 input[type="submit"] {
+    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition;
+}
+
 
