@@ -116,7 +116,7 @@
         </ul>
         <hr class="my-6 border-gray-200 w-full"/>
         <?php if (function_exists('pll_the_languages')) : ?>
-            <div class="mt-4 px-4">
+            <div">
                 <ul class="space-y-2">
                     <?php foreach ($langs_array as $lang) : ?>
                         <li>
