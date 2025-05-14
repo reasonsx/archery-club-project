@@ -41,19 +41,6 @@
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 
-
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="https://bueskydningdanmark.dk/" class="hover:underline">Archery Denmark</a>
-                        </li>
-                        <li>
-                            <a href="https://www.worldarchery.sport/" class="hover:underline">Archery International</a>
-                        </li>
-                    </ul>
-                </div>
-
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
@@ -66,6 +53,17 @@
                     </ul>
                 </div>
                 <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a href="https://bueskydningdanmark.dk/" class="hover:underline">Archery Denmark</a>
+                        </li>
+                        <li>
+                            <a href="https://www.worldarchery.sport/" class="hover:underline">Archery International</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
@@ -73,6 +71,8 @@
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
