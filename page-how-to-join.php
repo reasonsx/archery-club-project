@@ -11,7 +11,7 @@ get_header(); ?>
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
   
-  <div class="flex flex-col md:flex-row items-center justify-between w-full h-full px-8 relative">
+  <div class="flex flex-col-reverse md:flex-row items-center justify-between w-full h-full px-8 relative">
 
 
     <!-- Image on Right with Yellow Circle Background -->
@@ -25,16 +25,28 @@ get_header(); ?>
     </div>
 
     <!-- Text on Left (stacks on top in mobile) -->
-    <div class="w-full md:w-1/2 md:text-center md:text-left">
-      <h1 class="text-4xl text-black font-bold mb-4">
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h1 class="text-9xl text-black font-bold mb-4">
         <?php if ($hero_title) echo nl2br(esc_html($hero_title)); ?>
       </h1>
-      <h3 class="text-lg">
+      <h2 class="text-lg">
         <?php if ($hero_description) echo nl2br(esc_html($hero_description)); ?>
-      </h3>
+      </h2>
     </div>
 
   </div>
+</section>
+<section>
+    <div class="flex flex-row gap-5">
+        <div class="flex flex-col items-center w-auto mx-auto">
+            <h1><?php the_title(); ?></h1>
+        </div>
+        <div class="flex flex-col items-center w-auto mx-auto">
+            contact form will be here
+        </div>
+    </div>
+    
+
 </section>
 
 <?php get_footer(); ?>
