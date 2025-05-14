@@ -57,9 +57,6 @@
                         <li class="mb-4">
                             <a href="https://www.facebook.com/profile.php?id=100057323084944#" class="hover:underline ">Facebook</a>
                         </li>
-                        <li>
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                        </li>
                     </ul>
                 </div>
                 <div>
