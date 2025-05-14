@@ -76,16 +76,24 @@
                 </div>
 
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Federations</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Pricing</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="https://bueskydningdanmark.dk/" target="_blank" class="hover:underline">Archery Denmark</a>
+                            <span>500 DKK per 6 months (Ages 8–17)</span>
                         </li>
-                        <li>
-                            <a href="https://www.worldarchery.sport/" target="_blank" class="hover:underline">Archery International</a>
+                        <li class="mb-4">
+                            <span>625 DKK per 6 months (18+ Adults)</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>50 DKK per month for equipment rental (Adults only)</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Introduction Evening: Free trial session</span>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
