@@ -45,7 +45,7 @@
                             <span>Ages 8–17:</span><br><span>500 DKK per 6 months</span>
                         </li>
                         <li class="mb-4">
-                            <span>Adults:</span><br><span>625 DKK per 6 months</span>
+                            <span>Adults (18+):</span><br><span>625 DKK per 6 months</span>
                         </li>
                         <li class="mb-4">
                             <span>Equipment rental:</span><br><span>50 DKK per month (Adults only)</span>
