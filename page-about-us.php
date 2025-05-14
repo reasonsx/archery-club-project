@@ -84,7 +84,7 @@ get_header(); ?>
     <h1 class="text-4xl">Meet our members</h1>
 </section>
 
-<section class="max-w-screen-xl mx-auto">
+<section class="max-w-screen-lg mx-auto">
     <div class="mx-auto max-w-screen-xl text-center">
         <div class="mx-auto mb-8 max-w-screen-sm">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Equipment</h2>
@@ -93,6 +93,18 @@ get_header(); ?>
 
 
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div class="text-center text-gray-500">
+                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
+                    <img class="w-38 h-38 object-contain rounded-full"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
+                         alt="Finger Sling">
+                </div>
+                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
+                <p>Mandatory</p>
+                <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
+                    during the shot.</p>
+            </div>
+
             <div class="text-center text-gray-500">
                 <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
                     <img class="w-38 h-38 object-contain rounded-full"
