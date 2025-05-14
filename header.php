@@ -17,7 +17,7 @@
             <a href="<?php echo home_url(); ?>" class="flex items-center">
                 <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9"
                      alt="SBL Logo"/>
-                <span class="self-center text-xl font-semibold whitespace-nowrap">Sønderborg Bueskyttelaug</span>
+                <h3>Sønderborg Bueskyttelaug</h3>
             </a>
         </div>
 
