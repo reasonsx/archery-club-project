@@ -11,7 +11,7 @@ get_header(); ?>
 <?php $next_event_text = get_field('next_event_text'); ?>
 <?php $next_event_date = get_field('next_event_date'); ?>
 <?php $following_event_text = get_field('following_event_text'); ?>
-<?php $following_event_text = get_field('following_event_date'); ?>
+<?php $following_event_date = get_field('following_event_date'); ?>
 <?php $ready_to_join = get_field('ready_to_join'); ?>
 
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
