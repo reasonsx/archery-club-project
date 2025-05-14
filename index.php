@@ -100,7 +100,7 @@ get_header(); ?>
 
     </section>
 
-    <section class="max-w-screen-xl mx-auto p-4 sm:p-0">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6">
         <div class="mx-auto mb-8 max-w-screen-sm text-center">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Why Join Our Archery Club?</h2>
         </div>
