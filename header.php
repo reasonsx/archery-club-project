@@ -90,11 +90,11 @@
 <!--        </div>-->
 <!--    </div>-->
 </header>
+
 <header>
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-<!--        <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">-->
 
-            <!-- Left: Logo and Name -->
+            <!-- Logo -->
             <div class="flex lg:flex-1">
                 <a href="<?php echo home_url(); ?>" class="flex items-center">
                     <img src="https://www.s-bl.dk/images/SBL_logo_2017_lille_sort_skrift.jpg" class="mr-3 h-6 sm:h-9" alt="SBL Logo" />
@@ -113,7 +113,7 @@
                 </ul>
             </div>
 
-            <!-- Right: Language Switcher -->
+            <!-- Language Switcher -->
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <?php
                 function get_custom_lang_flag_svg($lang_slug) {
@@ -161,9 +161,9 @@
                         </div>
                     </div>
                 <?php endif; ?>
-
-
             </div>
+
+
         <!-- Mobile menu toggle -->
         <button data-collapse-toggle="mobile-menu-2" type="button"
                 class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -175,7 +175,6 @@
                       clip-rule="evenodd"></path>
             </svg>
         </button>
-<!--        </div>-->
 
         <!-- Mobile Navigation -->
         <div class="hidden justify-between items-center w-full lg:hidden" id="mobile-menu-2">
