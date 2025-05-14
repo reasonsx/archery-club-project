@@ -16,3 +16,8 @@ function boilerplate_add_support() {
 }
 
 add_action('after_setup_theme', 'boilerplate_add_support');
+
+function add_adobe_fonts() {
+    wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/egv6raj.css', false);
+}
+add_action('wp_enqueue_scripts', 'add_adobe_fonts');
