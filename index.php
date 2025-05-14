@@ -107,7 +107,7 @@ get_header(); ?>
             </div>
 
 
-            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center text-gray-500">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
                         <img class="w-38 h-38 object-contain rounded-full"
