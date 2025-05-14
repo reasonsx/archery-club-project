@@ -95,7 +95,7 @@
 </header>
 <header>
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">
+<!--        <div class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-screen-xl">-->
 
             <!-- Left: Logo and Name -->
             <div class="flex items-center flex-shrink-0">
@@ -117,7 +117,7 @@
             </div>
 
             <!-- Right: Language Switcher -->
-            <div class="flex items-center space-x-4 justify-end lg:justify-start">
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <?php
                 function get_custom_lang_flag_svg($lang_slug) {
                     return get_template_directory_uri() . '/assets/flags/' . $lang_slug . '.svg';
@@ -178,7 +178,7 @@
                 </button>
             </div>
 
-        </div>
+<!--        </div>-->
 
         <!-- Mobile Navigation -->
         <div class="hidden justify-between items-center w-full lg:hidden" id="mobile-menu-2">
