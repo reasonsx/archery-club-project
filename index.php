@@ -102,7 +102,7 @@ get_header(); ?>
 
     <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0">
         <div class="mx-auto mb-8 max-w-screen-sm text-center">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Why Join Our Archery Club?</h2>
+            <h1 class="mb-4 tracking-tight text-gray-900">Why Join Our Archery Club?</h1>
         </div>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
             <div class="flex flex-col items-center text-center">
