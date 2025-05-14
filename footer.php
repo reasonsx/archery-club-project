@@ -3,13 +3,30 @@
         <div class="md:flex md:justify-between">
             <div class="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-4">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Pricing</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <a href="tel:+4524609476" class="hover:underline">+45 24 60 94 76</a>
+                            <span>Ages 8–17: 500 DKK per 6 months</span>
                         </li>
-                        <li>
-                            <a href="mailto:formand@s-bl.dk" class="hover:underline">formand@s-bl.dk</a>
+                        <li class="mb-4">
+                            <span>Adults: 625 DKK per 6 months</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Equipment rental: 50 DKK per month (Adults only)</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Introduction Evening: Free trial session</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
                         </li>
                     </ul>
                 </div>
@@ -25,31 +42,13 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
                         <li class="mb-4">
-                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
+                            <a href="tel:+4524609476" class="hover:underline">+45 24 60 94 76</a>
                         </li>
-                        <li class="mb-4">
-                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Pricing</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <span>Ages 8–17: 500 DKK per 6 months</span>
-                        </li>
-                        <li class="mb-4">
-                            <span>Adults: 625 DKK per 6 months</span>
-                        </li>
-                        <li class="mb-4">
-                            <span>Equipment rental: 50 DKK per month (Adults only)</span>
-                        </li>
-                        <li class="mb-4">
-                            <span>Introduction Evening: Free trial session</span>
+                        <li>
+                            <a href="mailto:formand@s-bl.dk" class="hover:underline">formand@s-bl.dk</a>
                         </li>
                     </ul>
                 </div>
