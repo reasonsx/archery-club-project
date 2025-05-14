@@ -131,7 +131,7 @@ get_header(); ?>
 
     <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0">
         <div class="mx-auto mb-8 max-w-screen-sm text-center">
-            <h1 class="mb-4 text-gray-900">Why Join Our Archery Club?</h1>
+            <h1 class="mb-4 text-gray-900">Contact us</h1>
         </div>
         <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <!-- Left column -->
