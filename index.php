@@ -18,7 +18,7 @@ get_header(); ?>
     </div>
 
 
-<section class="flex flex-col gap-16">
+<section class="flex flex-col gap-24">
 
     <section class="h-full h-max-[80vh] w-full bg-cover bg-center flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-hero.jpg');">
         <h1 class="text-4xl text-white drop-shadow-lg">Hero</h1>
