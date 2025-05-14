@@ -19,17 +19,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
-                        </li>
-                        <li class="mb-4">
-                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
-                        </li>
-                    </ul>
-                </div>
+
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Times</h2>
                     <ul class="text-gray-600">
@@ -41,6 +31,19 @@
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>
+                        </li>
+                        <li class="mb-4">
+                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>
+                        </li>
+                    </ul>
+                </div>
+
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>
                     <ul class="text-gray-600">
