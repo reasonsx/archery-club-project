@@ -7,6 +7,11 @@ get_header(); ?>
 <?php $hero_image = get_field('join_hero_image'); ?>
 <?php $hero_title = get_field('join_hero_title'); ?>
 <?php $hero_description = get_field('join_hero_description'); ?>
+<?php $description_top = get_field('description_top'); ?>
+<?php $next_event_text = get_field('next_event_text'); ?>
+<?php $next_event_date = get_field('next_event_date'); ?>
+<?php $following_event_text = get_field('following_event_text'); ?>
+<?php $following_event_date = get_field('following_event_date'); ?>
 
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
@@ -26,7 +31,7 @@ get_header(); ?>
 
     <!-- Text on Left (stacks on top in mobile) -->
     <div class="w-full md:w-1/2 text-center md:text-left">
-      <h1 class="text-9xl text-black font-bold mb-4">
+      <h1 class="lg:text-7xl text-black font-bold mb-4">
         <?php if ($hero_title) echo nl2br(esc_html($hero_title)); ?>
       </h1>
       <h2 class="text-lg">
