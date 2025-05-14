@@ -114,7 +114,7 @@
             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
         </ul>
         <div class="mx-4">
-            <hr class="my-2 border-gray-500 w-full"/>
+            <hr class="my-2 border-gray-200 w-full"/>
         </div>
         <?php if (function_exists('pll_the_languages')) : ?>
         <ul class="space-y-2">
