@@ -138,7 +138,7 @@ get_header(); ?>
         </div>
         <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         <!-- Left column -->
-        <div>
+        <div class="relative z-10">
             <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
         </div>
 

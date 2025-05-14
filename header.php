@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="sticky top-0 bg-white z-100">
+<header class="sticky top-0 bg-white z-50">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 sm:p-6 lg:px-8">
 
         <!-- Logo -->
