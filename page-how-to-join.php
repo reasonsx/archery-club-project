@@ -14,9 +14,9 @@ get_header(); ?>
     
     <!-- Right content (Image + Yellow Circle) -->
     <div class="w-1/2 flex flex-col items-center justify-center relative">
-      <!-- Yellow Circle as Background -->
-      <div class="w-48 h-48 bg-[FDD576] rounded-full absolute z-0"></div>
-      <img src="<?php echo $hero_image['sizes']['large']; ?>" alt="<?php echo $intro_image['alt']; ?>" class="w-48 h-48 object-contain mb-4 relative z-10" />
+      <!-- Yellow Circle as Background, vertically centered and aligned with the image -->
+      <div class="w-48 h-48 bg-[FDD576] rounded-full absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
+      <img src="<?php echo $hero_image['sizes']['large']; ?>" alt="<?php echo $intro_image['alt']; ?>" class="w-auto h-[90vh] object-contain mb-4 relative z-10" />
     </div>
     
     <!-- Left content (Text) -->
