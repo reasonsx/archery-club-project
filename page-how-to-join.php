@@ -119,18 +119,16 @@ get_header(); ?>
             </svg>
           </button>
           <div
-            x-show="open"
-            x-transition:enter="transition-all ease-out duration-300"
-            x-transition:enter-start="opacity-0 max-h-0"
-            x-transition:enter-end="opacity-100 max-h-96" 
-            x-transition:leave="transition-all ease-in duration-200"
-            x-transition:leave-start="opacity-100 max-h-96"
-            x-transition:leave-end="opacity-0 max-h-0"
-            class="bg-blue-500 px-6 py-4 text-black text-sm overflow-hidden"
-            x-cloak
-          >
-            <?php echo wp_kses_post(get_field('answer')); ?>
-          </div>
+  x-ref="container"
+  x-show="open"
+  x-transition
+  x-bind:style="open ? 'height: ' + $refs.container.scrollHeight + 'px' : 'height: 0px'"
+  class="bg-blue-500 px-6 py-4 text-black text-sm overflow-hidden transition-[height] duration-300 ease-in-out"
+  x-cloak
+>
+  <?php echo wp_kses_post(get_field('answer')); ?>
+</div>
+
 
         </div>
       <?php endwhile; wp_reset_postdata(); ?>
