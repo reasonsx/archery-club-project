@@ -57,7 +57,7 @@ form.signup-intro-form input[type="number"] {
 
 /* Submit button */
 form.signup-intro-form input[type="submit"] {
-  @apply text-white font-medium rounded-md text-sm px-5 py-2.5 cursor-pointer w-auto;
+  @apply w-full text-black font-medium rounded-md text-sm px-5 py-2.5 cursor-pointer w-auto;
   background-color: #8DB7E1;
 }
 
