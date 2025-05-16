@@ -13,14 +13,6 @@ get_header(); ?>
 <?php $following_event_text = get_field('following_event_text'); ?>
 <?php $following_event_date = get_field('following_event_date'); ?>
 <?php $ready_to_join = get_field('ready_to_join'); ?>
-<?php
-$form_id = 0d13222; // your form ID
-$contact_form = WPCF7_ContactForm::get_instance($form_id);
-if ($contact_form) {
-    echo '<h2>' . esc_html($contact_form->title()) . '</h2>';
-}
-?>
-
 
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
@@ -63,13 +55,12 @@ if ($contact_form) {
             </div>
             <div class="flex flex-row">
               <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-              <p class="font-bold text-black ml-5"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+              <p class="font-bold text-black ml-3"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
         <div class="flex flex-col items-center w-1/2 mx-auto">
-          <?php echo do_shortcode('[contact-form-7 id="0d13222"]'); ?>
-
+          <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for the introductory evening"]'); ?>
         </div>
     </div>
     
