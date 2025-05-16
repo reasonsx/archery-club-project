@@ -46,3 +46,40 @@ h1, h3 {
 }
 
 
+/* Style the form wrapper */
+.signup-intro-form .wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Style all input fields: name, email, age */
+.signup-intro-form .wpcf7-form input[type="text"],
+.signup-intro-form .wpcf7-form input[type="email"],
+.signup-intro-form .wpcf7-form input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: rgba(141, 183, 225, 0.45); /* bg with 45% opacity */
+  border: 2px solid #8DB7E1; /* 2px stroke */
+  border-radius: 8px; /* rounded corners */
+  font-size: 16px;
+  outline: none;
+}
+
+/* Optional: style focus effect */
+.signup-intro-form .wpcf7-form input:focus {
+  box-shadow: 0 0 0 3px rgba(141, 183, 225, 0.3);
+}
+
+/* Style the submit button */
+.signup-intro-form .wpcf7-form input[type="submit"] {
+  background-color: #8DB7E1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+

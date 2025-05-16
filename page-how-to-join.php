@@ -43,7 +43,7 @@ get_header(); ?>
   </div>
 </section>
 <section class="max-w-screen-lg mx-auto pt-24">
-    <h1><?php the_title(); ?></h1>
+    <h1 class="mb-5"><?php the_title(); ?></h1>
     <div class="flex flex-row gap-5">
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
@@ -60,7 +60,7 @@ get_header(); ?>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
         <div class="flex flex-col items-center w-1/2 mx-auto">
-          <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for intro evening"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for intro evening" html_class="signup-intro-form"]'); ?>
         </div>
     </div>
     
