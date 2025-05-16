@@ -98,10 +98,6 @@ get_header(); ?>
 
 
 <section class="max-w-screen-lg mx-auto pt-24 px-4">
-  <h2 class="mb-10 text-4xl font-extrabold tracking-tight text-NormalBlue text-center font-pally">
-    Ofte stillede spørgsmål
-  </h2>
-
   <?php
   $faqs = new WP_Query(array(
     'post_type' => 'faq',
@@ -113,15 +109,17 @@ get_header(); ?>
   if ($faqs->have_posts()): ?>
     <div class="space-y-4">
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
-        <div class="faq-item border rounded-lg overflow-hidden">
-          <button
-            class="faq-question w-full text-left py-4 px-6 bg-gray-100 text-gray-800 flex justify-between items-center hover:bg-gray-200 focus:outline-none">
-            <span class="font-semibold"><?php echo esc_html(get_field('question')); ?></span>
-            <svg class="w-6 h-6 text-gray-800 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
+          <button @click="open = !open"
+            class="w-full flex justify-between items-center bg-[rgba(141,183,225,0.45)] px-6 py-4 text-left text-gray-900 font-medium hover:bg-[rgba(141,183,225,0.6)] focus:outline-none transition-colors duration-300">
+            <span><?php echo esc_html(get_field('question')); ?></span>
+            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ '-rotate-45': open }" width="24" height="24" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.055 32.0552L64.1105 64.1107M64.1105 64.1107H40.0689M64.1105 64.1107V40.069" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
-          <div class="faq-answer px-6 py-4 hidden bg-white text-gray-800">
+          <div x-show="open" x-transition.duration.300ms
+            class="bg-[#8DB7E1] px-6 py-4 text-black text-sm"
+            x-cloak>
             <?php echo wp_kses_post(get_field('answer')); ?>
           </div>
         </div>
@@ -131,6 +129,7 @@ get_header(); ?>
     <p class="text-center text-gray-500">Ingen spørgsmål fundet.</p>
   <?php endif; ?>
 </section>
+
 
 
 <?php get_footer(); ?>
