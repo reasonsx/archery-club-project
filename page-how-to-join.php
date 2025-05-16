@@ -66,7 +66,7 @@ get_header(); ?>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-[75%] mx-auto">
+        <div class="flex flex-col w-full mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
             <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
@@ -111,7 +111,7 @@ get_header(); ?>
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
           <button @click="open = !open"
-            :class="open ? 'bg-[#8DB7E1]' : 'bg-[rgba(141,183,225,0.45)] hover:bg-[rgba(141,183,225,0.6)]'"
+            :class="open ? 'bg-[#8DB7E1]' : 'bg-[#8DB7E1]/45'"
             class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300">
             <span><?php echo esc_html(get_field('question')); ?></span>
             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ '-rotate-45': open }" width="24" height="24" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
