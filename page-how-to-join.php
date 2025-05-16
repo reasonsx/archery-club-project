@@ -48,8 +48,8 @@ get_header(); ?>
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <div class="flex flex-row my-5 content-center">
-              <p class="text-black content-center"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
-                <p class="font-bold text-black content-center bg-[#FDD576] rounded px-2 py-1">
+              <p class="text-black  flex items-center"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
+                <p class="font-bold text-black bg-[#FDD576] rounded px-2 py-1">
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
