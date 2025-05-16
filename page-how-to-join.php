@@ -111,10 +111,10 @@ get_header(); ?>
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
           <button
-  @click="open = !open"
-  :style="open ? 'background-color: #8DB7E1;' : 'background-color: rgba(141, 183, 225, 0.45);'"
-  class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300"
->
+            @click="open = !open"
+            :style="open ? 'background-color: #8DB7E1;' : 'background-color: rgba(141, 183, 225, 0.45);'"
+            class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300"
+          >
 
             <span><?php echo esc_html(get_field('question')); ?></span>
             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ '-rotate-45': open }" width="24" height="24" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,18 +122,20 @@ get_header(); ?>
             </svg>
           </button>
           <div
-            x-show="open"
-            x-transition:enter="transition-all ease-out duration-300"
-            x-transition:enter-start="opacity-0 max-h-0"
-            x-transition:enter-end="opacity-100 max-h-96" 
-            x-transition:leave="transition-all ease-in duration-200"
-            x-transition:leave-start="opacity-100 max-h-96"
-            x-transition:leave-end="opacity-0 max-h-0"
-            class="bg-custom-blue px-6 py-4 text-black text-sm overflow-hidden"
-            x-cloak
-          >
-            <?php echo wp_kses_post(get_field('answer')); ?>
-          </div>
+  x-show="open"
+  x-transition:enter="transition-all ease-out duration-300"
+  x-transition:enter-start="opacity-0 max-h-0"
+  x-transition:enter-end="opacity-100 max-h-[1000px]"
+  x-transition:leave="transition-all ease-in duration-200"
+  x-transition:leave-start="opacity-100 max-h-[1000px]"
+  x-transition:leave-end="opacity-0 max-h-0"
+  class="px-6 py-4 text-black text-sm overflow-hidden"
+  style="background-color: #8DB7E1"
+  x-cloak
+>
+  <?php echo wp_kses_post(get_field('answer')); ?>
+</div>
+
 
         </div>
       <?php endwhile; wp_reset_postdata(); ?>
