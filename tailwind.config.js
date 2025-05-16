@@ -12,5 +12,11 @@ module.exports = {
                 sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
             }
         }
-    }
+    },
+    safelist: [
+  'bg-[#8DB7E1]',
+  'bg-[#8DB7E1]/45',
+  'bg-[#8DB7E1]/60'
+]
+
 }
