@@ -95,4 +95,42 @@ get_header(); ?>
       </div>
     </div>
 </section>
+
+
+<section class="max-w-screen-lg mx-auto pt-24 px-4">
+  <h2 class="mb-10 text-4xl font-extrabold tracking-tight text-NormalBlue text-center font-pally">
+    Ofte stillede spørgsmål
+  </h2>
+
+  <?php
+  $faqs = new WP_Query(array(
+    'post_type' => 'faq',
+    'posts_per_page' => -1,
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+  ));
+
+  if ($faqs->have_posts()): ?>
+    <div class="space-y-4">
+      <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
+        <div class="faq-item border rounded-lg overflow-hidden">
+          <button
+            class="faq-question w-full text-left py-4 px-6 bg-gray-100 text-gray-800 flex justify-between items-center hover:bg-gray-200 focus:outline-none">
+            <span class="font-semibold"><?php echo esc_html(get_field('question')); ?></span>
+            <svg class="w-6 h-6 text-gray-800 transition-transform duration-300" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer px-6 py-4 hidden bg-white text-gray-800">
+            <?php echo wp_kses_post(get_field('answer')); ?>
+          </div>
+        </div>
+      <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+  <?php else: ?>
+    <p class="text-center text-gray-500">Ingen spørgsmål fundet.</p>
+  <?php endif; ?>
+</section>
+
+
 <?php get_footer(); ?>
