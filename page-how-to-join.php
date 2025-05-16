@@ -82,8 +82,13 @@ get_header(); ?>
 <section class="max-w-screen-lg mx-auto pt-24">
     <h1 class="mb-5"><?php if ($where_and_when_title) echo wp_kses_post(nl2br($where_and_when_title)); ?></h1>
     <div class="flex flex-row gap-5">
-      <img src="<?php echo $where_and_when_image['sizes']['medium']; ?>" alt="<?php echo $where_and_when_image['alt']; ?>">
-      <div class="flex flex-col">
+      <img
+          src="<?php echo $where_and_when_image['sizes']['medium']; ?>"
+          alt="<?php echo $where_and_when_image['alt']; ?>"
+          class="rounded-full w-48 h-48 object-cover"
+        />
+
+      <div class="flex flex-col gap-3">
         <p class="text-black"><?php if ($winter_location) echo wp_kses_post(nl2br($winter_location)); ?></p>
         <p class="text-black"><?php if ($summer_location) echo wp_kses_post(nl2br($summer_location)); ?></p>
         <p class="text-black"><?php if ($training_times) echo wp_kses_post(nl2br($training_times)); ?></p>
