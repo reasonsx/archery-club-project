@@ -49,13 +49,13 @@ get_header(); ?>
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <div class="flex flex-row my-5 content-center">
               <p class="text-black  flex items-center"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
-                <p class="font-bold text-black bg-[#FDD576] rounded px-2 py-1">
+                <p class="font-bold text-black bg-[#FDD576] rounded ml-5 px-2 py-1">
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
             <div class="flex flex-row">
               <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-              <p class="font-bold text-black"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+              <p class="font-bold text-black ml-5"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
