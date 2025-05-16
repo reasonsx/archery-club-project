@@ -85,7 +85,7 @@ get_header(); ?>
       <img
           src="<?php echo $where_and_when_image['sizes']['medium']; ?>"
           alt="<?php echo $where_and_when_image['alt']; ?>"
-          class="rounded-full w-56 h-56 object-cover"
+          class="rounded-full w-64 h-64 object-cover"
         />
 
       <div class="flex flex-col gap-3">
