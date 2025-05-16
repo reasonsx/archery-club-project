@@ -111,7 +111,7 @@ get_header(); ?>
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
           <button @click="open = !open"
-            :class="open ? 'bg-[#8DB7E1]' : 'bg-[#8DB7E1] opacity-50'"
+            :class="open ? 'bg-blue-500' : 'bg-blue-500 opacity-50'"
             class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300">
             <span><?php echo esc_html(get_field('question')); ?></span>
             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ '-rotate-45': open }" width="24" height="24" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@ get_header(); ?>
             </svg>
           </button>
           <div x-show="open" x-transition.duration.300ms
-            class="bg-[#8DB7E1] px-6 py-4 text-black text-sm"
+            class="bg-blue-500 px-6 py-4 text-black text-sm"
             x-cloak>
             <?php echo wp_kses_post(get_field('answer')); ?>
           </div>
