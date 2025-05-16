@@ -46,46 +46,25 @@ h1, h3 {
 }
 
 
-/* Style the form wrapper */
-form.signup-intro-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* Style all input fields: name, email, age */
+/* For your specific form */
 form.signup-intro-form input[type="text"],
 form.signup-intro-form input[type="email"],
 form.signup-intro-form input[type="number"] {
-  width: 100%;
-  padding: 10px 14px;
-  background-color: rgba(141, 183, 225, 0.45); /* 45% opacity */
-  border: 2px solid #8DB7E1;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
+  @apply w-full p-3 mb-4 rounded-md border-2;
+  background-color: rgba(141, 183, 225, 0.45);
+  border-color: #8DB7E1;
 }
 
-/* Optional: focus effect */
-form.signup-intro-form input:focus {
-  box-shadow: 0 0 0 3px rgba(141, 183, 225, 0.3);
-}
-
-/* Style the submit button */
+/* Submit button */
 form.signup-intro-form input[type="submit"] {
+  @apply text-white font-medium rounded-md text-sm px-5 py-2.5 cursor-pointer w-auto;
   background-color: #8DB7E1;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 18px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
-/* Optional: hover effect for button */
+/* Optional: hover effect */
 form.signup-intro-form input[type="submit"]:hover {
   background-color: #74a2d3;
 }
+
 
 
