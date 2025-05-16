@@ -110,9 +110,12 @@ get_header(); ?>
     <div class="space-y-4">
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
-          <button @click="open = !open"
-            :class="open ? 'bg-custom-blue' : 'bg-custom-blue opacity-50'"
-            class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300">
+          <button
+  @click="open = !open"
+  :style="open ? 'background-color: #8DB7E1;' : 'background-color: rgba(141, 183, 225, 0.45);'"
+  class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300"
+>
+
             <span><?php echo esc_html(get_field('question')); ?></span>
             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{ '-rotate-45': open }" width="24" height="24" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M32.055 32.0552L64.1105 64.1107M64.1105 64.1107H40.0689M64.1105 64.1107V40.069" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
