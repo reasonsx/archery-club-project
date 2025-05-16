@@ -47,12 +47,18 @@ h1, h3 {
 
 
 /* For your specific form */
-form.signup-intro-form input[type="text"],
-form.signup-intro-form input[type="email"],
-form.signup-intro-form input[type="number"] {
+form.signup-intro-form.wpcf7-not-valid input[type="text"],
+form.signup-intro-form.wpcf7-not-valid input[type="email"],
+form.signup-intro-form.wpcf7-not-valid input[type="number"] {
   @apply w-full p-3 mb-4 rounded-md border-2;
   background-color: rgba(141, 183, 225, 0.45);
   border-color: #8DB7E1;
+}
+
+form.signup-intro-form input[type="text"],
+form.signup-intro-form input[type="email"],
+form.signup-intro-form input[type="number"] {
+ margin-bottom: 0
 }
 
 /* Submit button */
@@ -72,9 +78,7 @@ form.signup-intro-form.wpcf7-response-output {
 form.signup-intro-form .wpcf7-response-output {
   margin: 0;
 }
-.wpcf7-spinner {
+form.signup-intro-form .wpcf7-spinner {
     display: none;
 }
-.wpcf7-not-valid {
-    margin-bottom: 0;
-}
+
