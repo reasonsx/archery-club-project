@@ -45,8 +45,7 @@ get_header(); ?>
 <section class="max-w-screen-lg mx-auto pt-24">
     <h1><?php the_title(); ?></h1>
     <div class="flex flex-row gap-5">
-        <div class="flex flex-col items-center w-auto mx-auto w-1/2">
-            
+        <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
             <p><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <p><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
             <p><?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?></p>
@@ -54,7 +53,7 @@ get_header(); ?>
             <p><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             <p><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col items-center w-auto mx-auto">
+        <div class="flex flex-col items-center w-[70%] mx-auto">
             contact form will be here
         </div>
     </div>
