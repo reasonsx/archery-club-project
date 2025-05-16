@@ -51,21 +51,21 @@ get_header(); ?>
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <div class="flex flex-row my-5 content-center">
               <p class="text-black  flex items-center"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
-                <p class="font-bold text-black bg-[#FDD576] rounded ml-5 px-2 py-1">
+                <p class="font-bold text-black bg-[#FDD576] rounded ml-3 px-2 py-1">
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-row">
               <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-              <p class="font-bold text-black"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+              <p class="font-bold text-black ml-2"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-[75%] mx-auto">
+        <div class="flex flex-col w-full mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
             <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
-              <p class="font-bold text-black ml-2"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+              <p class="font-bold text-black ml-"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             </div>
           <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for the introductory evening" html_class="signup-intro-form"]'); ?>
         </div>
