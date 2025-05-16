@@ -61,7 +61,7 @@ get_header(); ?>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-1/2 mx-auto">
+        <div class="flex flex-col w-[60%] mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
             <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
