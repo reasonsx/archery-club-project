@@ -15,6 +15,11 @@ get_header(); ?>
 <?php $ready_to_join = get_field('ready_to_join'); ?>
 <?php $sign_up_form_title = get_field('sign_up_form_title'); ?>
 <?php $sign_up_form_description = get_field('sign_up_form_description'); ?>
+<?php $where_and_when_title = get_field('where_and_when_title'); ?>
+<?php $winter_location = get_field('winter_location'); ?>
+<?php $summer_location = get_field('summer_location'); ?>
+<?php $training_times = get_field('training_times'); ?>
+<?php $where_and_when_image = get_field('where_and_when_image'); ?>
 
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
@@ -74,4 +79,15 @@ get_header(); ?>
 
 </section>
 
+<section class="max-w-screen-lg mx-auto pt-24">
+    <h1 class="mb-5"><?php if ($where_and_when_title) echo wp_kses_post(nl2br($where_and_when_title)); ?></h1>
+    <div class="flex flex-row gap-5">
+      <img src="<?php echo $where_and_when_image['sizes']['medium']; ?>" alt="<?php echo $where_and_when_image['alt']; ?>">
+      <div class="flex flex-col">
+        <p class="text-black"><?php if ($winter_location) echo wp_kses_post(nl2br($winter_location)); ?></p>
+        <p class="text-black"><?php if ($summer_location) echo wp_kses_post(nl2br($summer_location)); ?></p>
+        <p class="text-black"><?php if ($training_times) echo wp_kses_post(nl2br($training_times)); ?></p>
+      </div>
+    </div>
+</section>
 <?php get_footer(); ?>
