@@ -65,6 +65,13 @@ form.signup-intro-form input[type="submit"] {
 form.signup-intro-form input[type="submit"]:hover {
   background-color: #8DB7E1;
 }
+form.signup-intro-form.wpcf7-response-output {
+  margin: 0;
+}
+
+form.signup-intro-form .wpcf7-response-output {
+  margin: 0;
+}
 
 
 
