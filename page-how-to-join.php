@@ -47,15 +47,15 @@ get_header(); ?>
     <div class="flex flex-row gap-5">
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
-            <div class="flex flex-row">
+            <div class="flex flex-row my-5">
               <p class="text-black"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
-                <p class="font-bold bg-[#FDD576] rounded px-2 py-1">
+                <p class="font-bold text-black bg-[#FDD576] rounded px-2 py-1">
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
             <div class="flex flex-row">
               <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-              <p class="font-bold bg-[#FDD576] rounded px-2 py-1"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
+              <p class="font-bold text-black"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
