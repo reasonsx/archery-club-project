@@ -50,15 +50,15 @@ h1, h3 {
 form.signup-intro-form.wpcf7-not-valid input[type="text"],
 form.signup-intro-form.wpcf7-not-valid input[type="email"],
 form.signup-intro-form.wpcf7-not-valid input[type="number"] {
-  @apply w-full p-3 mb-4 rounded-md border-2;
-  background-color: rgba(141, 183, 225, 0.45);
-  border-color: #8DB7E1;
+ margin-bottom: 0;
 }
 
 form.signup-intro-form input[type="text"],
 form.signup-intro-form input[type="email"],
 form.signup-intro-form input[type="number"] {
- margin-bottom: 0
+  @apply w-full p-3 mb-4 rounded-md border-2;
+  background-color: rgba(141, 183, 225, 0.45);
+  border-color: #8DB7E1;
 }
 
 /* Submit button */
