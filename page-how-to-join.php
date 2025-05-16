@@ -118,11 +118,20 @@ get_header(); ?>
               <path d="M32.055 32.0552L64.1105 64.1107M64.1105 64.1107H40.0689M64.1105 64.1107V40.069" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
-          <div x-show="open" x-transition.duration.300ms
-            class="bg-blue-500 px-6 py-4 text-black text-sm"
-            x-cloak>
+          <div
+            x-show="open"
+            x-transition:enter="transition-all ease-out duration-300"
+            x-transition:enter-start="opacity-0 max-h-0"
+            x-transition:enter-end="opacity-100 max-h-96" 
+            x-transition:leave="transition-all ease-in duration-200"
+            x-transition:leave-start="opacity-100 max-h-96"
+            x-transition:leave-end="opacity-0 max-h-0"
+            class="bg-blue-500 px-6 py-4 text-black text-sm overflow-hidden"
+            x-cloak
+          >
             <?php echo wp_kses_post(get_field('answer')); ?>
           </div>
+
         </div>
       <?php endwhile; wp_reset_postdata(); ?>
     </div>
