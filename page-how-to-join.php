@@ -66,7 +66,7 @@ get_header(); ?>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-3/4 mx-auto">
+        <div class="flex flex-col w-[75%] mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
             <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
@@ -85,7 +85,7 @@ get_header(); ?>
       <img
           src="<?php echo $where_and_when_image['sizes']['medium']; ?>"
           alt="<?php echo $where_and_when_image['alt']; ?>"
-          class="rounded-full w-48 h-48 object-cover"
+          class="rounded-full w-56 h-56 object-cover"
         />
 
       <div class="flex flex-col gap-3">
