@@ -59,8 +59,8 @@ get_header(); ?>
             </div>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col items-center w-[70%] mx-auto">
-            contact form will be here
+        <div class="flex flex-col items-center w-1/2 mx-auto">
+          <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for intro evening"]'); ?>
         </div>
     </div>
     
