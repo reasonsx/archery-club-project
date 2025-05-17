@@ -155,28 +155,32 @@ $about_description = get_field('about_description');
                 <!-- Benefit 1 -->
                 <div class="flex flex-col items-center text-center">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Benefit 1" class="w-full h-full object-cover">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Benefit 1" class="w-full h-full object-cover" />
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Expert Coaches</h3>
+                    <h3 class="text-2xl font-bold text-gray-900">Expert Coaches</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Learn from professional archery coaches with years of experience guiding beginners and pros alike.</p>
                 </div>
 
                 <!-- Benefit 2 -->
                 <div class="flex flex-col items-center text-center">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Benefit 2" class="w-full h-full object-cover">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Benefit 2" class="w-full h-full object-cover" />
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Community Events</h3>
+                    <h3 class="text-2xl font-bold text-gray-900">Community Events</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Participate in fun competitions and social events to connect with fellow archery enthusiasts.</p>
                 </div>
 
                 <!-- Benefit 3 -->
                 <div class="flex flex-col items-center text-center">
                     <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Benefit 3" class="w-full h-full object-cover">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Benefit 3" class="w-full h-full object-cover" />
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Top Equipment</h3>
+                    <h3 class="text-2xl font-bold text-gray-900">Top Equipment</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Access the latest bows and gear to improve your skills and enjoy the sport safely.</p>
                 </div>
             </div>
         </section>
+
 
 
 
