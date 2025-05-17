@@ -48,7 +48,11 @@
                 <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-400">Home</a></li>
                 <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-400">About
                         us</a></li>
-                <li><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="hover:text-blue-400">Blog</a>
+                        <li>
+                <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="hover:text-blue-400">
+                    Blog
+                </a>
+                </li>
                 </li>
                 <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-400">How
                         to join</a></li>
