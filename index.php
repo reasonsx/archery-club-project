@@ -216,33 +216,33 @@ $hero_image = get_field('hero_image');
     </section>
 
 
-    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
-        <div class="mx-auto max-w-screen-sm text-center">
-            <h1 class="text-gray-900">Why Join Our Archery Club?</h1>
-        </div>
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="flex flex-col items-center text-center">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
-                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Coaching</h3>
-                <p>Guidance from skilled coaches to help you improve safely and effectively.</p>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
-                <h3 class="mb-1 text-2xl font-bold  text-gray-900 h-16 flex items-center justify-center">Indoors and outdoors training</h3>
-                <p>Practice all year round — rain or shine — with our indoor and outdoor facilities.</p>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
-                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Physical and mental benefits</h3>
-                <p>Boost focus, coordination, and overall well-being through archery.</p>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
-                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Participation in tournaments</h3>
-                <p>Challenge yourself and grow by joining local and national competitions.</p>
-            </div>
-        </div>
-    </section>
+<!--    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">-->
+<!--        <div class="mx-auto max-w-screen-sm text-center">-->
+<!--            <h1 class="text-gray-900">Why Join Our Archery Club?</h1>-->
+<!--        </div>-->
+<!--        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">-->
+<!--            <div class="flex flex-col items-center text-center">-->
+<!--                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>-->
+<!--                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Coaching</h3>-->
+<!--                <p>Guidance from skilled coaches to help you improve safely and effectively.</p>-->
+<!--            </div>-->
+<!--            <div class="flex flex-col items-center text-center">-->
+<!--                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>-->
+<!--                <h3 class="mb-1 text-2xl font-bold  text-gray-900 h-16 flex items-center justify-center">Indoors and outdoors training</h3>-->
+<!--                <p>Practice all year round — rain or shine — with our indoor and outdoor facilities.</p>-->
+<!--            </div>-->
+<!--            <div class="flex flex-col items-center text-center">-->
+<!--                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>-->
+<!--                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Physical and mental benefits</h3>-->
+<!--                <p>Boost focus, coordination, and overall well-being through archery.</p>-->
+<!--            </div>-->
+<!--            <div class="flex flex-col items-center text-center">-->
+<!--                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>-->
+<!--                <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">Participation in tournaments</h3>-->
+<!--                <p>Challenge yourself and grow by joining local and national competitions.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 
     <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
