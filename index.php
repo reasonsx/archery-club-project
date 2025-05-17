@@ -59,9 +59,6 @@ $about_description = get_field('about_description');
             </div>
         </section>
 
-
-
-
         <!-- IMAGES SECTION -->
         <section class="max-w-screen-xl mx-auto flex flex-col items-center">
             <h1 class="text-4xl">Images gallery</h1>
