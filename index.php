@@ -27,7 +27,7 @@ $about_description = get_field('about_description');
                 <div class="max-w-screen-lg mx-auto w-full">
                     <div class="max-w-2xl space-y-6 text-white">
                         <h1 class="text-4xl font-bold drop-shadow-lg"><?php echo esc_html($hero_title); ?></h1>
-                        <p class="text-lg text-white"><?php echo esc_html($hero_description); ?></p>
+                        <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
                            class="cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center">
                             Join Now
@@ -53,7 +53,7 @@ $about_description = get_field('about_description');
             <div class="max-w-xl">
                 <h1 class="text-4xl font-bold mb-4"><?php echo esc_html($about_title); ?></h1>
                 <p class="mb-6 text-gray-700">
-                    <?php echo esc_html($about_description); ?>
+                <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 </p>
                 <a href="#join" class="inline-block cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     Join Now
