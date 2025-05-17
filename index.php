@@ -145,6 +145,58 @@ $about_description = get_field('about_description');
         </section>
 
 
+        <!-- BOWS SECTION -->
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col bg-[#8DB7E1]">
+            <div class="mx-auto max-w-screen-sm text-center">
+                <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
+            </div>
+
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Bow 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Compound_bow_transparent.png"
+                                alt="Bow 1"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #1</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Learn from professional archery coaches with years of experience guiding beginners and pros alike.</p>
+                </div>
+
+                <!-- Bow 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Recurve_bow_transparent.png"
+                                alt="Bow 2"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #2</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Participate in fun competitions and social events to connect with fellow archery enthusiasts.</p>
+                </div>
+
+                <!-- Bow 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Longbow_transparent.png"
+                                alt="Bow 3"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #3</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Access the latest bows and gear to improve your skills and enjoy the sport safely.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
 
 
 
