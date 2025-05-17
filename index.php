@@ -36,9 +36,28 @@ $hero_description = get_field('hero_description');
 
 
 
-        <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
-            <h1 class="text-4xl">About</h1>
+        <section class="max-w-screen-xl mx-auto h-96 flex items-center gap-12 px-4">
+            <!-- Left: Circle Image -->
+            <div class="flex-shrink-0">
+                <img
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                        alt="About Image"
+                        class="w-48 h-48 rounded-full object-cover"
+                />
+            </div>
+
+            <!-- Right: Text content -->
+            <div class="max-w-xl">
+                <h1 class="text-4xl font-bold mb-4">About</h1>
+                <p class="mb-6 text-gray-700">
+                    This is the about section description. Tell visitors what your club or business is about in a clear, concise way.
+                </p>
+                <a href="#join" class="inline-block cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                    Join Now
+                </a>
+            </div>
         </section>
+
 
         <section class="max-w-screen-xl mx-auto flex flex-col items-center">
             <h1 class="text-4xl">Images gallery</h1>
