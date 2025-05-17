@@ -21,15 +21,13 @@ $hero_description = get_field('hero_description');
 
             <!-- Overlay content -->
             <div class="relative z-10 h-full flex items-center">
-                <div class="max-w-screen-lg mx-auto w-full">
-                    <div class="max-w-2xl space-y-6 text-white">
-                        <h1 class="text-4xl font-bold drop-shadow-lg"><?php echo esc_html($hero_title); ?></h1>
-                        <p class="text-lg text-white"><?php echo esc_html($hero_description); ?></p>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
-                           class="cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center">
-                            Join Now
-                        </a>
-                    </div>
+                <div class="max-w-screen-lg mx-auto w-full text-left">
+                    <h1 class="text-4xl font-bold drop-shadow-lg"><?php echo esc_html($hero_title); ?></h1>
+                    <p class="text-lg text-white"><?php echo esc_html($hero_description); ?></p>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
+                       class="cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center">
+                        Join Now
+                    </a>
                 </div>
             </div>
         </section>
