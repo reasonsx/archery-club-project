@@ -154,7 +154,7 @@ $about_description = get_field('about_description');
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Bow 1 -->
                 <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
                         <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Compound_bow_transparent.png"
                                 alt="Bow 1"
@@ -167,7 +167,7 @@ $about_description = get_field('about_description');
 
                 <!-- Bow 2 -->
                 <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
                         <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/8/81/Recurve_bow_transparent.png"
                                 alt="Bow 2"
@@ -180,7 +180,7 @@ $about_description = get_field('about_description');
 
                 <!-- Bow 3 -->
                 <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-yellow-300 flex items-center justify-center overflow-hidden">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
                         <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Longbow_transparent.png"
                                 alt="Bow 3"
