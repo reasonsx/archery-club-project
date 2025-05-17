@@ -11,7 +11,6 @@ get_header(); ?>
 <?php $next_event_text = get_field('next_event_text'); ?>
 <?php $next_event_date = get_field('next_event_date'); ?>
 <?php $following_event_text = get_field('following_event_text'); ?>
-<?php $following_event_date = get_field('following_event_date'); ?>
 <?php $ready_to_join = get_field('ready_to_join'); ?>
 <?php $sign_up_form_title = get_field('sign_up_form_title'); ?>
 <?php $sign_up_form_description = get_field('sign_up_form_description'); ?>
@@ -60,10 +59,7 @@ get_header(); ?>
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
-            <div class="flex flex-row">
-              <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-              <p class="font-bold text-black ml-2"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
-            </div>
+              <p class="text-black mb-3"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
         <div class="flex flex-col w-full mx-auto">
