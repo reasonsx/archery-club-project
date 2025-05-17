@@ -36,7 +36,7 @@ $hero_description = get_field('hero_description');
 
 
 
-        <section class="max-w-screen-xl mx-auto h-96 flex items-center gap-12 px-4">
+        <section class="max-w-screen-xl mx-auto h-96 flex items-center gap-12 w-full">
             <!-- Left: Circle Image -->
             <div class="flex-shrink-0">
                 <img
