@@ -53,7 +53,8 @@ $about_description = get_field('about_description');
             <div class="max-w-xl w-1/2 flex flex-col gap-6">
                 <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
+                   class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     Read more
                 </a>
             </div>
@@ -66,23 +67,28 @@ $about_description = get_field('about_description');
             <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="w-full h-72 rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             class="w-full h-72 rounded-lg"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="w-full h-72 rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                             class="w-full h-72 rounded-lg"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="w-full h-72 rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                             class="w-full h-72 rounded-lg"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="w-full h-72 rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                             class="w-full h-72 rounded-lg"/>
                     </div>
                 </div>
             </div>
 
             <!-- Button -->
             <div class="text-center mt-8">
-                <a href="/full-gallery" class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                <a href="/full-gallery"
+                   class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     See Full Gallery
                 </a>
             </div>
@@ -147,64 +153,57 @@ $about_description = get_field('about_description');
 
         <!-- BOWS SECTION -->
         <section class="w-full h-auto bg-[#8DB7E1]">
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col ">
-            <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
-            </div>
-
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Bow 1 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
-                        <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Compound_bow_transparent.png"
-                                alt="Bow 1"
-                                class="max-w-[70%] max-h-[70%] object-contain"
-                        />
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900">Bow #1</h3>
-                    <p class="mt-2 text-gray-700 max-w-xs">Learn from professional archery coaches with years of experience guiding beginners and pros alike.</p>
+            <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col ">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
                 </div>
 
-                <!-- Bow 2 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
-                        <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Recurve_bow_transparent.png"
-                                alt="Bow 2"
-                                class="max-w-[70%] max-h-[70%] object-contain"
-                        />
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Bow 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                            <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Compound_bow_transparent.png"
+                                    alt="Bow 1"
+                                    class="max-w-[70%] max-h-[70%] object-contain"
+                            />
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Bow #1</h3>
+                        <p class="mt-2 text-gray-700 max-w-xs">Learn from professional archery coaches with years of
+                            experience guiding beginners and pros alike.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900">Bow #2</h3>
-                    <p class="mt-2 text-gray-700 max-w-xs">Participate in fun competitions and social events to connect with fellow archery enthusiasts.</p>
-                </div>
 
-                <!-- Bow 3 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
-                        <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Longbow_transparent.png"
-                                alt="Bow 3"
-                                class="max-w-[70%] max-h-[70%] object-contain"
-                        />
+                    <!-- Bow 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                            <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/8/81/Recurve_bow_transparent.png"
+                                    alt="Bow 2"
+                                    class="max-w-[70%] max-h-[70%] object-contain"
+                            />
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Bow #2</h3>
+                        <p class="mt-2 text-gray-700 max-w-xs">Participate in fun competitions and social events to
+                            connect with fellow archery enthusiasts.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900">Bow #3</h3>
-                    <p class="mt-2 text-gray-700 max-w-xs">Access the latest bows and gear to improve your skills and enjoy the sport safely.</p>
+
+                    <!-- Bow 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                            <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Longbow_transparent.png"
+                                    alt="Bow 3"
+                                    class="max-w-[70%] max-h-[70%] object-contain"
+                            />
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Bow #3</h3>
+                        <p class="mt-2 text-gray-700 max-w-xs">Access the latest bows and gear to improve your skills
+                            and enjoy the sport safely.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
-    </section>
-
-
-
-
-
-
-
-        <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
-            <h1 class="text-4xl">What is archery about</h1>
-        </section>
-
+        
 
         <section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
@@ -244,37 +243,35 @@ $about_description = get_field('about_description');
         </section>
 
 
-
-
         <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
-                            <div class="mx-auto mb-8 max-w-screen-sm text-center">
-                                <h1 class="mb-4 text-gray-900">Contact us</h1>
-                            </div>
-                            <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
-                                <!-- Left column -->
-                                <div class="relative z-10">
-                                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
-                                </div>
+            <div class="mx-auto mb-8 max-w-screen-sm text-center">
+                <h1 class="mb-4 text-gray-900">Contact us</h1>
+            </div>
+            <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+                <!-- Left column -->
+                <div class="relative z-10">
+                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
+                </div>
 
-                                <!-- Right column -->
-                                <div class="flex flex-col gap-4">
-
-
-                                    <div>
-                                        <h5>Address:</h5>
-                                        <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
-                                    </div>
-
-                                    <div>
-                                        <h5>Email:</h5>
-                                        <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
-                                    </div>
+                <!-- Right column -->
+                <div class="flex flex-col gap-4">
 
 
-                                    <div>
-                                        <h5>Phone:</h5>
-                                        <p>24 60 94 76</p>
-                                    </div>
+                    <div>
+                        <h5>Address:</h5>
+                        <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
+                    </div>
+
+                    <div>
+                        <h5>Email:</h5>
+                        <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
+                    </div>
+
+
+                    <div>
+                        <h5>Phone:</h5>
+                        <p>24 60 94 76</p>
+                    </div>
 
                     <div class="w-full aspect-video">
                         <iframe
