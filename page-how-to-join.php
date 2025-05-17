@@ -21,7 +21,7 @@ get_header(); ?>
 <?php $training_times = get_field('training_times'); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 
-<section class="h-screen bg-no-repeat bg-center bg-cover relative bg-opacity-50"
+<section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
   
   <div class="flex flex-col-reverse md:flex-row items-center md:justify-between w-full h-full px-8 relative">
