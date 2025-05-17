@@ -27,7 +27,7 @@ get_header();
 
     if ($blog_posts->have_posts()):
       while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-        <article class="rounded-lg overflow-hidden cursor-pointer group">
+        <a href="<?php the_permalink(); ?>" class="block rounded-lg overflow-hidden group cursor-pointer no-underline">
           <!-- Image Top Half -->
           <?php if (has_post_thumbnail()): ?>
             <div class="h-48 overflow-hidden">
@@ -50,7 +50,7 @@ get_header();
               </svg>
             </a>
           </div>
-        </article>
+          </a>
       <?php endwhile;
 
       // Pagination (if needed)
