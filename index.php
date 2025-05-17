@@ -39,7 +39,7 @@ $about_description = get_field('about_description');
 
 
 
-        <section class="max-w-screen-xl mx-auto h-96 flex items-center gap-12 w-full">
+        <section class="max-w-screen-xl mx-auto h-auto flex items-center gap-12 w-full">
             <!-- Left: Circle Image -->
             <div class="flex-shrink-0">
                 <img
