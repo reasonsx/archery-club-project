@@ -22,7 +22,7 @@ $hero_image = get_field('hero_image');
                 <div class="max-w-screen-lg mx-auto w-full">
                     <div class="max-w-2xl space-y-6 text-white">
                         <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
-                        <p class="text-lg drop-shadow">Your hero description goes here. Tell people why this club is awesome.</p>
+                        <p class="text-lg text-white">Your hero description goes here. Tell people why this club is awesome.</p>
                         <a href="#join" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-blue-100 transition">
                             Join Now
                         </a>
