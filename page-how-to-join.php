@@ -139,13 +139,21 @@ get_header(); ?>
 
 
 <section class="max-w-screen-lg mx-auto pt-24">
-  <?php
+   <?php
+  $post_type = 'faq';
+  $post_type_obj = get_post_type_object($post_type);
   $faqs = new WP_Query(array(
-    'post_type' => 'faq',
+    'post_type' => $post_type,
     'posts_per_page' => -1,
     'orderby' => 'menu_order',
     'order' => 'ASC',
   ));
+
+  if ($post_type_obj): ?>
+  <h1 class="text-3xl font-bold mb-6">
+      <?php echo esc_html($post_type_obj->labels->singular_name); ?>
+    </h1>
+  <?php endif;
 
   if ($faqs->have_posts()): ?>
     <div class="space-y-4">
