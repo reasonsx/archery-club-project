@@ -24,7 +24,7 @@ $hero_image = get_field('hero_image');
                         <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
                         <p class="text-lg text-white">Your hero description goes here. Tell people why this club is awesome.</p>
                         <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'how-to-join' ) ) ); ?>">
-                            <button class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-base px-6 py-3">
+                            <button class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-base px-6 py-2">
                                 Join Now
                             </button>
                         </a>
