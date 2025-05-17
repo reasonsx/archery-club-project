@@ -17,40 +17,55 @@ get_header();
 
 
 <section class="max-w-screen-lg mx-auto pt-24 px-4">
-  <?php
-  $blog_posts = new WP_Query(array(
-    'post_type' => 'post',
-    'posts_per_page' => 10,
-    'paged' => get_query_var('paged') ?: 1,
-  ));
-
-  if ($blog_posts->have_posts()):
-    while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-      <article class="mb-8 border-b pb-4">
-        <h2 class="text-2xl font-semibold">
-          <a href="<?php the_permalink(); ?>" class="text-blue-600 hover:underline">
-            <?php the_title(); ?>
-          </a>
-        </h2>
-        <p class="text-gray-600 mt-2">
-          <?php echo get_the_excerpt(); ?>
-        </p>
-        <a href="<?php the_permalink(); ?>" class="text-blue-500 hover:underline inline-block mt-2">
-          Read more →
-        </a>
-      </article>
-    <?php endwhile;
-
-    // Pagination (if needed)
-    echo paginate_links(array(
-      'total' => $blog_posts->max_num_pages
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <?php
+    $blog_posts = new WP_Query(array(
+      'post_type' => 'post',
+      'posts_per_page' => 10,
+      'paged' => get_query_var('paged') ?: 1,
     ));
 
-    wp_reset_postdata();
-  else:
-    echo '<p>No blog posts found.</p>';
-  endif;
-  ?>
+    if ($blog_posts->have_posts()):
+      while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
+        <article class="rounded-lg overflow-hidden shadow-lg cursor-pointer group">
+          <!-- Image Top Half -->
+          <?php if (has_post_thumbnail()): ?>
+            <div class="h-48 overflow-hidden">
+              <?php the_post_thumbnail('medium_large', ['class' => 'w-full h-full object-cover transition-transform duration-300 group-hover:scale-105']); ?>
+            </div>
+          <?php else: ?>
+            <div class="h-48 bg-gray-300"></div>
+          <?php endif; ?>
+
+          <!-- Blue Bottom Half -->
+          <div class="bg-blue-600 text-white p-6 flex flex-col justify-between h-48">
+            <div>
+              <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
+              <p class="text-sm line-clamp-3"><?php echo get_the_excerpt(); ?></p>
+            </div>
+
+            <a href="<?php the_permalink(); ?>" class="inline-flex items-center mt-4 text-white hover:text-blue-300 font-semibold">
+              Read more
+              <svg class="ml-2 w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" >
+                <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      <?php endwhile;
+
+      // Pagination (if needed)
+      echo paginate_links(array(
+        'total' => $blog_posts->max_num_pages
+      ));
+
+      wp_reset_postdata();
+    else:
+      echo '<p>No blog posts found.</p>';
+    endif;
+    ?>
+  </div>
 </section>
+
 
 <?php get_footer(); ?>
