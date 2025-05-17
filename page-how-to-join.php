@@ -118,7 +118,7 @@ get_header(); ?>
       ?>
         <div class="flex justify-between items-center px-4 py-3 border-b border-black <?php echo $row_class; ?>">
           <div class="text-xl">
-            <span class="uppercase"><?php the_title(); ?></span>
+            <span class="uppercasen text-3xl"><?php the_title(); ?></span>
             <span class="text-sm text-gray-700 ml-2"><?php echo esc_html($age_range); ?></span>
           </div>
           <div class="text-right text-md font-semibold">
