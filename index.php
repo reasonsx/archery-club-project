@@ -60,6 +60,9 @@ $about_description = get_field('about_description');
         </section>
 
 
+
+
+        <!-- IMAGES SECTION -->
         <section class="max-w-screen-xl mx-auto flex flex-col items-center">
             <h1 class="text-4xl">Images gallery</h1>
             <div id="gallery" class="relative w-[50vw]" data-carousel="slide">
@@ -112,9 +115,7 @@ $about_description = get_field('about_description');
             </div>
         </section>
 
-        <section class="max-w-screen-xl mx-auto h-96 flex items-center">
-            <h1 class="text-4xl">Archery benefits</h1>
-        </section>
+
 
         <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
             <h1 class="text-4xl">What is archery about</h1>
@@ -155,64 +156,10 @@ $about_description = get_field('about_description');
                     </div>
                 </div>
 
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <a href="#">
-                        <img class="rounded-t-lg w-full h-40 object-cover"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
-                             alt=""/>
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Noteworthy technology
-                                acquisitions
-                                2021</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <a href="#">
-                        <img class="rounded-t-lg w-full h-40 object-cover"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
-                             alt=""/>
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Noteworthy technology
-                                acquisitions
-                                2021</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                        <a href="#"
-                           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
             </div>
         </section>
+
+        <!-- BENEFITS SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1 class="text-gray-900">Why Join Our Archery Club?</h1>
