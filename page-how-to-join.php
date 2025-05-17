@@ -50,7 +50,7 @@ get_header(); ?>
 </section>
 <section class="max-w-screen-lg mx-auto pt-24">
     <h1 class="mb-5"><?php the_title(); ?></h1>
-    <div class="flex flex-row gap-5">
+    <div class="flex flex-col sm:flex-row gap-5">
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
             <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
             <div class="flex flex-row my-5 content-center">
