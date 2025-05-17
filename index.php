@@ -6,6 +6,9 @@ get_header(); ?>
 $hero_image = get_field('hero_image');
 $hero_title = get_field('hero_title');
 $hero_description = get_field('hero_description');
+$about_image = get_field('about_image');
+$about_title = get_field('about_title');
+$about_description = get_field('about_description');
 ?>
 
     <section class="flex flex-col gap-24">
@@ -40,17 +43,17 @@ $hero_description = get_field('hero_description');
             <!-- Left: Circle Image -->
             <div class="flex-shrink-0">
                 <img
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                        alt="About Image"
+                        src="<?php echo esc_url($about_image['url']); ?>"
+                        alt="<?php echo esc_attr($about_image['alt']); ?>"
                         class="w-48 h-48 rounded-full object-cover"
                 />
             </div>
 
             <!-- Right: Text content -->
             <div class="max-w-xl">
-                <h1 class="text-4xl font-bold mb-4">About</h1>
+                <h1 class="text-4xl font-bold mb-4"><?php echo esc_html($about_title); ?></h1>
                 <p class="mb-6 text-gray-700">
-                    This is the about section description. Tell visitors what your club or business is about in a clear, concise way.
+                    <?php echo esc_html(about_description); ?>
                 </p>
                 <a href="#join" class="inline-block cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     Join Now
