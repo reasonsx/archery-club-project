@@ -19,9 +19,8 @@ get_header(); ?>
 <?php $summer_location = get_field('summer_location'); ?>
 <?php $training_times = get_field('training_times'); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
-
 <?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
-
+<?php $pricing_title = get_field('pricing_title'); ?>
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
   
@@ -95,7 +94,9 @@ get_header(); ?>
 </section>
 
 <section class="max-w-screen-lg mx-auto pt-24">
-  <h1 class="text-3xl font-bold mb-6"></h1>
+  <h1 class="text-3xl font-bold mb-6">
+        <p class="text-black"><?php if ($pricing_title) echo wp_kses_post(nl2br($pricing_title)); ?></p>
+  </h1>
   <?php
   $pricing_posts = new WP_Query(array(
     'post_type' => 'pricing',
