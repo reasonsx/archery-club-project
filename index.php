@@ -146,7 +146,8 @@ $about_description = get_field('about_description');
 
 
         <!-- BOWS SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col bg-[#8DB7E1]">
+        <section class="w-full h-auto bg-[#8DB7E1]">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col ">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
             </div>
@@ -192,7 +193,7 @@ $about_description = get_field('about_description');
                 </div>
             </div>
         </section>
-
+    </section>
 
 
 
