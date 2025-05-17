@@ -39,26 +39,27 @@ $about_description = get_field('about_description');
 
 
 
-        <section class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-center gap-12 w-full px-4">
+        <section class="max-w-screen-xl mx-auto h-auto flex items-center gap-12 w-full">
             <!-- Left: Circle Image -->
-            <div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
+            <div class="flex-shrink-0 w-1/2 flex justify-center">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
-                        class="w-48 h-48 md:w-72 md:h-72 rounded-full object-cover"
+                        class="w-72 h-72 rounded-full object-cover"
                 />
             </div>
 
             <!-- Right: Text content -->
-            <div class="max-w-xl w-full md:w-1/2">
+            <div class="max-w-xl w-1/2">
                 <h1 class="text-4xl font-bold mb-4"><?php echo esc_html($about_title); ?></h1>
-                <p class="mb-6 text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
+                <p class="mb-6 text-gray-700">
+                <p class="text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
+                </p>
                 <a href="#join" class="inline-block cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     Join Now
                 </a>
             </div>
         </section>
-
 
 
         <section class="max-w-screen-xl mx-auto flex flex-col items-center">
