@@ -45,7 +45,7 @@ $about_description = get_field('about_description');
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
-                        class="w-48 h-48 rounded-full object-cover"
+                        class="w-72 h-72 rounded-full object-cover"
                 />
             </div>
 
