@@ -62,7 +62,7 @@ get_header(); ?>
               <p class="text-black mb-3"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-md mx-auto">
+        <div class="flex flex-col w-xl mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
               <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
