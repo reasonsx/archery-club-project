@@ -1,28 +1,47 @@
 <?php
-/**
- * Template Name: Blog Page
- */
+/*
+Template Name: Blog Overview
+*/
+get_header();
+?>
 
-get_header(); ?>
+<section class="max-w-screen-lg mx-auto pt-24 px-4">
+  <h1 class="text-3xl font-bold mb-8 text-center">Blog</h1>
 
-<div class="content">
-    <h1 class="text-3xl font-bold mb-6"><?php the_title(); ?></h1>
+  <?php
+  $blog_posts = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page' => 10,
+    'paged' => get_query_var('paged') ?: 1,
+  ));
 
-    <?php
-    // WordPress loop to display blog posts
-    if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-            ?>
-            <div class="post">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <p><?php the_excerpt(); ?></p>
-            </div>
-            <?php
-        endwhile;
-    else :
-        echo '<p>No posts found.</p>';
-    endif;
-    ?>
-</div>
+  if ($blog_posts->have_posts()):
+    while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
+      <article class="mb-8 border-b pb-4">
+        <h2 class="text-2xl font-semibold">
+          <a href="<?php the_permalink(); ?>" class="text-blue-600 hover:underline">
+            <?php the_title(); ?>
+          </a>
+        </h2>
+        <p class="text-gray-600 mt-2">
+          <?php echo get_the_excerpt(); ?>
+        </p>
+        <a href="<?php the_permalink(); ?>" class="text-blue-500 hover:underline inline-block mt-2">
+          Read more →
+        </a>
+      </article>
+    <?php endwhile;
+
+    // Pagination (if needed)
+    echo paginate_links(array(
+      'total' => $blog_posts->max_num_pages
+    ));
+
+    wp_reset_postdata();
+  else:
+    echo '<p>No blog posts found.</p>';
+  endif;
+  ?>
+</section>
 
 <?php get_footer(); ?>
