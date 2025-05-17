@@ -112,6 +112,28 @@ $about_description = get_field('about_description');
             </div>
         </section>
 
+        <section class="w-full py-12 bg-white">
+            <h2 class="text-center text-4xl mb-8">Images Gallery</h2>
+            <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="w-full h-auto rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="w-full h-auto rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="w-full h-auto rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="w-full h-auto rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
 
         <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
