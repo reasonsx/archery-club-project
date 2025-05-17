@@ -8,14 +8,25 @@ $hero_image = get_field('hero_image');
 
     <section class="flex flex-col gap-24">
 
-        <section class="relative h-[48rem] w-full flex items-center justify-center overflow-hidden">
-            <h1 class="relative z-10 text-4xl text-white drop-shadow-lg">Hero</h1>
+        <section class="relative h-[48rem] w-full overflow-hidden">
+            <!-- Background image -->
             <?php if ($hero_image): ?>
                 <img src="<?php echo esc_url($hero_image['url']); ?>"
                      alt="<?php echo esc_attr($hero_image['alt']); ?>"
                      class="absolute inset-0 w-full h-full object-cover"
                      draggable="false">
             <?php endif; ?>
+
+            <!-- Content on top -->
+            <div class="relative z-10 h-full flex items-center">
+                <div class="max-w-2xl px-6 text-white space-y-6">
+                    <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
+                    <p class="text-lg drop-shadow">Your hero description goes here. Tell people why this club is awesome.</p>
+                    <a href="#join" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-blue-100 transition">
+                        Join Now
+                    </a>
+                </div>
+            </div>
         </section>
 
 
