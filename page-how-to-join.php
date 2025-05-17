@@ -62,12 +62,12 @@ get_header(); ?>
               <p class="text-black mb-3"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
-        <div class="flex flex-col w-full mx-auto">
+        <div class="flex flex-col w-md mx-auto">
           <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
           <div class="flex flex-row">
-            <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
-              <p class="font-bold text-black ml-2"><?php if ($following_event_date) echo wp_kses_post(nl2br($following_event_date)); ?></p>
-            </div>
+              <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
+              <p class="font-bold text-black ml-2"><?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?></p>
+          </div>
           <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for the introductory evening" html_class="signup-intro-form"]'); ?>
         </div>
     </div>
