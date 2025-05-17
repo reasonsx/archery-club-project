@@ -48,7 +48,7 @@ get_header(); ?>
 
   </div>
 </section>
-<section class="max-w-screen-lg mx-auto pt-24">
+<section class="max-w-screen-lg mx-auto pt-24 w-[80%]">
     <h1 class="mb-5"><?php the_title(); ?></h1>
     <div class="flex flex-col sm:flex-row gap-5">
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
