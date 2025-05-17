@@ -116,7 +116,6 @@ $about_description = get_field('about_description');
             <h2 class="text-center text-4xl mb-8">Images Gallery</h2>
             <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="w-full h-auto rounded-lg" />
                     </div>
@@ -132,6 +131,7 @@ $about_description = get_field('about_description');
                 </div>
             </div>
         </section>
+
 
 
 
