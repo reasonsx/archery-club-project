@@ -62,6 +62,7 @@ $about_description = get_field('about_description');
         <!-- IMAGES SECTION -->
         <section class="w-full py-12 bg-white">
             <h2 class="text-center text-4xl mb-8">Images Gallery</h2>
+
             <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -78,11 +79,14 @@ $about_description = get_field('about_description');
                     </div>
                 </div>
             </div>
+
+            <!-- Button -->
+            <div class="text-center mt-8">
+                <a href="/full-gallery" class="inline-block px-6 py-3 bg-blue-600 text-white text-lg font-medium rounded-lg shadow hover:bg-blue-700 transition">
+                    See Full Gallery
+                </a>
+            </div>
         </section>
-
-
-
-
 
         <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
             <h1 class="text-4xl">What is archery about</h1>
