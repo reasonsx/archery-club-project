@@ -20,6 +20,8 @@ get_header(); ?>
 <?php $training_times = get_field('training_times'); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 
+<?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
+
 <section class="h-screen bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
   
@@ -93,7 +95,7 @@ get_header(); ?>
 </section>
 
 <section class="max-w-screen-lg mx-auto pt-24">
-  <h2 class="text-3xl font-bold mb-6">Pricing</h2>
+  <h1 class="text-3xl font-bold mb-6"></h1>
   <?php
   $pricing_posts = new WP_Query(array(
     'post_type' => 'pricing',
@@ -129,7 +131,7 @@ get_header(); ?>
   <?php endif; ?>
 
   <p class="text-sm mt-4 font-medium text-black">
-    <?php echo esc_html(get_field('equipment_rental_info')); ?>
+        <p class="text-black"><?php if ($equipment_rental_info) echo wp_kses_post(nl2br($equipment_rental_info)); ?></p>
   </p>
 </section>
 
