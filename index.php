@@ -18,7 +18,7 @@ $hero_image = get_field('hero_image');
             <?php endif; ?>
 
             <!-- Content on top -->
-            <div class="relative z-10 h-full flex items-center">
+            <div class="max-w-screen-xl mx-auto relative z-10 h-full flex items-center">
                 <div class="max-w-2xl px-6 text-white space-y-6">
                     <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
                     <p class="text-lg drop-shadow">Your hero description goes here. Tell people why this club is awesome.</p>
