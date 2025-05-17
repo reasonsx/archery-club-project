@@ -50,7 +50,7 @@ $about_description = get_field('about_description');
             </div>
 
             <!-- Right: Text content -->
-            <div class="max-w-xl w-1/2 gap-6">
+            <div class="max-w-xl w-1/2 flex flex-col gap-6">
                 <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="#join" class="inline-block cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
