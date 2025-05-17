@@ -59,7 +59,7 @@ get_header(); ?>
                 <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
               </p>
             </div>
-              <p class="text-black"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
+              <p class="text-black mb-3"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
             <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
         </div>
         <div class="flex flex-col w-full mx-auto">
