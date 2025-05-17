@@ -6,6 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+        });
+    </script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
@@ -113,7 +129,8 @@
                    class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Blog</a></li>
             <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>"
                    class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a></li>
-            <li><a href="<?php echo home_url('/#contact'); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a></li>
+            <li><a href="<?php echo home_url('/#contact'); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a>
+            </li>
         </ul>
         <div class="mx-4">
             <hr class="my-4 border-gray-200 w-full"/>
