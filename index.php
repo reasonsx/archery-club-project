@@ -17,17 +17,20 @@ $hero_image = get_field('hero_image');
                      draggable="false">
             <?php endif; ?>
 
-            <!-- Content on top -->
-            <div class="max-w-screen-xl mx-auto relative z-10 h-full flex items-center">
-                <div class="max-w-2xl px-6 text-white space-y-6">
-                    <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
-                    <p class="text-lg drop-shadow">Your hero description goes here. Tell people why this club is awesome.</p>
-                    <a href="#join" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-blue-100 transition">
-                        Join Now
-                    </a>
+            <!-- Overlay content -->
+            <div class="relative z-10 h-full flex items-center">
+                <div class="max-w-screen-xl mx-auto px-6 w-full">
+                    <div class="max-w-2xl space-y-6 text-white">
+                        <h1 class="text-4xl font-bold drop-shadow-lg">Hero Title</h1>
+                        <p class="text-lg drop-shadow">Your hero description goes here. Tell people why this club is awesome.</p>
+                        <a href="#join" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-blue-100 transition">
+                            Join Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+
 
 
         <section class="max-w-screen-xl mx-auto h-96 flex justify-center">
