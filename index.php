@@ -82,7 +82,7 @@ $about_description = get_field('about_description');
 
             <!-- Button -->
             <div class="text-center mt-8">
-                <a href="/full-gallery" class="inline-block px-6 py-3 bg-blue-600 text-white text-lg font-medium rounded-lg shadow hover:bg-blue-700 transition">
+                <a href="/full-gallery" class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     See Full Gallery
                 </a>
             </div>
