@@ -8,10 +8,10 @@ get_header();
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
   <!-- Blue circle behind text -->
-  <div class="absolute right-24 w-56 h-56 bg-[#8DB7E1] rounded-full z-0"></div>
+  <div class="absolute right-[20rem] w-56 h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
-  <h1 class="text-black !text-[150px] md:text-5xl font-bold z-10">ARCHERY <br> MAGAZINE</h1>
+  <h1 class="text-black text-center !text-[150px] md:text-5xl font-bold z-10">ARCHERY <br> MAGAZINE</h1>
 
 </section>
 
