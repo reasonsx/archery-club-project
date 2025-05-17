@@ -132,7 +132,7 @@ get_header(); ?>
   <?php endif; ?>
 
   <p class="text-sm mt-4 font-medium text-black">
-    <?php echo esc_html(get_field('equipment_rental')); ?>
+    <?php echo  wp_kses_post(nl2br((get_field('equipment_rental')))); ?>
   </p>
 
 </section>
