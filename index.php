@@ -23,7 +23,7 @@ $hero_image = get_field('hero_image');
 
 <section class="flex flex-col gap-24">
 
-    <section class="relative h-96 md:h-[48rem] w-full flex items-center justify-center overflow-hidden">
+    <section class="relative h-[48rem] w-full flex items-center justify-center overflow-hidden">
         <h1 class="relative z-10 text-4xl text-white drop-shadow-lg">Hero</h1>
         <?php if ($hero_image): ?>
             <img src="<?php echo esc_url($hero_image['url']); ?>"
