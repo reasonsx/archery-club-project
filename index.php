@@ -16,15 +16,21 @@ get_header(); ?>
 //            } ?>
 <!--        </div>-->
     </div>
+<?php
+$hero_image = get_field('hero_image');
+?>
 
 
 <section class="flex flex-col gap-24">
 
     <section class="relative h-96 md:h-[48rem] w-full flex items-center justify-center overflow-hidden">
         <h1 class="relative z-10 text-4xl text-white drop-shadow-lg">Hero</h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/frontpage/home-hero.jpg"
-             class="absolute inset-0 w-full h-full object-cover"
-             alt="">
+        <?php if ($hero_image): ?>
+            <img src="<?php echo esc_url($hero_image['url']); ?>"
+                 alt="<?php echo esc_attr($hero_image['alt']); ?>"
+                 class="absolute inset-0 w-full h-full object-cover"
+                 draggable="false">
+        <?php endif; ?>
     </section>
 
 
