@@ -131,9 +131,8 @@ get_header(); ?>
     <p class="text-center text-gray-500">No pricing info found.</p>
   <?php endif; ?>
 
-  <p class="text-sm mt-4 font-medium text-black">
-        <p class="text-black"><?php if ($equipment_rental_info) echo wp_kses_post(nl2br($equipment_rental_info)); ?></p>
-  </p>
+  <p class="text-black"><?php echo wp_kses_post(nl2br(get_field('equipment_rental_info'))); ?></p>
+
 </section>
 
 
