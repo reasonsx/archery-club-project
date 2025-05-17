@@ -245,35 +245,35 @@ $about_description = get_field('about_description');
         <!--    </section>-->
 
 
-        <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
-            <div class="mx-auto mb-8 max-w-screen-sm text-center">
-                <h1 class="mb-4 text-gray-900">Contact us</h1>
-            </div>
-            <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
-                <!-- Left column -->
-                <div class="relative z-10">
-                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
-                </div>
+        <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
+                            <div class="mx-auto mb-8 max-w-screen-sm text-center">
+                                <h1 class="mb-4 text-gray-900">Contact us</h1>
+                            </div>
+                            <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+                                <!-- Left column -->
+                                <div class="relative z-10">
+                                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
+                                </div>
 
-                <!-- Right column -->
-                <div class="flex flex-col gap-4">
-
-
-                    <div>
-                        <h5>Address:</h5>
-                        <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
-                    </div>
-
-                    <div>
-                        <h5>Email:</h5>
-                        <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
-                    </div>
+                                <!-- Right column -->
+                                <div class="flex flex-col gap-4">
 
 
-                    <div>
-                        <h5>Phone:</h5>
-                        <p>24 60 94 76</p>
-                    </div>
+                                    <div>
+                                        <h5>Address:</h5>
+                                        <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
+                                    </div>
+
+                                    <div>
+                                        <h5>Email:</h5>
+                                        <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
+                                    </div>
+
+
+                                    <div>
+                                        <h5>Phone:</h5>
+                                        <p>24 60 94 76</p>
+                                    </div>
 
                     <div class="w-full aspect-video">
                         <iframe
