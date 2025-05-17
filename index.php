@@ -66,16 +66,16 @@ $about_description = get_field('about_description');
             <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="w-full h-auto rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="w-full h-72 rounded-lg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="w-full h-auto rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="w-full h-72 rounded-lg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="w-full h-auto rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="w-full h-72 rounded-lg" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="w-full h-auto rounded-lg" />
+                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="w-full h-72 rounded-lg" />
                     </div>
                 </div>
             </div>
