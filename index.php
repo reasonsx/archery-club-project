@@ -20,7 +20,7 @@ get_header(); ?>
 
 <section class="flex flex-col gap-24">
 
-    <section class="relative h-96 w-full flex items-center justify-center overflow-hidden">
+    <section class="relative h-96 md:h-[48rem] w-full flex items-center justify-center overflow-hidden">
         <h1 class="relative z-10 text-4xl text-white drop-shadow-lg">Hero</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/frontpage/home-hero.jpg"
              class="absolute inset-0 w-full h-full object-cover"
