@@ -4,7 +4,7 @@ Template Name: Blog Overview
 */
 get_header();
 ?>
-<section class="bg-no-repeat bg-center bg-cover relative"
+<section class="h-[50vh] bg-no-repeat bg-center bg-cover relative"
     style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
   
   <div class="flex flex-col-reverse md:flex-row items-center md:justify-between w-full h-full px-8 relative">
