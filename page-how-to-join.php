@@ -48,7 +48,7 @@ get_header(); ?>
 
   </div>
 </section>
-<section class="max-w-screen-lg mx-auto pt-24 w-[80%]">
+<section class="max-w-screen-lg mx-auto pt-24">
     <h1 class="mb-5"><?php the_title(); ?></h1>
     <div class="flex flex-col sm:flex-row gap-5">
         <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
@@ -90,6 +90,47 @@ get_header(); ?>
         <p class="text-black"><?php if ($training_times) echo wp_kses_post(nl2br($training_times)); ?></p>
       </div>
     </div>
+</section>
+
+<section class="max-w-screen-lg mx-auto pt-24">
+  <h2 class="text-3xl font-bold mb-6">Pricing</h2>
+  <?php
+  $pricing_posts = new WP_Query(array(
+    'post_type' => 'pricing',
+    'posts_per_page' => -1,
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+  ));
+
+  if ($pricing_posts->have_posts()): ?>
+    <div class="border-t border-black">
+      <?php
+      $index = 0;
+      while ($pricing_posts->have_posts()): $pricing_posts->the_post();
+        $age_range = get_field('age_range');
+        $price = get_field('price');
+        $index++;
+        $is_even = $index % 2 === 0;
+        $row_class = $is_even ? 'bg-[#FDD576]' : '';
+      ?>
+        <div class="flex justify-between items-center px-4 py-3 border-b border-black <?php echo $row_class; ?>">
+          <div class="text-xl">
+            <span class="uppercase"><?php the_title(); ?></span>
+            <span class="text-sm text-gray-700 ml-2"><?php echo esc_html($age_range); ?></span>
+          </div>
+          <div class="text-right text-md font-semibold">
+            <?php echo esc_html($price); ?>
+          </div>
+        </div>
+      <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+  <?php else: ?>
+    <p class="text-center text-gray-500">No pricing info found.</p>
+  <?php endif; ?>
+
+  <p class="text-sm mt-4 font-medium text-black">
+    <?php echo esc_html(get_field('equipment_rental_info')); ?>
+  </p>
 </section>
 
 
