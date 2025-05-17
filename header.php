@@ -10,15 +10,18 @@
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer>
         const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            centeredSlides: true,
+            slidesPerView: 1, // default: mobile
+            spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 2500,
                 disableOnInteraction: false,
             },
-            grabCursor: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3, // tablets and up
+                },
+            },
         });
     </script>
 
