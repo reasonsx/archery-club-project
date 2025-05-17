@@ -116,7 +116,7 @@ get_header(); ?>
         $is_even = $index % 2 === 0;
         $row_class = $is_even ? 'bg-[#FDD576]' : '';
       ?>
-        <div class="flex justify-between items-center pt-4 px-3 border-b border-black <?php echo $row_class; ?>">
+        <div class="flex justify-between items-end py-3 px-3 border-b border-black <?php echo $row_class; ?>">
           <div class="text-xl">
             <span class="uppercase text-5xl"><?php the_title(); ?></span>
             <span class="text-sm text-gray-700 ml-2"><?php echo esc_html($age_range); ?></span>
