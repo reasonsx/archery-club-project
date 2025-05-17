@@ -172,26 +172,40 @@ $hero_image = get_field('hero_image');
             $benefits = new WP_Query([
                 'post_type' => 'benefit',
                 'posts_per_page' => 4,
-                'orderby' => 'menu_order', // if you want manual ordering
+                'orderby' => 'menu_order',
                 'order' => 'ASC',
             ]);
 
             if ($benefits->have_posts()) :
                 while ($benefits->have_posts()) : $benefits->the_post();
-                    $icon = get_field('icon'); // assuming ACF image field
-                    $description = get_field('description'); // assuming ACF textarea or WYSIWYG
+                    // Get fields
+                    $image = get_field('benefit_image');
+                    $title = get_field('benefit_title'); // fallback if you don't want post title
+                    $description = get_field('benefit_description');
                     ?>
+
                     <div class="flex flex-col items-center text-center">
-                        <?php if ($icon) : ?>
-                            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                                <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" class="max-w-full max-h-full rounded-full" />
+                        <?php if ($image) : ?>
+                            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center overflow-hidden">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="max-w-full max-h-full rounded-full" />
                             </div>
                         <?php else : ?>
                             <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
                         <?php endif; ?>
-                        <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center"><?php the_title(); ?></h3>
+
+                        <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">
+                            <?php
+                            if ($title) {
+                                echo esc_html($title);
+                            } else {
+                                the_title();
+                            }
+                            ?>
+                        </h3>
+
                         <p><?php echo esc_html($description); ?></p>
                     </div>
+
                 <?php
                 endwhile;
                 wp_reset_postdata();
@@ -200,6 +214,7 @@ $hero_image = get_field('hero_image');
 
         </div>
     </section>
+
 
     <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
         <div class="mx-auto max-w-screen-sm text-center">
