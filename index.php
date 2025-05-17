@@ -13,6 +13,7 @@ $about_description = get_field('about_description');
 
     <section class="flex flex-col gap-24">
 
+        <!-- HERO SECTION -->
         <section class="relative h-[48rem] w-full overflow-hidden">
             <!-- Background image -->
             <?php if ($hero_image): ?>
@@ -37,8 +38,7 @@ $about_description = get_field('about_description');
             </div>
         </section>
 
-
-
+        <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-center gap-12 w-full">
             <!-- Left: Circle Image -->
             <div class="flex-shrink-0 w-1/2 flex justify-center">
