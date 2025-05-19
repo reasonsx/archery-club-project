@@ -6,21 +6,22 @@ get_header();
 $hero_image = get_field('about_us_hero_image'); // expects full ACF array
 ?>
 
-
 <!-- HERO -->
-<section class="relative flex items-end justify-center h-[60vh] bg-no-repeat bg-center bg-cover"
-        style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
+<section
+  class="h-[50vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center"
+  style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');"
+>
 
-  <!-- White translucent circle -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <div class="w-72 h-72 md:w-96 md:h-96 bg-white/40 rounded-full -z-10"></div>
-  </div>
+  <!-- White circle behind title -->
+  <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-white/40 rounded-full -translate-x-8 -translate-y-6 z-0"></div>
 
-  <!-- Big title -->
-  <h1 class="text-black text-center font-extrabold leading-none uppercase
-             text-[90px] md:text-[150px] lg:text-[200px] drop-shadow-sm z-10">
-    About&nbsp;Us
+  <!-- Page title -->
+  <h1 class="text-black text-center font-extrabold z-10 leading-none
+              text-[10vw] md:text-[8rem] tracking-wide">
+    ABOUT&nbsp;US
   </h1>
+</section>
+
 
 <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
