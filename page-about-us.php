@@ -27,7 +27,7 @@ $story_button_link   = get_field('our_story_button_link');
 </section>
 
 <section class="max-w-screen-xl mx-auto px-4 py-16">
-  <div class="grid grid-cols-1 md:grid-cols-[20vw_1fr] gap-10 items-start">
+  <div class="flex flex-row gap-10 items-start">
     
     <!-- BIG YEAR BAR -->
     <div class="relative md:w-[20vw]">
