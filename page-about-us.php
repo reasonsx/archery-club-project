@@ -33,9 +33,9 @@ $story_button_link   = get_field('our_story_button_link');
     <div class="relative">
       <div class="bg-[#8DB7E1] w-full h-full md:min-h-[400px]"></div>
       <span class="absolute inset-0 flex items-center justify-center rotate-90 md:rotate-0">
-        <span class="text-[120px] md:text-[140px] font-extrabold leading-none text-black">
+        <h1 class="text-[120px] md:text-[140px] font-extrabold leading-none text-black">
           <?php echo esc_html($year); ?>
-        </span>
+</h1>
       </span>
     </div>
 
