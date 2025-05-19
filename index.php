@@ -119,7 +119,7 @@ $about_description = get_field('about_description');
 
                         <div class="flex flex-col items-center text-center">
                             <?php if ($image) : ?>
-                                <div class="mx-auto mb-4 w-40 h-40 rounded-full flex items-center justify-center overflow-hidden">
+                                <div class="mx-auto mb-4 w-40 h-40 flex items-center justify-center overflow-hidden">
                                     <img src="<?php echo esc_url($image['url']); ?>"
                                          alt="<?php echo esc_attr($image['alt']); ?>"
                                          class="max-w-full max-h-full rounded-full"/>
