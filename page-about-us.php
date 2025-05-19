@@ -112,7 +112,7 @@ $story_button_link   = get_field('our_story_button_link');
 </section>
 
 <section class="max-w-screen-lg mx-auto py-16">
-    <h1 class="text-center">
+    <h1 class="text-center mb-8">
      Equipment
     </h1>
 
