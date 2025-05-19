@@ -124,9 +124,9 @@ $about_description = get_field('about_description');
                                          alt="<?php echo esc_attr($image['alt']); ?>"
                                          class="max-w-full max-h-full rounded-full"/>
                                 </div>
-<!--                            --><?php //else : ?>
-<!--                                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>-->
-<!--                            --><?php //endif; ?>
+                            <?php else : ?>
+                                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center"></div>
+                            <?php endif; ?>
 
                             <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">
                                 <?php
