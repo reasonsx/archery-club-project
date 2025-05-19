@@ -13,7 +13,7 @@ $hero_image = get_field('about_us_hero_image'); // expects full ACF array
 >
 
   <!-- White circle behind title -->
-  <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
+  <div class="absolute w-72 h-72 md:w-96 md:h-96 opacity-50 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
 
   <!-- Page title -->
   <h1 class="text-black text-center font-extrabold z-10 leading-none
