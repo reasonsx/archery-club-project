@@ -41,17 +41,17 @@ $story_button_link   = get_field('our_story_button_link');
 
     <!-- STORY CONTENT -->
     <div>
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold mb-6">
         <?php echo esc_html($story_title); ?>
-      </h2>
+      </h1>
 
       <div class="prose max-w-none mb-8">
-        <?php echo wp_kses_post($story_text); ?>
+        <?php if ($story_text) echo nl2br(esc_html($story_text)); ?>
       </div>
 
       <?php if ($story_button_text) : ?>
         <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-           class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded">
+           class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-3 rounded">
           <?php echo esc_html($story_button_text); ?>
         </a>
       <?php endif; ?>
