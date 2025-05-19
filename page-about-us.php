@@ -16,7 +16,7 @@ $about_us_title = get_field('about_us_title');
 
   <!-- Page title -->
   <h1 class="text-black text-right font-extrabold z-10 leading-none
-              text-[4rem] md:text-[8rem] tracking-wide">
+              text-[6rem] md:text-[8rem] tracking-wide">
               <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
   </h1>
 </section>
