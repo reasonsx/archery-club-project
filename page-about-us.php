@@ -108,7 +108,15 @@ $story_button_link   = get_field('our_story_button_link');
 
 
 <section class="h-96 flex justify-center">
-    <h1 class="text-4xl">Meet our members</h1>
+    <h1 >Meet our members</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1>Our core values</h1>
+</section>
+
+<section class="h-96 flex justify-center">
+    <h1>Photo gallery</h1>
 </section>
 
 <section class="max-w-screen-lg mx-auto py-16">
