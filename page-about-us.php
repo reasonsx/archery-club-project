@@ -145,7 +145,7 @@ $story_button_link   = get_field('our_story_button_link');
               <?php if ( $img_url ) : ?>
                 <img src="<?php echo esc_url( $img_url ); ?>"
                      alt="<?php the_title_attribute(); ?>"
-                     class="w-46 h-46 object-contain" />
+                     class="w-46 h-auto" />
               <?php endif; ?>
             </div>
 
