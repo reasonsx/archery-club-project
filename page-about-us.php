@@ -114,7 +114,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 <section class="max-w-screen-xl mx-auto px-4 py-20">
   <!-- Section Heading -->
-  <h1>
+    <h1 class="mb-8">
     <?php echo esc_html( $section_title ); ?>
   </h1>
 
