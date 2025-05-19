@@ -111,7 +111,6 @@ $story_button_link   = get_field('our_story_button_link');
     <h1 >Meet our members</h1>
 </section>
 
-<section class="h-96 flex justify-center">
     <?php
     /*  Core Values Section  */
     $post_type      = 'core_value';
