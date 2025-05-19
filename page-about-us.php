@@ -114,9 +114,9 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 <section class="max-w-screen-xl mx-auto px-4 py-20">
   <!-- Section Heading -->
-  <h2 class="text-4xl md:text-5xl font-extrabold mb-14 text-center md:text-left">
+  <h1>
     <?php echo esc_html( $section_title ); ?>
-  </h2>
+  </h1>
 
   <!-- Values Grid -->
   <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -136,8 +136,8 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
             <!-- “┐” corner accent -->
             <span class="absolute top-6 right-6 w-10 h-10 border-t-4 border-r-4 border-black"></span>
 
-            <h3 class="text-2xl font-semibold mb-4"><?php the_title(); ?></h3>
-            <p class="leading-relaxed">  <?php echo wp_kses_post( get_field( 'value_description' ) ); ?></p>
+            <h3 class="text-2xl font-semibold my-4"><?php the_title(); ?></h3>
+            <p class="text-black">  <?php echo wp_kses_post( get_field( 'value_description' ) ); ?></p>
           </div>
     <?php
         endwhile;
