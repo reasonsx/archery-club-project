@@ -141,11 +141,11 @@ $story_button_link   = get_field('our_story_button_link');
           <!-- CARD -->
           <div class="text-center text-gray-500">
             <!-- blue circle with transparent-bg image -->
-            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#8DB7E1] flex items-center justify-center">
+            <div class="mx-auto mb-4 w-36 h-36 rounded-full bg-[#8DB7E1] flex items-center justify-center">
               <?php if ( $img_url ) : ?>
                 <img src="<?php echo esc_url( $img_url ); ?>"
                      alt="<?php the_title_attribute(); ?>"
-                     class="w-38 h-38 object-contain" />
+                     class="w-40 h-40 object-contain" />
               <?php endif; ?>
             </div>
 
