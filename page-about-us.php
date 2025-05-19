@@ -13,8 +13,7 @@ $story_button_link   = get_field('our_story_button_link');
 <!-- HERO -->
 <section
   class="h-[90vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
-  style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');"
->
+  style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');">
 
   <!-- White circle behind title -->
   <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
@@ -101,22 +100,17 @@ $story_button_link   = get_field('our_story_button_link');
     </div>
 </section>
 
-<section class="flex flex-col items-center w-auto mx-auto">
-
-
-</section>
-
 
 <section class="h-96 flex justify-center">
     <h1 >Meet our members</h1>
 </section>
 
-    <?php
-    /*  Core Values Section  */
-    $post_type      = 'core_value';
-    $type_object    = get_post_type_object( $post_type );
-    $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
-    ?>
+<?php
+/*  Core Values Section  */
+$post_type      = 'core_value';
+$type_object    = get_post_type_object( $post_type );
+$section_title  = $type_object ? $type_object->labels->name : 'Core Values';
+?>
 
 <section class="max-w-screen-xl mx-auto px-4 py-20">
   <!-- Section Heading -->
