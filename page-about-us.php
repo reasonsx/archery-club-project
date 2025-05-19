@@ -141,7 +141,7 @@ $story_button_link   = get_field('our_story_button_link');
           <!-- CARD -->
           <div class="text-center text-gray-500">
             <!-- blue circle with transparent-bg image -->
-            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
+            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#8DB7E1] flex items-center justify-center">
               <?php if ( $img_url ) : ?>
                 <img src="<?php echo esc_url( $img_url ); ?>"
                      alt="<?php the_title_attribute(); ?>"
@@ -153,12 +153,8 @@ $story_button_link   = get_field('our_story_button_link');
               <?php the_title(); ?>
             </h3>
 
-            <?php if ( $subtitle ) : ?>
-              <p class="font-semibold"><?php echo esc_html( $subtitle ); ?></p>
-            <?php endif; ?>
-
             <?php if ( $description ) : ?>
-              <p><?php echo wp_kses_post( nl2br( $description ) ); ?></p>
+              <p class="text-black"><?php echo wp_kses_post( nl2br( $description ) ); ?></p>
             <?php endif; ?>
           </div>
     <?php
