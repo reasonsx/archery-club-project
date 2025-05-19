@@ -7,7 +7,7 @@ $about_us_title = get_field('about_us_title');
 
 <!-- HERO -->
 <section
-  class="h-[90vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center"
+  class="h-[90vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-right pr-20"
   style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');"
 >
 
