@@ -8,16 +8,16 @@ $hero_image = get_field('about_us_hero_image'); // expects full ACF array
 
 <!-- HERO -->
 <section
-  class="h-[50vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center"
+  class="h-[90vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center"
   style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');"
 >
 
   <!-- White circle behind title -->
-  <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-white/40 rounded-full -translate-x-8 -translate-y-6 z-0"></div>
+  <div class="absolute w-72 h-72 md:w-96 md:h-96 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
 
   <!-- Page title -->
   <h1 class="text-black text-center font-extrabold z-10 leading-none
-              text-[10vw] md:text-[8rem] tracking-wide">
+              text-[50vw] md:text-[8rem] tracking-wide">
     ABOUT&nbsp;US
   </h1>
 </section>
