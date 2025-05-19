@@ -1,21 +1,26 @@
 <?php
-/*
-Template Name: About Us
-*/
-get_header(); ?>
+/* Template Name: About-Us */
+get_header();
 
-<main class="max-w-3xl mx-auto px-4 py-10">
-    <div class="prose">
-        <?php while (have_posts()) : the_post(); ?>
-            <?php the_content(); ?>
-        <?php endwhile; ?>
-    </div>
-</main>
+// ACF image field (returns array)
+$hero_image = get_field('about_us_hero_image'); // expects full ACF array
+?>
 
-<section class="h-96 flex justify-center">
-    <h1 class="text-4xl">Hero</h1>
-</section>
 
+<!-- HERO -->
+<section class="relative flex items-end justify-center h-[60vh] bg-no-repeat bg-center bg-cover"
+        style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
+
+  <!-- White translucent circle -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="w-72 h-72 md:w-96 md:h-96 bg-white/40 rounded-full -z-10"></div>
+  </div>
+
+  <!-- Big title -->
+  <h1 class="text-black text-center font-extrabold leading-none uppercase
+             text-[90px] md:text-[150px] lg:text-[200px] drop-shadow-sm z-10">
+    About&nbsp;Us
+  </h1>
 
 <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
