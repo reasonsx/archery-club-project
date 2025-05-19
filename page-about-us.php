@@ -3,6 +3,11 @@
 get_header();
 $hero_image = get_field('about_us_hero_image');
 $about_us_title = get_field('about_us_title');
+$year                = get_field('date');                   
+$story_title         = get_field('our_story_title');        
+$story_text          = get_field('our_story');
+$story_button_text   = get_field('our_story_button_text');
+$story_button_link   = get_field('our_story_button_link'); 
 ?>
 
 <!-- HERO -->
@@ -19,6 +24,40 @@ $about_us_title = get_field('about_us_title');
               text-[6rem] md:text-[8rem] tracking-wide">
               <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
   </h1>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-10 items-start">
+    
+    <!-- BIG YEAR BAR -->
+    <div class="relative">
+      <div class="bg-[#8DB7E1] w-full h-full md:min-h-[400px]"></div>
+      <span class="absolute inset-0 flex items-center justify-center rotate-90 md:rotate-0">
+        <span class="text-[120px] md:text-[140px] font-extrabold leading-none text-black">
+          <?php echo esc_html($year); ?>
+        </span>
+      </span>
+    </div>
+
+    <!-- STORY CONTENT -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        <?php echo esc_html($story_title); ?>
+      </h2>
+
+      <div class="prose max-w-none mb-8">
+        <?php echo wp_kses_post($story_text); ?>
+      </div>
+
+      <?php if ($story_button_text) : ?>
+        <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
+           class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded">
+          <?php echo esc_html($story_button_text); ?>
+        </a>
+      <?php endif; ?>
+    </div>
+
+  </div>
 </section>
 
 
@@ -58,24 +97,6 @@ $about_us_title = get_field('about_us_title');
                     is a member of Archery Denmark.</p>
             </li>
         </ol>
-    </div>
-
-    <div class="flex flex-col justify-start h-screen">
-        <h1>Our story</h1>
-        <p>Sønderborg Archery Guild was founded on May 29, 1954 and is a member of Archery Denmark.
-            <br>
-            <br>
-            The primary focus is target shooting with all bow types:
-            longbows, recurve bows and compound bows.
-            <br>
-            <br>
-            We are a club with room for those who want to shoot for
-            fun and exercise, but also those who want to train to be at
-            an elite level in archery and, for example, become Danish Champion.
-        </p>
-        <button type="button" class="dark">
-            How to join?
-        </button>
     </div>
 </section>
 
