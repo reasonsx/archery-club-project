@@ -111,67 +111,67 @@ $story_button_link   = get_field('our_story_button_link');
     <h1 class="text-4xl">Meet our members</h1>
 </section>
 
-<section class="max-w-screen-lg mx-auto">
-    <div class="mx-auto max-w-screen-xl text-center">
-        <div class="mx-auto mb-8 max-w-screen-sm">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Equipment</h2>
-            <h5 class="text-gray-500">Learn what equipment is needed what it's used for</h5>
-        </div>
+<section class="max-w-screen-lg mx-auto py-16">
+  <div class="text-center">
+    <?php
+      // Optional section heading – can be hard-coded or pulled from ACF
+      echo '<h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">Equipment</h2>';
+    ?>
+  </div>
 
+  <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            <div class="text-center text-gray-500">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                    <img class="w-38 h-38 object-contain rounded-full"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                         alt="Finger Sling">
-                </div>
-                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
-                <p>Mandatory</p>
-                <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
-                    during the shot.</p>
+    <?php
+      // WP_Query for the custom post-type “equipment”
+      $equipment = new WP_Query([
+        'post_type'      => 'equipment',
+        'posts_per_page' => -1,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+      ]);
+
+      if ( $equipment->have_posts() ) :
+        while ( $equipment->have_posts() ) : $equipment->the_post();
+
+          $img          = get_field('equip_image');        // returns array or URL
+          $subtitle     = get_field('equip_subtitle');     // e.g. “Mandatory”
+          $description  = get_field('equip_description');  // textarea / WYSIWYG
+          $img_url      = $img ? ( is_array($img) ? $img['url'] : $img ) : '';
+    ?>
+          <!-- CARD -->
+          <div class="text-center text-gray-500">
+            <!-- blue circle with transparent-bg image -->
+            <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
+              <?php if ( $img_url ) : ?>
+                <img src="<?php echo esc_url( $img_url ); ?>"
+                     alt="<?php the_title_attribute(); ?>"
+                     class="w-38 h-38 object-contain" />
+              <?php endif; ?>
             </div>
 
-            <div class="text-center text-gray-500">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                    <img class="w-38 h-38 object-contain rounded-full"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                         alt="Finger Sling">
-                </div>
-                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
-                <p>Mandatory</p>
-                <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
-                    during the shot.</p>
-            </div>
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
+              <?php the_title(); ?>
+            </h3>
 
-            <div class="text-center text-gray-500">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                    <img class="w-38 h-38 object-contain rounded-full"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                         alt="Finger Sling">
-                </div>
-                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
-                <p>Mandatory</p>
-                <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
-                    during the shot.</p>
-            </div>
+            <?php if ( $subtitle ) : ?>
+              <p class="font-semibold"><?php echo esc_html( $subtitle ); ?></p>
+            <?php endif; ?>
 
-            <div class="text-center text-gray-500">
-                <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-blue-400 flex items-center justify-center">
-                    <img class="w-38 h-38 object-contain rounded-full"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/finger-sling.png"
-                         alt="Finger Sling">
-                </div>
-                <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">Finger Sling</h3>
-                <p>Mandatory</p>
-                <p>Prevents dropping the bow. The index finger and thumb go through loops to keep the bow in place
-                    during the shot.</p>
-            </div>
+            <?php if ( $description ) : ?>
+              <p><?php echo wp_kses_post( nl2br( $description ) ); ?></p>
+            <?php endif; ?>
+          </div>
+    <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+        echo '<p class="col-span-full text-center text-gray-500">No equipment found.</p>';
+      endif;
+    ?>
 
-
-        </div>
-    </div>
+  </div>
 </section>
+
 
 
 <?php get_footer(); ?>
