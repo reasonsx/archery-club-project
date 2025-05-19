@@ -26,35 +26,32 @@ $story_button_link   = get_field('our_story_button_link');
   </h1>
 </section>
 
-<section class="py-16">
-  <div class="flex flex-col md:flex-row max-w-screen-xl mx-auto">
-
-    <!-- BLUE BAR (1/5 of screen, flush left) -->
-    <div class="relative flex-shrink-0 w-full md:w-[20vw]">
-      <!-- full-height blue background -->
-      <div class="absolute inset-0 bg-[#8DB7E1]"></div>
-
-      <!-- YEAR -->
-      <div class="relative h-full flex items-center justify-center md:justify-start md:pl-6">
-        <span class="text-[120px] md:text-[140px] font-extrabold leading-none text-black">
+<section class="max-w-screen-xl mx-auto px-4 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-[20vw_1fr] gap-10 items-start">
+    
+    <!-- BIG YEAR BAR -->
+    <div class="relative md:w-[20vw]">
+      <div class="bg-[#8DB7E1] w-full h-full min-h-[400px]"></div>
+      <span class="absolute inset-0 flex items-center justify-center rotate-90 md:rotate-0">
+        <h1 class="text-[120px] md:text-[140px] font-extrabold leading-none text-black">
           <?php echo esc_html($year); ?>
-        </span>
-      </div>
+        </h1>
+      </span>
     </div>
 
-    <!-- STORY CONTENT (4/5 width) -->
-    <div class="flex-1 px-4 md:px-10 mt-10 md:mt-0">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+    <!-- STORY CONTENT -->
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-6">
         <?php echo esc_html($story_title); ?>
-      </h2>
+      </h1>
 
       <div class="prose max-w-none mb-8">
-        <?php echo wp_kses_post( nl2br($story_text) ); ?>
+        <?php if ($story_text) echo nl2br(esc_html($story_text)); ?>
       </div>
 
       <?php if ($story_button_text) : ?>
         <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-           class="inline-block bg-[#FDD576] hover:bg-[#FCD163] text-black font-semibold px-8 py-3 rounded">
+           class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-3 rounded">
           <?php echo esc_html($story_button_text); ?>
         </a>
       <?php endif; ?>
@@ -62,6 +59,7 @@ $story_button_link   = get_field('our_story_button_link');
 
   </div>
 </section>
+
 
 
 <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
