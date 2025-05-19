@@ -112,7 +112,48 @@ $story_button_link   = get_field('our_story_button_link');
 </section>
 
 <section class="h-96 flex justify-center">
-    <h1>Our core values</h1>
+    <?php
+    /*  Core Values Section  */
+    $post_type      = 'core_value';
+    $type_object    = get_post_type_object( $post_type );
+    $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
+    ?>
+
+<section class="max-w-screen-xl mx-auto px-4 py-20">
+  <!-- Section Heading -->
+  <h2 class="text-4xl md:text-5xl font-extrabold mb-14 text-center md:text-left">
+    <?php echo esc_html( $section_title ); ?>
+  </h2>
+
+  <!-- Values Grid -->
+  <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+    <?php
+      $values = new WP_Query([
+        'post_type'      => $post_type,
+        'posts_per_page' => -1,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+      ]);
+
+      if ( $values->have_posts() ) :
+        while ( $values->have_posts() ) : $values->the_post();
+    ?>
+          <!-- Card -->
+          <div class="relative bg-[#8DB7E1] text-black p-8 md:p-10 min-h-[280px]">
+            <!-- “┐” corner accent -->
+            <span class="absolute top-6 right-6 w-10 h-10 border-t-4 border-r-4 border-black"></span>
+
+            <h3 class="text-2xl font-semibold mb-4"><?php the_title(); ?></h3>
+            <p class="leading-relaxed">  <?php echo wp_kses_post( get_field( 'value_description' ) ); ?></p>
+          </div>
+    <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+        echo '<p class="col-span-full text-center text-gray-500">No core values found.</p>';
+      endif;
+    ?>
+  </div>
 </section>
 
 <section class="h-96 flex justify-center">
