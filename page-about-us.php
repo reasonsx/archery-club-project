@@ -116,7 +116,7 @@ $story_button_link   = get_field('our_story_button_link');
     <h1 class="mb-8"><?php echo esc_html($title); ?></h1>
   <?php endif; ?>
 
-  <div class="bg-[#FDD576] rounded-xl overflow-hidden md:flex">
+  <div class="bg-[#FDD576] h-[70vh] rounded-xl overflow-hidden md:flex">
     <?php if ($image): ?>
       <div class="md:w-1/2">
         <img src="<?php echo esc_url($image['url']); ?>"
@@ -127,13 +127,13 @@ $story_button_link   = get_field('our_story_button_link');
 
     <div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
       <?php if ($story_title): ?>
-        <h3 class="text-xl font-semibold mb-1"><?php echo esc_html($story_title); ?></h3>
+        <h3 class="text-xl text-black font-semibold mb-1"><?php echo esc_html($story_title); ?></h3>
       <?php endif; ?>
       <?php if ($subtitle): ?>
-        <p class="text-sm mb-4"><?php echo esc_html($subtitle); ?></p>
+        <p class="text-sm text-black mb-4"><?php echo esc_html($subtitle); ?></p>
       <?php endif; ?>
       <?php if ($description): ?>
-        <p class="text-base italic">“<?php echo esc_html($description); ?>”</p>
+        <p class="text-base text-black italic">“<?php echo esc_html($description); ?>”</p>
       <?php endif; ?>
     </div>
   </div>
