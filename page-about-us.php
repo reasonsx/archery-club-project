@@ -154,7 +154,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 </section>
 
 <section class="max-w-screen-lg mx-auto py-16">
-    <h1 class="text-center mb-8">
+    <h1 class="mb-8">
      Equipment
     </h1>
 
