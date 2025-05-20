@@ -9,6 +9,7 @@ $story_text          = get_field('our_story');
 $story_button_text   = get_field('our_story_button_text');
 $story_button_link   = get_field('our_story_button_link'); 
 $equipment_title   = get_field('equipment_title');
+$photo_gallery_title   = get_field('photo_gallery_title');
 ?>
 
 <!-- HERO -->
@@ -187,7 +188,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 <!-- PHOTO GALLERY -->
 <section class="max-w-screen-xl mx-auto px-4 py-20">
-  <h1 class="mb-12">Photo Gallery</h1>
+  <h1 class="mb-12"><?php echo esc_html( $photo_gallery_title ); ?></h1>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <?php
