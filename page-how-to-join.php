@@ -156,13 +156,13 @@ get_header(); ?>
   <?php endif;
 
   if ($faqs->have_posts()): ?>
-    <div class="space-y-4 cursor-pointer">
+    <div class="space-y-4">
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
           <button
             @click="open = !open"
             :style="open ? 'background-color: #8DB7E1;' : 'background-color: rgba(141, 183, 225, 0.45);'"
-            class="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300"
+            class="cursor-pointer w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-medium focus:outline-none transition-colors duration-300"
           >
 
             <span><?php echo esc_html(get_field('question')); ?></span>
