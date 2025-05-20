@@ -104,8 +104,41 @@ $story_button_link   = get_field('our_story_button_link');
 
 <!-- MEET OUR MEMBERS -->
 <section class="max-w-screen-xl mx-auto px-4 py-20">
-    <h1 >Meet our members</h1>
+  <?php
+  $title = get_field('members_title');
+  $story_title = get_field('member_story_title');
+  $subtitle = get_field('member_story_subtitle');
+  $description = get_field('member_story_text');
+  $image = get_field('member_story_image');
+  ?>
+
+  <?php if ($title): ?>
+    <h1 class="mb-8"><?php echo esc_html($title); ?></h1>
+  <?php endif; ?>
+
+  <div class="bg-[#FDD576] rounded-xl overflow-hidden md:flex">
+    <?php if ($image): ?>
+      <div class="md:w-1/2">
+        <img src="<?php echo esc_url($image['url']); ?>"
+             alt="<?php echo esc_attr($image['alt']); ?>"
+             class="w-full h-full object-cover">
+      </div>
+    <?php endif; ?>
+
+    <div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
+      <?php if ($story_title): ?>
+        <h3 class="text-xl font-semibold mb-1"><?php echo esc_html($story_title); ?></h3>
+      <?php endif; ?>
+      <?php if ($subtitle): ?>
+        <p class="text-sm mb-4"><?php echo esc_html($subtitle); ?></p>
+      <?php endif; ?>
+      <?php if ($description): ?>
+        <p class="text-base italic">“<?php echo esc_html($description); ?>”</p>
+      <?php endif; ?>
+    </div>
+  </div>
 </section>
+
 
 
 <!-- CORE VALUES -->
