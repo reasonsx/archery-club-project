@@ -153,7 +153,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 <!-- PHOTO GALLERY -->
 <section class="max-w-screen-xl mx-auto px-4 py-20">
-  <h2 class="text-4xl font-extrabold mb-12 text-center">Photo Gallery</h2>
+  <h1 class="mb-12">Photo Gallery</h1>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <?php
