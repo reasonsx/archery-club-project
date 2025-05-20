@@ -10,7 +10,7 @@ $footer_content = get_field('footer_content');
             <div class="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-4">
                 <?php
                 $footer = new WP_Query([
-                    'post_type' => 'benefit',
+                    'post_type' => 'footer',
                     'posts_per_page' => 4,
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
