@@ -210,7 +210,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 
 <!-- EQUIPMENT -->
-<section class="max-w-screen-lg mx-auto py-16">
+<section class="max-w-screen-xl mx-auto px-4 py-20">
     <h1 class="mb-8">
      Equipment
     </h1>
@@ -272,7 +272,7 @@ $description = get_field('archery_guide_description');
 $pdf         = get_field('archery_guide_pdf'); // returns array
 $button_text = get_field('archery_guide_button_text');
 ?>
-<section class="max-w-screen-lg mx-auto py-20 px-4">
+<section class="max-w-screen-xl mx-auto px-4 py-20">
   <h1>
     <?php echo esc_html($title); ?>
   </h1>
