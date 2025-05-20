@@ -183,14 +183,14 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
                 $class .= " col-span-{$span}";
             }
             ?>
-            <div class="<?php echo esc_attr($class); ?>">
+            <div class="<?php echo esc_attr($class); ?> h-[400px]">
                 <?php if ($image) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>"
                          alt="<?php echo esc_attr(get_the_title()); ?>"
-                         class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105" />
+                         class="w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 <?php endif; ?>
 
-                <div class="h-[400px] absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                <div class="absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
                     <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
                     <?php if ($date): ?>
                         <p class="text-sm text-black italic mb-1"><?php echo esc_html($date); ?></p>
