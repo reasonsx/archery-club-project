@@ -169,7 +169,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
         while ( $values->have_posts() ) : $values->the_post();
     ?>
           <!-- Card -->
-          <div class="relative bg-[#8DB7E1] text-black p-8 md:p-10 min-h-[280px]">
+          <div class="relative bg-blue-main text-black p-8 md:p-10 min-h-[280px]">
             <!-- “┐” corner accent -->
             <span class="absolute top-6 right-6 w-10 h-10 border-t-4 border-r-4 border-black"></span>
 
