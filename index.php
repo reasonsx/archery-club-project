@@ -51,7 +51,7 @@ $benefits_title = get_field('benefits_title');
             </div>
 
             <!-- Right: Text content -->
-            <div class="max-w-xl w-1/2 flex flex-col gap-6">
+            <div class="sm:max-w-xl sm:w-1/2 w-full flex flex-col gap-6">
                 <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
