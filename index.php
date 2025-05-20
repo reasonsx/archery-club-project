@@ -42,7 +42,7 @@ $benefits_title = get_field('benefits_title');
         <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col sm:flex-row justify-center">
             <!-- Left: Circle Image -->
-            <div class="flex-shrink-0 w-1/2 aspect-square flex justify-center">
+            <div class="flex-shrink-0 w-full sm:w-1/2 aspect-square flex justify-center">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
@@ -52,7 +52,7 @@ $benefits_title = get_field('benefits_title');
 
             <!-- Right: Text content -->
             <div class="sm:max-w-xl sm:w-1/2 w-full flex flex-col gap-6">
-                <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
+                <h1><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg text-black"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
                    class="inline-block max-w-max cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#fce169] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
