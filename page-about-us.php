@@ -168,7 +168,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
     if ($photos->have_posts()) :
         while ($photos->have_posts()) : $photos->the_post();
             $index++;
-            $image = get_field('photo'); // ACF image field
+            $image = get_field('image'); // ACF image field
             $date = get_field('date'); // ACF date field
             $description = get_field('description'); // ACF description field
 
