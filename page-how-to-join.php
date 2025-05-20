@@ -158,7 +158,7 @@ get_header(); ?>
   if ($faqs->have_posts()): ?>
     <div class="space-y-4">
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
-        <div x-data="{ open: false }" class="cursor-pointer rounded-md overflow-hidden transition-all duration-300">
+        <div x-data="{ open: false }" class=" rounded-md overflow-hidden transition-all duration-300">
           <button
             @click="open = !open"
             :style="open ? 'background-color: #8DB7E1;' : 'background-color: rgba(141, 183, 225, 0.45);'"
