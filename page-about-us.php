@@ -12,7 +12,7 @@ $story_button_link   = get_field('our_story_button_link');
 
 <!-- HERO -->
 <section
-  class="h-[90vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
+  class="h-[80vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
   style="background-image:url('<?php echo esc_url( $hero_image['url'] ); ?>');">
 
   <!-- White circle behind title -->
