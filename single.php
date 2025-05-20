@@ -6,9 +6,9 @@
       <!-- Title -->
       <h1 class="text-4xl font-bold mb-4"><?php the_title(); ?></h1>
 
-      <!-- Date & Author -->
+      <!-- Date  -->
       <p class="text-sm text-gray-500 mb-6">
-        Published on <?php echo get_the_date(); ?> by <?php the_author(); ?>
+        <?php echo get_the_date(); ?>
       </p>
 
       <!-- Featured Image (optional) -->
