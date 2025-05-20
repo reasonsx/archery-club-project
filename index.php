@@ -118,7 +118,7 @@ $benefits_title = get_field('benefits_title');
                                 <div class="mx-auto mb-4 w-40 h-40 flex items-center justify-center overflow-hidden">
                                     <img src="<?php echo esc_url($image['url']); ?>"
                                          alt="<?php echo esc_attr($image['alt']); ?>"
-                                         class="max-w-full max-h-full rounded-full"/>
+                                         class="max-w-full max-h-full"/>
                                 </div>
                             <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">
                                 <?php
