@@ -1,4 +1,4 @@
-<footer class="px-4 pt-4 bg-white sm:px-6 sm:py-8 shadow-inner shadow-gray-200 mt-12">
+<footer class="px-4 pt-4 bg-white sm:p-6 shadow-inner shadow-gray-200 mt-12">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
             <div class="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-4">
