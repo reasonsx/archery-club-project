@@ -10,6 +10,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                'blue-main': '#8DB7E1',
+                'yellow-main': '#FDD576',
             }
         }
     }
