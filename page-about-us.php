@@ -175,19 +175,20 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
             $is_last = ($index === $total);
             $items_in_last_row = $total % 3;
             $is_last_row = ($index > $total - $items_in_last_row);
-            $class = 'relative group aspect-square overflow-hidden';
+           $class = 'relative group aspect-square overflow-hidden';
 
-            // Stretch last item if it's in incomplete last row
-            if ($is_last && $items_in_last_row !== 0) {
-                $span = 3 - $items_in_last_row + 1;
-                $class .= " col-span-{$span}";
-            }
+if ($is_last && $items_in_last_row !== 0 && $items_in_last_row < 3) {
+    // Stretch last image only on medium+ screens
+    $span = 3 - $items_in_last_row + 1;
+    $class .= " md:col-span-{$span}";
+}
+
             ?>
             <div class="<?php echo esc_attr($class); ?> h-[400px]">
                 <?php if ($image) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>"
                          alt="<?php echo esc_attr(get_the_title()); ?>"
-                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                         class="w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 <?php endif; ?>
 
                 <div class="absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
