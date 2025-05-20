@@ -31,7 +31,7 @@ $benefits_title = get_field('benefits_title');
                         <h1 class="text-4xl font-bold drop-shadow-lg"><?php echo esc_html($hero_title); ?></h1>
                         <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
-                           class="cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#FFDF93] font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center"
+                           class="cursor-pointer focus:outline-none text-black bg-[#FDD576] hover:bg-[#FFDC87] font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center"
                         >
                             Join Now
                         </a>
