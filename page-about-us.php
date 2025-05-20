@@ -317,8 +317,7 @@ $button_text = get_field('archery_guide_button_text');
   <?php endif; ?>
 
   <a href="<?php echo esc_url($pdf['url']); ?>"
-     class="w-full md:w-auto block text-center cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition"
-     download>
+     class="w-full md:w-auto block text-center cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
     <?php echo esc_html($button_text ?: 'Download PDF'); ?>
   </a>
 </section>
