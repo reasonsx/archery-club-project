@@ -11,7 +11,7 @@ $story_button_link = get_field('our_story_button_link');
 $equipment_title = get_field('equipment_title');
 $photo_gallery_title = get_field('photo_gallery_title');
 ?>
-
+<section class="flex flex-col gap-24">
 <!-- HERO -->
 <section
         class="h-[48rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
@@ -28,7 +28,7 @@ $photo_gallery_title = get_field('photo_gallery_title');
 </section>
 
 <!-- OUR STORY -->
-<section class="max-w-screen-xl mx-auto px-4 py-16">
+<section class="max-w-screen-xl mx-auto px-4">
     <div class="flex flex-row gap-10 items-start">
 
         <!-- BIG YEAR BAR -->
@@ -104,7 +104,7 @@ $photo_gallery_title = get_field('photo_gallery_title');
 
 
 <!-- MEET OUR MEMBERS -->
-<section class="max-w-screen-xl mx-auto px-4 py-20">
+<section class="max-w-screen-xl mx-auto px-4">
     <?php
     $title = get_field('members_title');
     $story_title = get_field('member_story_title');
@@ -185,7 +185,7 @@ $section_title = $type_object ? $type_object->labels->name : 'Core Values';
 </section>
 
 <!-- PHOTO GALLERY -->
-<section class="max-w-screen-xl mx-auto px-4 py-20">
+<section class="max-w-screen-xl mx-auto px-4">
     <h1 class="mb-12"><?php echo esc_html($photo_gallery_title); ?></h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -242,7 +242,7 @@ $section_title = $type_object ? $type_object->labels->name : 'Core Values';
 
 
 <!-- EQUIPMENT -->
-<section class="max-w-screen-xl mx-auto px-4 py-20">
+<section class="max-w-screen-xl mx-auto px-4">
     <h1 class="mb-8"><?php echo esc_html($equipment_title); ?></h1>
 
     <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -319,5 +319,5 @@ $button_text = get_field('archery_guide_button_text');
     </a>
 </section>
 
-
+</section>
 <?php get_footer(); ?>
