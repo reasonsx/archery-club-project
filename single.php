@@ -4,7 +4,7 @@
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <article class="prose lg:prose-xl max-w-none">
       <!-- Title -->
-      <h1 class="text-4xl font-bold mb-4"><?php the_title(); ?></h1>
+      <h1 class=" mb-4"><?php the_title(); ?></h1>
 
       <!-- Date  -->
       <p class="text-sm text-gray-500 mb-6">
