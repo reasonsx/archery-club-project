@@ -116,7 +116,7 @@ $story_button_link   = get_field('our_story_button_link');
     <h1 class="mb-8"><?php echo esc_html($title); ?></h1>
   <?php endif; ?>
 
-  <div class="bg-[#FDD576] h-[70vh] rounded-xl overflow-hidden md:flex">
+  <div class="bg-[#FDD576] md:h-[70vh] rounded-xl overflow-hidden md:flex">
     <?php if ($image): ?>
       <div class="md:w-1/2">
         <img src="<?php echo esc_url($image['url']); ?>"
