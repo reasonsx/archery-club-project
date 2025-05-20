@@ -25,6 +25,7 @@ $story_button_link   = get_field('our_story_button_link');
   </h1>
 </section>
 
+<!-- OUR STORY -->
 <section class="max-w-screen-xl mx-auto px-4 py-16">
   <div class="flex flex-row gap-10 items-start">
     
@@ -101,17 +102,18 @@ $story_button_link   = get_field('our_story_button_link');
 </section>
 
 
+<!-- MEET OUR MEMBERS -->
 <section class="h-96 flex justify-center">
     <h1 >Meet our members</h1>
 </section>
 
+
+<!-- CORE VALUES -->
 <?php
-/*  Core Values Section  */
 $post_type      = 'core_value';
 $type_object    = get_post_type_object( $post_type );
 $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 ?>
-
 <section class="max-w-screen-xl mx-auto px-4 py-20">
   <!-- Section Heading -->
     <h1 class="mb-8">
@@ -149,10 +151,13 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
   </div>
 </section>
 
+<!-- PHOTO GALLERY -->
 <section class="h-96 flex justify-center">
     <h1>Photo gallery</h1>
 </section>
 
+
+<!-- EQUIPMENT -->
 <section class="max-w-screen-lg mx-auto py-16">
     <h1 class="mb-8">
      Equipment
@@ -207,13 +212,14 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
   </div>
 </section>
 
+
+<!-- ARCHERY GUIDE -->
 <?php
 $title       = get_field('archery_guide_title');
 $description = get_field('archery_guide_description');
 $pdf         = get_field('archery_guide_pdf'); // returns array
 $button_text = get_field('archery_guide_button_text');
 ?>
-
 <section class="max-w-screen-lg mx-auto py-20 px-4">
   <h1>
     <?php echo esc_html($title); ?>
