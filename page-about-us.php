@@ -133,7 +133,7 @@ $story_button_link   = get_field('our_story_button_link');
         <p class="text-sm text-black mb-4"><?php echo esc_html($subtitle); ?></p>
       <?php endif; ?>
       <?php if ($description): ?>
-        <p class="text-base text-black italic">“<?php echo esc_html($description); ?>”</p>
+        <p class="text-base text-black italic">“<?php echo nl2br(esc_html($description)); ?>”</p>
       <?php endif; ?>
     </div>
   </div>
