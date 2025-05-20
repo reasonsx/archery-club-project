@@ -214,14 +214,14 @@ $pdf         = get_field('archery_guide_pdf'); // returns array
 $button_text = get_field('archery_guide_button_text');
 ?>
 
-<section class="max-w-screen-lg mx-auto py-20 px-4 text-center">
-  <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+<section class="max-w-screen-lg mx-auto py-20 px-4">
+  <h1>
     <?php echo esc_html($title); ?>
-  </h2>
+  </h1>
 
   <?php if ($description): ?>
     <p class="mb-8 text-lg text-gray-700">
-      <?php echo esc_html($description); ?>
+        <?php echo nl2br(esc_html($description)); ?>
     </p>
   <?php endif; ?>
 
