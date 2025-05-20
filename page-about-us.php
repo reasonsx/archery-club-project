@@ -41,7 +41,7 @@ $story_button_link   = get_field('our_story_button_link');
 
     <!-- STORY CONTENT -->
     <div>
-      <h1 class="text-3xl md:text-4xl font-bold mb-6">
+      <h1 class="mb-6">
         <?php echo esc_html($story_title); ?>
       </h1>
 
