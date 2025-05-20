@@ -41,11 +41,11 @@ $about_description = get_field('about_description');
         <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-center gap-12 w-full">
             <!-- Left: Circle Image -->
-            <div class="flex-shrink-0 w-1/2 flex justify-center">
+            <div class="flex-shrink-0 w-1/2 aspect-square flex justify-center">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
-                        class="w-full h-auto rounded-full object-cover"
+                        class="w-full h-full rounded-full object-cover"
                 />
             </div>
 
