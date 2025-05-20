@@ -220,7 +220,7 @@ $button_text = get_field('archery_guide_button_text');
   </h1>
 
   <?php if ($description): ?>
-    <p class="mb-8 text-lg text-gray-700">
+    <p class="my-8 text-lg text-gray-700">
         <?php echo nl2br(esc_html($description)); ?>
     </p>
   <?php endif; ?>
