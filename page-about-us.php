@@ -207,6 +207,30 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
   </div>
 </section>
 
+<?php
+$title       = get_field('archery_guide_title');
+$description = get_field('archery_guide_description');
+$pdf         = get_field('archery_guide_pdf'); // returns array
+$button_text = get_field('archery_guide_button_text');
+?>
+
+<section class="max-w-screen-lg mx-auto py-20 px-4 text-center">
+  <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+    <?php echo esc_html($title); ?>
+  </h2>
+
+  <?php if ($description): ?>
+    <p class="mb-8 text-lg text-gray-700">
+      <?php echo esc_html($description); ?>
+    </p>
+  <?php endif; ?>
+
+  <a href="<?php echo esc_url($pdf['url']); ?>"
+     class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-4 rounded hover:bg-[#f4c84e] transition"
+     download>
+    <?php echo esc_html($button_text ?: 'Download PDF'); ?>
+  </a>
+</section>
 
 
 <?php get_footer(); ?>
