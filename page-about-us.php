@@ -190,13 +190,13 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
                          class="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105" />
                 <?php endif; ?>
 
-                <div class="absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                <div class="h-[400px] absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
                     <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
                     <?php if ($date): ?>
-                        <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
+                        <p class="text-sm text-black italic mb-1"><?php echo esc_html($date); ?></p>
                     <?php endif; ?>
                     <?php if ($description): ?>
-                        <p class="text-sm"><?php echo esc_html($description); ?></p>
+                        <p class="text-sm text-black"><?php echo esc_html($description); ?></p>
                     <?php endif; ?>
                 </div>
             </div>
