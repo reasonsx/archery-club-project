@@ -40,7 +40,7 @@ $benefits_title = get_field('benefits_title');
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col sm:flex-row">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col sm:flex-row justify-center">
             <!-- Left: Circle Image -->
             <div class="flex-shrink-0 w-1/2 aspect-square flex justify-center">
                 <img
