@@ -53,7 +53,7 @@ $photo_gallery_title   = get_field('photo_gallery_title');
 
       <?php if ($story_button_text) : ?>
         <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-           class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-3 rounded">
+           class="w-full md:w-auto block text-center cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
           <?php echo esc_html($story_button_text); ?>
         </a>
       <?php endif; ?>
