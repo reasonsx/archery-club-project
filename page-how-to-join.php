@@ -156,7 +156,7 @@ get_header(); ?>
   <?php endif;
 
   if ($faqs->have_posts()): ?>
-    <div class="space-y-4">
+    <div class="space-y-4 cursor-pointer">
       <?php while ($faqs->have_posts()): $faqs->the_post(); ?>
         <div x-data="{ open: false }" class="rounded-md overflow-hidden transition-all duration-300">
           <button
