@@ -14,7 +14,7 @@ $about_description = get_field('about_description');
     <section class="flex flex-col gap-24">
 
         <!-- HERO SECTION -->
-        <section class="relative h-[48rem] w-full overflow-hidden">
+        <section class="relative h-[40rem] w-full overflow-hidden">
             <!-- Background image -->
             <?php if ($hero_image): ?>
                 <img src="<?php echo esc_url($hero_image['url']); ?>"
