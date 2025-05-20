@@ -8,6 +8,7 @@ $story_title         = get_field('our_story_title');
 $story_text          = get_field('our_story');
 $story_button_text   = get_field('our_story_button_text');
 $story_button_link   = get_field('our_story_button_link'); 
+$equipment_title   = get_field('equipment_title');
 ?>
 
 <!-- HERO -->
@@ -244,9 +245,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
 
 <!-- EQUIPMENT -->
 <section class="max-w-screen-xl mx-auto px-4 py-20">
-    <h1 class="mb-8">
-     Equipment
-    </h1>
+    <h1 class="mb-8"><?php echo esc_html($equipment_title); ?></h1>
 
   <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
