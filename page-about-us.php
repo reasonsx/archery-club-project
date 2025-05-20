@@ -175,7 +175,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
             $is_last = ($index === $total);
             $items_in_last_row = $total % 3;
             $is_last_row = ($index > $total - $items_in_last_row);
-            $class = 'relative group aspect-square overflow-hidden';
+            $class = 'relative group overflow-hidden h-[400px]';
 
             // Stretch last item if it's in incomplete last row
             if ($is_last && $items_in_last_row !== 0) {
