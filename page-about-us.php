@@ -175,14 +175,13 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
             $is_last = ($index === $total);
             $items_in_last_row = $total % 3;
             $is_last_row = ($index > $total - $items_in_last_row);
-           $class = 'relative group aspect-square overflow-hidden';
+            $class = 'relative group aspect-square overflow-hidden';
 
-if ($is_last && $items_in_last_row !== 0 && $items_in_last_row < 3) {
-    // Stretch last image only on medium+ screens
-    $span = 3 - $items_in_last_row + 1;
-    $class .= " md:col-span-{$span}";
-}
-
+            // Stretch last item if it's in incomplete last row
+            if ($is_last && $items_in_last_row !== 0) {
+                $span = 3 - $items_in_last_row + 1;
+                $class .= " col-span-{$span}";
+            }
             ?>
             <div class="<?php echo esc_attr($class); ?> h-[400px]">
                 <?php if ($image) : ?>
