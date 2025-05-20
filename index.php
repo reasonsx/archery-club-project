@@ -99,7 +99,6 @@ $benefits_title = get_field('benefits_title');
                 <h1 class="text-gray-900"><?php echo esc_html($benefits_title); ?></h1>
             </div>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
-
                 <?php
                 $benefits = new WP_Query([
                     'post_type' => 'benefit',
@@ -107,7 +106,6 @@ $benefits_title = get_field('benefits_title');
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
                 ]);
-
                 if ($benefits->have_posts()) :
                     while ($benefits->have_posts()) : $benefits->the_post();
                         // Get fields
@@ -115,7 +113,6 @@ $benefits_title = get_field('benefits_title');
                         $title = get_field('benefit_title'); // fallback if you don't want post title
                         $description = get_field('benefit_description');
                         ?>
-
                         <div class="flex flex-col items-center text-center">
                             <?php if ($image) : ?>
                                 <div class="mx-auto mb-4 w-40 h-40 flex items-center justify-center overflow-hidden">
@@ -123,10 +120,6 @@ $benefits_title = get_field('benefits_title');
                                          alt="<?php echo esc_attr($image['alt']); ?>"
                                          class="max-w-full max-h-full rounded-full"/>
                                 </div>
-                            <?php else : ?>
-                                <div class="mx-auto mb-4 w-40 h-40 bg-blue-400 flex items-center justify-center"></div>
-                            <?php endif; ?>
-
                             <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">
                                 <?php
                                 if ($title) {
