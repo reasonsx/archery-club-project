@@ -158,7 +158,7 @@ $section_title  = $type_object ? $type_object->labels->name : 'Core Values';
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <?php
     $photos = new WP_Query([
-        'post_type' => 'photo_gallery',
+        'post_type' => 'photo',
         'posts_per_page' => -1,
     ]);
 
