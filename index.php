@@ -252,21 +252,25 @@ $benefits_title = get_field('benefits_title');
                 <!-- Right column -->
                 <div class="flex flex-col gap-4">
 
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Left: Address -->
+                        <div class="md:w-1/2">
+                            <h5>Address:</h5>
+                            <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
+                        </div>
 
-                    <div>
-                        <h5>Address:</h5>
-                        <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
-                    </div>
+                        <!-- Right: Email & Phone -->
+                        <div class="md:w-1/2 flex flex-col gap-4">
+                            <div>
+                                <h5>Email:</h5>
+                                <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
+                            </div>
 
-                    <div>
-                        <h5>Email:</h5>
-                        <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
-                    </div>
-
-
-                    <div>
-                        <h5>Phone:</h5>
-                        <p>24 60 94 76</p>
+                            <div>
+                                <h5>Phone:</h5>
+                                <p>24 60 94 76</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="w-full aspect-video">
