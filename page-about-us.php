@@ -226,7 +226,7 @@ $button_text = get_field('archery_guide_button_text');
   <?php endif; ?>
 
   <a href="<?php echo esc_url($pdf['url']); ?>"
-     class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-3 rounded">
+     class="inline-block bg-[#FDD576] text-black font-semibold px-8 py-3 rounded"
      download>
     <?php echo esc_html($button_text ?: 'Download PDF'); ?>
   </a>
