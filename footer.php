@@ -1,6 +1,3 @@
-
-
-
 <footer class="bg-white p-10 shadow-inner shadow-gray-200 mt-12">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
