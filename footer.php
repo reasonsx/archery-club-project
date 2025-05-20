@@ -1,7 +1,4 @@
-<?php
-$footer_title = get_field('footer_title');
-$footer_content = get_field('footer_content');
-?>
+
 
 
 <footer class="bg-white p-10 shadow-inner shadow-gray-200 mt-12">
@@ -17,64 +14,21 @@ $footer_content = get_field('footer_content');
                 ]);
 
                 if ($footer->have_posts()) :
-                while ($footer->have_posts()) : $footer->the_post();
-                $footer_title = get_field('footer_title');
-                $footer_content = get_field('footer_content');
-                ?>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase"><?php echo esc_html($footer_title); ?></h2>
-                    <ul class="text-gray-600">
-                        <?php echo wp_kses_post(nl2br($footer_content)); ?>
-                    </ul>
-                </div>
-                <?php
-                endwhile;
+                    while ($footer->have_posts()) : $footer->the_post();
+                        $footer_title = get_field('footer_title');
+                        $footer_content = get_field('footer_content');
+                        ?>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase"><?php echo esc_html($footer_title); ?></h2>
+                            <ul class="text-gray-600">
+                                <?php echo wp_kses_post(nl2br($footer_content)); ?>
+                            </ul>
+                        </div>
+                    <?php
+                    endwhile;
                     wp_reset_postdata();
                 endif;
                 ?>
-
-<!--                <div>-->
-<!--                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Training Places</h3>-->
-<!--                    <ul class="text-gray-600">-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Summer:</span><br><span>Outdoor range at Ingolf Nielsens Vej,<br>6400 Sønderborg</span>-->
-<!--                        </li>-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Winter:</span><br><span>Indoor training at Humlehøjhallen<br>(Stråbjergvej 1, 6400 Sønderborg)</span>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!---->
-<!--                <div>-->
-<!--                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact</h2>-->
-<!--                    <ul class="text-gray-600">-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Phone:</span><br><a href="tel:+4524609476" class="hover:underline">+45 24 60 94 76</a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span>E-mail:</span><br><a href="mailto:formand@s-bl.dk" class="hover:underline">formand@s-bl.dk</a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!---->
-<!--                <div>-->
-<!--                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Pricing</h2>-->
-<!--                    <ul class="text-gray-600">-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Ages 8–17:</span><br><span>500 DKK per 6 months</span>-->
-<!--                        </li>-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Adults (18+):</span><br><span>625 DKK per 6 months</span>-->
-<!--                        </li>-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Equipment rental:</span><br><span>50 DKK per month (Adults only)</span>-->
-<!--                        </li>-->
-<!--                        <li class="mb-4">-->
-<!--                            <span>Introduction Evening:</span><br><span>Free trial session</span>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
