@@ -26,7 +26,7 @@
 
     <!-- Optional: Back to Blog link -->
     <div class="mt-12">
-      <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 inline-block transition text-center">
+      <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>"  class="w-full md:w-auto block text-center cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
         ← Back to Blog
       </a>
     </div>
