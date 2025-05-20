@@ -9,6 +9,7 @@ $hero_description = get_field('hero_description');
 $about_image = get_field('about_image');
 $about_title = get_field('about_title');
 $about_description = get_field('about_description');
+$benefits_title = get_field('benefits_title');
 ?>
 
     <section class="flex flex-col gap-24">
@@ -62,8 +63,6 @@ $about_description = get_field('about_description');
 
         <!-- IMAGES SECTION -->
         <section class="w-full py-12 bg-white">
-            <h2 class="text-center text-4xl mb-8">Images Gallery</h2>
-
             <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -97,7 +96,7 @@ $about_description = get_field('about_description');
         <!-- BENEFITS SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900">Why Join Our Archery Club?</h1>
+                <h1 class="text-gray-900"><?php echo esc_html($benefits_title); ?></h1>
             </div>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
 
