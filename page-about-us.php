@@ -64,40 +64,51 @@ $photo_gallery_title = get_field('photo_gallery_title');
 
 
 <section class="max-w-screen-xl mx-auto h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-
-
     <div>
         <ol class="relative border-s border-gray-200">
-            <li class="mb-10 ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400">January 1, 1900</time>
-                <h3 class="text-lg font-semibold text-gray-900">Title</h3>
-                <p class="mb-4 text-base font-normal text-gray-500">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.</p>
-                <a href="#"
-                   class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">
-                    Learn more
-                    <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                         fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </li>
-            <li class="mb-10 ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400">January 1, 1900</time>
-                <h3 class="text-lg font-semibold text-gray-900">Title</h3>
-                <p class="text-base font-normal text-gray-500">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.</p>
-            </li>
-            <li class="ms-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400">May 29, 1954</time>
-                <h3 class="text-lg font-semibold text-gray-900">Beginning of Sønderborg Archery Guild</h3>
-                <p class="text-base font-normal text-gray-500">Sønderborg Archery Guild was founded on May 29, 1954 and
-                    is a member of Archery Denmark.</p>
-            </li>
+            <?php
+            $timeline_query = new WP_Query([
+                'post_type' => 'timeline',
+                'posts_per_page' => -1,
+                'orderby' => 'meta_value',
+                'meta_key' => 'timeline_date',
+                'order' => 'ASC',
+            ]);
+
+            if ($timeline_query->have_posts()):
+                while ($timeline_query->have_posts()): $timeline_query->the_post();
+                    $timeline_date = get_field('timeline_date');
+                    $timeline_title = get_field('timeline_title');
+                    $timeline_description = get_field('timeline_description');
+                    ?>
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">
+                            <?php echo esc_html($timeline_date); ?>
+                        </time>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            <?php echo esc_html($timeline_title); ?>
+                        </h3>
+                        <p class="mb-4 text-base font-normal text-gray-500">
+                            <?php echo esc_html($timeline_description); ?>
+                        </p>
+                        <a href="<?php the_permalink(); ?>"
+                           class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">
+                            Learn more
+                            <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                 fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </li>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+            else:
+                echo '<p>No timeline events found.</p>';
+            endif;
+            ?>
         </ol>
     </div>
 </section>
