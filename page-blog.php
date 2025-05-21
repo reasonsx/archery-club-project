@@ -3,6 +3,7 @@
 Template Name: Blog Overview
 */
 get_header();
+$title = get_field('blog_page_title');
 ?>
 <section class="h-[50vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center text-white"
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
@@ -11,7 +12,7 @@ get_header();
   <div class="absolute right-[20rem] w-56 h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
-  <h1 class="text-black text-center !text-[150px] md:text-5xl font-bold z-10">ARCHERY <br> MAGAZINE</h1>
+  <h1 class="text-black text-center !text-[150px] md:text-5xl font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
 
 </section>
 
