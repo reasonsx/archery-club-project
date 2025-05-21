@@ -17,7 +17,7 @@ $title = get_field('blog_page_title');
 </section>
 
 
-<section class="max-w-screen-lg mx-auto pt-24 px-4">
+<section class="max-w-screen-lg mx-auto pt-16 sm:pt-24 px-4">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <?php
     $blog_posts = new WP_Query(array(
