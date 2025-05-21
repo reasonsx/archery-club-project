@@ -7,13 +7,6 @@ get_header(); ?>
 <?php $hero_image = get_field('join_hero_image'); ?>
 <?php $hero_title = get_field('join_hero_title'); ?>
 <?php $hero_description = get_field('join_hero_description'); ?>
-<?php $description_top = get_field('description_top'); ?>
-<?php $next_event_text = get_field('next_event_text'); ?>
-<?php $next_event_date = get_field('next_event_date'); ?>
-<?php $following_event_text = get_field('following_event_text'); ?>
-<?php $ready_to_join = get_field('ready_to_join'); ?>
-<?php $sign_up_form_title = get_field('sign_up_form_title'); ?>
-<?php $sign_up_form_description = get_field('sign_up_form_description'); ?>
 <?php $where_and_when_title = get_field('where_and_when_title'); ?>
 <?php $winter_location = get_field('winter_location'); ?>
 <?php $summer_location = get_field('summer_location'); ?>
@@ -49,31 +42,36 @@ get_header(); ?>
 
     </div>
 </section>
-<section class="max-w-screen-lg mx-auto pt-24">
-    <h1 class="mb-5"><?php the_title(); ?></h1>
-    <div class="flex flex-col sm:flex-row gap-5">
-        <div class="flex flex-col w-auto mx-auto w-1/2 text-black">
-            <p class="text-black"><?php if ($description_top) echo wp_kses_post(nl2br($description_top)); ?></p>
-            <div class="flex flex-row my-5 content-center">
-                <p class="text-black  flex items-center"><?php if ($next_event_text) echo wp_kses_post(nl2br($next_event_text)); ?></p>
-                <p class="font-bold text-black bg-[#FDD576] rounded ml-3 px-2 py-1">
-                    <?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?>
-                </p>
-            </div>
-            <p class="text-black mb-3"><?php if ($following_event_text) echo wp_kses_post(nl2br($following_event_text)); ?></p>
-            <p class="text-black"><?php if ($ready_to_join) echo wp_kses_post(nl2br($ready_to_join)); ?></p>
-        </div>
-        <div class="flex flex-col w-xl mx-auto">
-            <h4 class="text-black text-xl"><?php if ($sign_up_form_title) echo wp_kses_post(nl2br($sign_up_form_title)); ?></h4>
-            <div class="flex flex-col mb-2">
-                <?php if ($sign_up_form_description) echo wp_kses_post(nl2br($sign_up_form_description)); ?>
-                <p class="font-bold text-black ml-2"><?php if ($next_event_date) echo wp_kses_post(nl2br($next_event_date)); ?></p>
-            </div>
-            <?php echo do_shortcode('[contact-form-7 id="0d13222" title="Sign up for the introductory evening" html_class="signup-intro-form"]'); ?>
-        </div>
-    </div>
+<section class="max-w-screen-xl mx-auto px-4 py-20">
+  <h2 class="text-4xl font-bold mb-4"><?php the_field('how_to_join_title'); ?></h2>
+  <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
 
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <?php
+    $steps = new WP_Query([
+        'post_type' => 'how_to_join_step',
+        'posts_per_page' => -1,
+        'orderby' => 'title',
+        'order' => 'ASC',
+    ]);
 
+    if ($steps->have_posts()) :
+        while ($steps->have_posts()) : $steps->the_post();
+            $step_title = get_field('step_title');
+            $step_description = get_field('step_description');
+            ?>
+            <div>
+                <div class="inline-block bg-yellow-400 text-black px-3 py-1 font-semibold mb-2">
+                    <?php echo esc_html(get_the_title()); ?>
+                </div>
+                <h3 class="text-xl font-semibold mb-2"><?php echo esc_html($step_title); ?></h3>
+                <p class="text-gray-800"><?php echo esc_html($step_description); ?></p>
+            </div>
+        <?php endwhile;
+        wp_reset_postdata();
+    endif;
+    ?>
+  </div>
 </section>
 
 <section class="max-w-screen-lg mx-auto pt-24">
