@@ -23,6 +23,6 @@ function add_adobe_fonts() {
 add_action('wp_enqueue_scripts', 'add_adobe_fonts');
 
 if (function_exists('pll_register_string')) {
-    pll_register_string('Read More Button Label', 'Read more');
-    pll_register_string('Back to Blog Button Label', ' ← Back to Blog');
+    pll_register_string('Read More Button Label', 'Read more', 'Theme Strings');
+    pll_register_string('Back to Blog Button Label', '← Back to Blog', 'Theme Strings');
 }
