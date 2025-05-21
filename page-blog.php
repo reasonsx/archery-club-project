@@ -5,11 +5,11 @@ Template Name: Blog Overview
 get_header();
 $title = get_field('blog_page_title');
 ?>
-<section class="h-[10rem] sm:h-[20vh] md:h-[40vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center text-white"
+<section class="h-[12rem] sm:h-[25vh] md:h-[40vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center text-white"
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
   <!-- Blue circle behind text -->
-  <div class="absolute right-[20rem] w-40 h-40 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
+  <div class="absolute right-[20rem] w-36 h-36 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
   <h1 class="text-black text-center max-sm:text-4xl sm:text-6xl md:text-[80px] lg:text-[100px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
