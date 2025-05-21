@@ -54,8 +54,7 @@
                 </a>
                 </li>
                 </li>
-                <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-400">How
-                        to join</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-400">Join us</a></li>
                 <li><a href="<?php echo home_url('/#contact'); ?>" class="hover:text-blue-400">Contact</a></li>
             </ul>
         </div>
