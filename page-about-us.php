@@ -10,6 +10,7 @@ $story_button_text = get_field('our_story_button_text');
 $story_button_link = get_field('our_story_button_link');
 $equipment_title = get_field('equipment_title');
 $photo_gallery_title = get_field('photo_gallery_title');
+$timeline_image = get_field('timeline_image');
 ?>
 <section class="flex flex-col gap-24">
 <!-- HERO -->
@@ -106,13 +107,11 @@ $photo_gallery_title = get_field('photo_gallery_title');
     <!-- MEET OUR MEMBERS -->
     <section class="max-w-screen-xl mx-auto px-4">
         <div class="bg-[#FDD576] md:h-[70vh] rounded-xl overflow-hidden md:flex">
-            <?php if ($image): ?>
                 <div class="md:w-1/2">
-                    <img src="<?php echo esc_url($image['url']); ?>"
-                         alt="<?php echo esc_attr($image['alt']); ?>"
+                    <img src="<?php echo esc_url($timeline_image['url']); ?>"
+                         alt="<?php echo esc_attr($timeline_image['alt']); ?>"
                          class="w-full h-full object-cover">
                 </div>
-            <?php endif; ?>
             <div>
                 <ol class="relative border-s border-gray-200">
                     <?php
