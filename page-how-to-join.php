@@ -43,8 +43,8 @@ get_header(); ?>
     </div>
 </section>
 <section class="max-w-screen-xl mx-auto px-4 py-20">
-  <h2 class="text-4xl font-bold mb-4"><?php the_field('how_to_join_title'); ?></h2>
-  <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
+  <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
+  <p class="mb-12 text-lg text-black"><?php the_field('how_to_join_description'); ?></p>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <?php
@@ -61,7 +61,7 @@ get_header(); ?>
             $step_description = get_field('step_description');
             ?>
             <div>
-                <div class="inline-block bg-yellow-400 text-black px-3 py-1 font-semibold mb-2">
+                <div class="inline-block bg-[#FDD576] rounded-md text-black px-3 py-1 font-semibold mb-2">
                     <?php echo esc_html(get_the_title()); ?>
                 </div>
                 <h3 class="text-xl font-semibold mb-2"><?php echo esc_html($step_title); ?></h3>
