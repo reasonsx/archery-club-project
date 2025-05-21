@@ -65,7 +65,7 @@ $timeline_image = get_field('timeline_image');
     
     <!-- TIMELINE -->
     <section class="max-w-screen-xl mx-auto px-4 py-12">
-        <div class="bg-[#FDD576] rounded-xl overflow-hidden md:flex h-full min-h-[500px]">
+        <div class="bg-[#8DB7E1] rounded-xl overflow-hidden md:flex h-full min-h-[500px]">
             <!-- Left Image -->
             <div class="md:w-1/2 h-[400px] md:h-auto">
                 <img src="<?php echo esc_url($timeline_image['url']); ?>"
@@ -92,7 +92,7 @@ $timeline_image = get_field('timeline_image');
                             $timeline_description = get_field('timeline_description');
                             ?>
                             <li class="mb-10 ms-4">
-                                <div class="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                                <div class="absolute w-3 h-3 bg-[#8DB7E1] rounded-full mt-1.5 -start-1.5 border border-white"></div>
                                 <time class="mb-1 text-sm font-normal leading-none text-gray-900">
                                     <?php echo esc_html($timeline_date); ?>
                                 </time>
