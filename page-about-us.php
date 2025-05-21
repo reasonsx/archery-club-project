@@ -70,7 +70,7 @@ $timeline_image = get_field('timeline_image');
                          alt="<?php echo esc_attr($timeline_image['alt']); ?>"
                          class="w-full h-full object-cover">
                 </div>
-            <div>
+            <div class="md:w-1/2 px-8">
                 <ol class="relative border-s border-white">
                     <?php
                     $timeline_query = new WP_Query([
