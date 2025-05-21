@@ -103,6 +103,56 @@ $photo_gallery_title = get_field('photo_gallery_title');
         </ol>
     </div>
 </section>
+    <!-- MEET OUR MEMBERS -->
+    <section class="max-w-screen-xl mx-auto px-4">
+        <div class="bg-[#FDD576] md:h-[70vh] rounded-xl overflow-hidden md:flex">
+            <?php if ($image): ?>
+                <div class="md:w-1/2">
+                    <img src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>"
+                         class="w-full h-full object-cover">
+                </div>
+            <?php endif; ?>
+            <div>
+                <ol class="relative border-s border-gray-200">
+                    <?php
+                    $timeline_query = new WP_Query([
+                        'post_type' => 'timeline',
+                        'posts_per_page' => -1,
+                        'orderby' => 'meta_value',
+                        'meta_key' => 'timeline_date',
+                        'order' => 'ASC',
+                    ]);
+
+                    if ($timeline_query->have_posts()):
+                        while ($timeline_query->have_posts()): $timeline_query->the_post();
+                            $timeline_date = get_field('timeline_date');
+                            $timeline_title = get_field('timeline_title');
+                            $timeline_description = get_field('timeline_description');
+                            ?>
+                            <li class="mb-10 ms-4">
+                                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                                <time class="mb-1 text-sm font-normal leading-none text-gray-400">
+                                    <?php echo esc_html($timeline_date); ?>
+                                </time>
+                                <h3 class="text-lg font-semibold text-gray-900">
+                                    <?php echo esc_html($timeline_title); ?>
+                                </h3>
+                                <p class="mb-4 text-base font-normal text-gray-500">
+                                    <?php echo wp_kses_post(nl2br($timeline_description)); ?>
+                                </p>
+                            </li>
+                        <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    else:
+                        echo '<p>No timeline events found.</p>';
+                    endif;
+                    ?>
+                </ol>
+            </div>
+        </div>
+    </section>
 
 
 <!-- MEET OUR MEMBERS -->
