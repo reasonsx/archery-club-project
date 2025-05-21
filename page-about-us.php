@@ -71,7 +71,7 @@ $timeline_image = get_field('timeline_image');
                          class="w-full h-full object-cover">
                 </div>
             <div>
-                <ol class="relative border-s border-gray-200">
+                <ol class="relative border-s border-gray-900">
                     <?php
                     $timeline_query = new WP_Query([
                         'post_type' => 'timeline',
@@ -88,14 +88,14 @@ $timeline_image = get_field('timeline_image');
                             $timeline_description = get_field('timeline_description');
                             ?>
                             <li class="mb-10 ms-4">
-                                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                                <time class="mb-1 text-sm font-normal leading-none text-gray-400">
+                                <div class="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                                <time class="mb-1 text-sm font-normal leading-none text-gray-900">
                                     <?php echo esc_html($timeline_date); ?>
                                 </time>
                                 <h3 class="text-lg font-semibold text-gray-900">
                                     <?php echo esc_html($timeline_title); ?>
                                 </h3>
-                                <p class="mb-4 text-base font-normal text-gray-500">
+                                <p class="mb-4 text-base font-normal text-gray-900">
                                     <?php echo wp_kses_post(nl2br($timeline_description)); ?>
                                 </p>
                             </li>
