@@ -84,13 +84,13 @@ $timeline_image = get_field('timeline_image');
                     ?>
                     <li class="mb-10 ms-4">
                         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-900">
                             <?php echo esc_html($timeline_date); ?>
                         </time>
                         <h3 class="text-lg font-semibold text-gray-900">
                             <?php echo esc_html($timeline_title); ?>
                         </h3>
-                        <p class="mb-4 text-base font-normal text-gray-500">
+                        <p class="mb-4 text-base font-normal text-gray-900">
                             <?php echo wp_kses_post(nl2br($timeline_description)); ?>
                         </p>
                     </li>
@@ -104,6 +104,8 @@ $timeline_image = get_field('timeline_image');
         </ol>
     </div>
 </section>
+
+
     <!-- MEET OUR MEMBERS -->
     <section class="max-w-screen-xl mx-auto px-4">
         <div class="bg-[#FDD576] md:h-[70vh] rounded-xl overflow-hidden md:flex">
