@@ -21,3 +21,7 @@ function add_adobe_fonts() {
     wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/egv6raj.css', false);
 }
 add_action('wp_enqueue_scripts', 'add_adobe_fonts');
+
+if (function_exists('pll_register_string')) {
+    pll_register_string('Read More Label', 'Read more', 'Theme Strings');
+}

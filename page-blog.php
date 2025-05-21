@@ -46,7 +46,7 @@ $title = get_field('blog_page_title');
             </div>
 
             <a href="<?php the_permalink(); ?>" class="cursor-pointer inline-flex items-end mt-4 text-black hover:text-white font-semibold">
-                Read more
+                <?php echo pll__('Read more'); ?>
               <svg class="ml-2 w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" >
                 <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
