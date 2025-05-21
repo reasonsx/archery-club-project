@@ -38,7 +38,7 @@ get_header();
           <?php endif; ?>
 
           <!-- Blue Bottom Half -->
-          <div class="bg-[#8DB7E1] text-black p-6 flex flex-col justify-between h-48">
+          <div class="bg-[#8DB7E1] text-black p-6 flex flex-col justify-between h-fit">
             <div>
               <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
               <p class="text-sm text-black line-clamp-3"><?php echo get_the_excerpt(); ?></p>
