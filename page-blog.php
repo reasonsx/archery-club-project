@@ -27,7 +27,7 @@ get_header();
 
     if ($blog_posts->have_posts()):
       while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-        <article class="rounded-lg overflow-hidden cursor-pointer group">
+        <article class="rounded-lg overflow-hidden group">
           <!-- Image Top Half -->
           <?php if (has_post_thumbnail()): ?>
             <div class="h-48 overflow-hidden">
@@ -38,13 +38,13 @@ get_header();
           <?php endif; ?>
 
           <!-- Blue Bottom Half -->
-          <div class="bg-[#8DB7E1] text-black p-6 flex flex-col justify-between h-56">
+          <div class="bg-[#8DB7E1] text-black p-6 flex flex-col justify-between h-full">
             <div>
               <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
               <p class="text-sm text-black line-clamp-3"><?php echo get_the_excerpt(); ?></p>
             </div>
 
-            <a href="<?php the_permalink(); ?>" class="inline-flex items-end mt-4 text-black hover:text-white font-semibold">
+            <a href="<?php the_permalink(); ?>" class="cursor-pointer inline-flex items-end mt-4 text-black hover:text-white font-semibold">
                 Read more
               <svg class="ml-2 w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" >
                 <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
