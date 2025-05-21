@@ -65,7 +65,7 @@ get_header(); ?>
                     <?php echo esc_html(get_the_title()); ?>
                 </div>
                 <h3 class="text-xl font-semibold mb-2"><?php echo esc_html($step_title); ?></h3>
-                <p class="text-gray-800"><?php echo esc_html($step_description); ?></p>
+                <p class="text-gray-800"><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
             </div>
         <?php endwhile;
         wp_reset_postdata();
