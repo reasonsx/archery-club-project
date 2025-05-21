@@ -9,10 +9,10 @@ $title = get_field('blog_page_title');
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
   <!-- Blue circle behind text -->
-  <div class="absolute right-[20rem] w-32 h-32 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
+  <div class="absolute right-[20rem] w-40 h-40 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
-  <h1 class="text-black text-center max-sm:text-5xl sm:text-8xl md:text-[120px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
+  <h1 class="text-black text-center max-sm:text-6xl sm:text-8xl md:text-[120px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
 
 </section>
 
