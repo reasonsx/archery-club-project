@@ -12,7 +12,7 @@ $title = get_field('blog_page_title');
   <div class="absolute right-[20rem] w-40 h-40 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
-  <h1 class="text-black text-center max-sm:text-4xl sm:text-6xl md:text-[100px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
+  <h1 class="text-black text-center max-sm:text-4xl sm:text-6xl md:text-[80px] lg:text-[100px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
 
 </section>
 
