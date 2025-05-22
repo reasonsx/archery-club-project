@@ -27,7 +27,7 @@ $benefits_title = get_field('benefits_title');
             <!-- Overlay content -->
             <div class="relative z-10 h-full flex items-center">
                 <div class="max-w-screen-lg mx-auto w-full">
-                    <div class="p-4 sm:p-0md:w-1/2 w-full space-y-6 text-white">
+                    <div class="p-4 flex sm:p-0 md:w-1/2 w-full space-y-6 text-white">
                         <h1 class="text-4xl font-bold drop-shadow-lg"><?php echo esc_html($hero_title); ?></h1>
                         <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
