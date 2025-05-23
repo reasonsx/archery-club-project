@@ -30,7 +30,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
             <!-- Overlay content -->
             <div class="relative z-10 h-full flex items-center">
                 <div class="max-w-screen-lg mx-auto w-full">
-                    <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6 text-white">
+                    <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
                         <h1 class="text-4xl font-bold drop-shadow-lg mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                         <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                         <div class="w-32">
@@ -70,7 +70,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
         <!-- BENEFITS SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900"><?php echo esc_html($benefits_title); ?></h1>
+                <h1><?php echo esc_html($benefits_title); ?></h1>
             </div>
             <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
                 <?php
@@ -98,7 +98,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                 <div class="mx-auto mb-4 w-40 h-40 bg-blue-400 flex items-center justify-center"></div>
                             <?php endif; ?>
 
-                            <h3 class="mb-1 text-2xl font-bold text-gray-900 h-16 flex items-center justify-center">
+                            <h3 class="mb-1 text-2xl font-bold h-16 flex items-center justify-center">
                                 <?php
                                 if ($title) {
                                     echo esc_html($title);
@@ -160,7 +160,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
 
-                            <div class="absolute inset-0 bg-[#FDD576] text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
                                 <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
                                     <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
@@ -180,7 +180,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900"><?php echo esc_html($blog_shortcuts_title); ?></h1>
+                <h1><?php echo esc_html($blog_shortcuts_title); ?></h1>
             </div>
             <div class="grid gap-8 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
                 <?php
@@ -205,7 +205,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                 <a href="<?php the_permalink(); ?>">
                                     <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
                                 </a>
-                                <p class="mb-4 font-normal text-gray-900 flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
+                                <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
                                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
                                     Read more
@@ -232,7 +232,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
 
         <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
             <div class="mx-auto mb-8 max-w-screen-sm text-center">
-                <h1 class="mb-4 text-gray-900"><?php echo esc_html($contact_us_title); ?></h1>
+                <h1 class="mb-4"><?php echo esc_html($contact_us_title); ?></h1>
             </div>
             <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
                 <!-- Left column -->
