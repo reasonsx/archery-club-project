@@ -11,6 +11,7 @@ $story_button_link = get_field('our_story_button_link');
 $equipment_title = get_field('equipment_title');
 $timeline_image = get_field('timeline_image');
 $timeline_title = get_field('timeline_title');
+$bows_title = get_field('bows_title');
 ?>
 <section class="flex flex-col gap-24">
     <!-- HERO -->
@@ -196,7 +197,7 @@ $timeline_title = get_field('timeline_title');
     <section class="w-full h-auto bg-[#8DB7E1] py-12">
         <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-12 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="mb-6">What types of bows we use?</h1>
+                <h1><?php echo esc_html($bows_title); ?></h1>
             </div>
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
