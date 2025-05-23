@@ -125,7 +125,7 @@ $timeline_image = get_field('timeline_image');
             <h1><?php echo esc_html($title); ?></h1>
         <?php endif; ?>
 
-        <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex">
+        <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex rounded-xl">
             <?php if ($image): ?>
                 <div class="md:w-1/2">
                     <img src="<?php echo esc_url($image['url']); ?>"
