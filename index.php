@@ -19,7 +19,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
 
         <!-- HERO SECTION -->
         <div class="bg-white">
-            <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2400px]">
+            <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
                 <!-- Background image -->
                 <?php if ($hero_image): ?>
                     <img src="<?php echo esc_url($hero_image['url']); ?>"
