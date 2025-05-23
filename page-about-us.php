@@ -53,7 +53,7 @@ $timeline_image = get_field('timeline_image');
 
                 <?php if ($story_button_text) : ?>
                     <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-                       class=" text-center cursor-pointer focus:outline-none bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                       class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                         <?php echo esc_html($story_button_text); ?>
                     </a>
                 <?php endif; ?>
@@ -315,7 +315,7 @@ $timeline_image = get_field('timeline_image');
         <?php endif; ?>
 
         <a href="<?php echo esc_url($pdf['url']); ?>"
-           class=" text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+           class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
