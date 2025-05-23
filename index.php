@@ -69,11 +69,11 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
         </section>
 
         <!-- BENEFITS SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-12 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($benefits_title); ?></h1>
             </div>
-            <div class="grid gap-6 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="grid gap-6 lg:gap-12 sm:grid-cols-2 lg:grid-cols-4">
                 <?php
                 $benefits = new WP_Query([
                     'post_type' => 'benefit',
