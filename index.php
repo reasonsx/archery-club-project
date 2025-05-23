@@ -229,9 +229,10 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
         </section>
 
 <section id="contact"></section>
-        <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0 gap-12">
+        <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0 flex flex-col gap-12">
+
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="mb-4"><?php echo esc_html($contact_us_title); ?></h1>
+                <h1><?php echo esc_html($contact_us_title); ?></h1>
             </div>
             <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
                 <!-- Left column -->
