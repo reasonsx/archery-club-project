@@ -28,13 +28,14 @@ $timeline_image = get_field('timeline_image');
     </section>
 
     <!-- OUR STORY -->
-    <section class="max-w-screen-xl mx-auto px-4">
+    <section class="max-w-screen-xl mx-auto px-4 h-auto">
         <div class="flex flex-row gap-8 items-start">
 
             <!-- BIG YEAR BAR -->
             <div class="relative md:w-[20vw] hidden md:block">
                 <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
-                <span class="absolute inset-0 flex items-center justify-center rotate-270"><h1 class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
+                <span class="absolute inset-0 flex items-center justify-center rotate-270"><h1
+                            class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
             </div>
 
             <!-- STORY CONTENT -->
@@ -54,7 +55,6 @@ $timeline_image = get_field('timeline_image');
                     </a>
                 <?php endif; ?>
             </div>
-
         </div>
     </section>
 
@@ -301,7 +301,8 @@ $timeline_image = get_field('timeline_image');
             <p class="my-8 text-lg"><?php echo nl2br(esc_html($description)); ?></p>
         <?php endif; ?>
 
-        <a href="<?php echo esc_url($pdf['url']); ?>" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
+        <a href="<?php echo esc_url($pdf['url']); ?>"
+           class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
