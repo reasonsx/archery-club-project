@@ -12,7 +12,7 @@ $title = get_field('blog_page_title');
   <div class="absolute right-[20rem] w-32 h-32 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
   <!-- Text on top -->
-  <h1 class="text-black text-center max-sm:text-4xl sm:text-6xl md:text-[80px] lg:text-[100px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
+  <h1 class="text-gray-900 text-center max-sm:text-4xl sm:text-6xl md:text-[80px] lg:text-[100px] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
 
 </section>
 
@@ -39,13 +39,13 @@ $title = get_field('blog_page_title');
           <?php endif; ?>
 
           <!-- Blue Bottom Half -->
-          <div class="bg-[#8DB7E1] text-black p-6 flex flex-col justify-between h-56">
+          <div class="bg-[#8DB7E1] p-6 flex flex-col justify-between h-56">
             <div>
               <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
-              <p class="text-sm text-black line-clamp-3"><?php echo get_the_excerpt(); ?></p>
+              <p class="text-sm line-clamp-3"><?php echo get_the_excerpt(); ?></p>
             </div>
 
-            <a href="<?php the_permalink(); ?>" class="cursor-pointer inline-flex items-end mt-4 text-black hover:text-white font-semibold">
+            <a href="<?php the_permalink(); ?>" class="cursor-pointer inline-flex items-end mt-4 text-gray-900 hover:text-white font-semibold">
                 <?php echo pll__('Read more'); ?>
               <svg class="ml-2 w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" >
                 <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
