@@ -242,7 +242,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <!-- Right column -->
                 <div class="flex flex-col gap-4">
 
-                    <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex flex-col md:flex-row gap-8">
                         <!-- Left: Address -->
                         <div class="md:w-1/2">
                             <h5>Address:</h5>
