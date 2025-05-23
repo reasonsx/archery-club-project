@@ -36,7 +36,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                             <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                             <div class="w-32">
                                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
-                                   class="text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                                   class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                                     Join Now
                                 </a>
                             </div>
