@@ -30,9 +30,12 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center">© 1954 - 2025 <a href="<?php echo home_url(); ?>"
-                                                                                class="hover:underline">Sønderborg Bueskyttelaug</a></span>
-   
+    <span class="text-sm text-gray-500 sm:text-center">
+        © 1954 - <?php echo date('Y'); ?>
+        <a href="<?php echo home_url(); ?>" class="hover:underline">
+            Sønderborg Bueskyttelaug
+        </a>
+    </span>
         </div>
     </div>
 </footer>
