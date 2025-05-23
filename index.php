@@ -176,7 +176,7 @@ $contact_us_title = get_field('contact_us_title');
             </div>
         </section>
 
-        <section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1 class="text-gray-900">Learn more about archery</h1>
             </div>
