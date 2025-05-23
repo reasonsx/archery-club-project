@@ -208,7 +208,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                 </a>
                                 <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
-                                   class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
+                                   class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                                     Read more
                                     <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg"
