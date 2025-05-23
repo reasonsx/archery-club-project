@@ -44,7 +44,7 @@ get_header(); ?>
 </section>
 <section class="max-w-screen-xl mx-auto px-4 py-20">
   <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
-  <p class="mb-12 text-lg text-black"><?php the_field('how_to_join_description'); ?></p>
+  <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <?php
@@ -61,11 +61,11 @@ get_header(); ?>
             $step_description = get_field('step_description');
             ?>
             <div>
-                <div class="inline-block bg-[#FDD576] rounded-md text-black px-3 py-1 font-semibold mb-2">
+                <div class="inline-block bg-[#FDD576] rounded-md px-3 py-1 font-semibold mb-2">
                     <?php echo esc_html(get_the_title()); ?>
                 </div>
                 <h3 class="text-xl font-semibold mb-2"><?php echo esc_html($step_title); ?></h3>
-                <p class="text-gray-800"><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
+                <p><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
             </div>
         <?php endwhile;
         wp_reset_postdata();
@@ -84,16 +84,16 @@ get_header(); ?>
         />
 
         <div class="flex flex-col gap-3">
-            <p class="text-black"><?php if ($winter_location) echo wp_kses_post(nl2br($winter_location)); ?></p>
-            <p class="text-black"><?php if ($summer_location) echo wp_kses_post(nl2br($summer_location)); ?></p>
-            <p class="text-black"><?php if ($training_times) echo wp_kses_post(nl2br($training_times)); ?></p>
+            <p><?php if ($winter_location) echo wp_kses_post(nl2br($winter_location)); ?></p>
+            <p><?php if ($summer_location) echo wp_kses_post(nl2br($summer_location)); ?></p>
+            <p><?php if ($training_times) echo wp_kses_post(nl2br($training_times)); ?></p>
         </div>
     </div>
 </section>
 
 <section class="max-w-screen-xl mx-auto pt-24">
     <h1 class="text-3xl font-bold mb-6">
-        <p class="text-black"><?php if ($pricing_title) echo wp_kses_post(nl2br($pricing_title)); ?></p>
+        <p><?php if ($pricing_title) echo wp_kses_post(nl2br($pricing_title)); ?></p>
     </h1>
     <?php
     $pricing_posts = new WP_Query(array(
@@ -117,7 +117,7 @@ get_header(); ?>
                 <div class="flex justify-between items-end py-3 px-3 border-b border-black <?php echo $row_class; ?>">
                     <div class="text-xl">
                         <span class="uppercase text-5xl"><?php the_title(); ?></span>
-                        <span class="text-sm text-gray-700 ml-2"><?php echo esc_html($age_range); ?></span>
+                        <span class="text-sm text-gray-900 ml-2"><?php echo esc_html($age_range); ?></span>
                     </div>
                     <div class="text-right text-md font-semibold">
                         <?php echo esc_html($price); ?>
@@ -127,10 +127,10 @@ get_header(); ?>
             wp_reset_postdata(); ?>
         </div>
     <?php else: ?>
-        <p class="text-center text-gray-500">No pricing info found.</p>
+        <p class="text-center text-gray-900">No pricing info found.</p>
     <?php endif; ?>
 
-    <p class="text-sm mt-4 font-medium text-black">
+    <p class="text-sm mt-4 font-medium">
         <?php echo wp_kses_post(nl2br((get_field('equipment_rental')))); ?>
     </p>
 
@@ -179,7 +179,7 @@ get_header(); ?>
                             x-transition:leave="transition-all ease-in duration-200"
                             x-transition:leave-start="opacity-100 max-h-[1000px]"
                             x-transition:leave-end="opacity-0 max-h-0"
-                            class="px-6 py-4 text-black text-sm overflow-hidden"
+                            class="px-6 py-4 text-sm overflow-hidden"
                             style="background-color: #8DB7E1"
                             x-cloak
                     >
@@ -192,7 +192,7 @@ get_header(); ?>
             wp_reset_postdata(); ?>
         </div>
     <?php else: ?>
-        <p class="text-center text-gray-500">Ingen spørgsmål fundet.</p>
+        <p class="text-center">Ingen spørgsmål fundet.</p>
     <?php endif; ?>
 </section>
 
