@@ -13,6 +13,8 @@ $benefits_title = get_field('benefits_title');
 $photo_gallery_title = get_field('photo_gallery_title');
 $contact_us_title = get_field('contact_us_title');
 $blog_shortcuts_title = get_field('blog_shortcuts_title');
+$address = get_field('address');
+$phone_and_email = get_field('phone_and_email');
 ?>
 
     <section class="flex flex-col gap-24">
@@ -246,21 +248,12 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                     <div class="flex flex-col md:flex-row gap-6">
                         <!-- Left: Address -->
                         <div class="md:w-1/2">
-                            <h5>Address:</h5>
-                            <p>Ingolf Nielsens Vej, 6400 Sønderborg</p>
+                            <p><?php echo wp_kses_post(nl2br($address)); ?></p>
                         </div>
 
                         <!-- Right: Email & Phone -->
                         <div class="md:w-1/2 flex flex-col gap-6">
-                            <div>
-                                <h5>Email:</h5>
-                                <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
-                            </div>
-
-                            <div>
-                                <h5>Phone:</h5>
-                                <p>24 60 94 76</p>
-                            </div>
+                            <p><?php echo wp_kses_post(nl2br($phone_and_email)); ?></p>
                         </div>
                     </div>
 
