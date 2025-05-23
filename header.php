@@ -26,19 +26,30 @@
         <!-- Center: Main Navigation (Desktop only) -->
         <div class="hidden lg:flex lg:gap-x-12">
             <ul class="flex flex-row space-x-8 font-medium text-gray-900">
-                <li><a href="<?php echo home_url(); ?>" class="hover:text-blue-400">Home</a></li>
-                <li><a href="<?php echo get_permalink(get_page_by_path('about-us')); ?>" class="hover:text-blue-400">About
-                        us</a></li>
-                        <li>
-                <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="hover:text-blue-400">
-                    Blog
-                </a>
+                <li><a href="<?php echo esc_url(home_url()); ?>" class="hover:text-blue-400">Home</a></li>
+                <li>
+                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('about-us')->ID))); ?>" class="hover:text-blue-400">
+                        About us
+                    </a>
                 </li>
+                <li>
+                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('blog')->ID))); ?>" class="hover:text-blue-400">
+                        Blog
+                    </a>
                 </li>
-                <li><a href="<?php echo get_permalink(get_page_by_path('how-to-join')); ?>" class="hover:text-blue-400">Join us</a></li>
-                <li><a href="<?php echo home_url('/#contact'); ?>" class="hover:text-blue-400">Contact</a></li>
+                <li>
+                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('how-to-join')->ID))); ?>" class="hover:text-blue-400">
+                        Join us
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="hover:text-blue-400">
+                        Contact
+                    </a>
+                </li>
             </ul>
         </div>
+
 
         <!-- Language Switcher -->
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
