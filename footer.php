@@ -30,7 +30,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
         <div class="sm:flex sm:items-center sm:justify-between">
-    <span class="text-sm text-gray-500 sm:text-center">
+    <span class="text-sm text-gray-900 sm:text-center">
         <!-- Static start year and dynamic current year using PHP -->
         © 1954 - <?php echo date('Y'); ?>
 
