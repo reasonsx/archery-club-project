@@ -305,7 +305,7 @@ $timeline_image = get_field('timeline_image');
             <p class="my-8 text-lg"><?php echo nl2br(esc_html($description)); ?></p>
         <?php endif; ?>
 
-        <a href="<?php echo esc_url($pdf['url']); ?>" class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
+        <a href="<?php echo esc_url($pdf['url']); ?>" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
