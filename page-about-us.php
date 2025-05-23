@@ -163,7 +163,7 @@ $bows_title = get_field('bows_title');
         <h1><?php echo esc_html($section_title); ?></h1>
 
         <!-- Values Grid -->
-        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <?php
             $values = new WP_Query([
                 'post_type' => $post_type,
