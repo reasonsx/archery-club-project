@@ -247,12 +247,12 @@ $phone_and_email = get_field('phone_and_email');
 
                     <div class="flex flex-col md:flex-row gap-6">
                         <!-- Left: Address -->
-                        <div class="md:w-1/2">
+                        <div class="md:w-2/3">
                             <p><?php echo wp_kses_post(nl2br($address)); ?></p>
                         </div>
 
                         <!-- Right: Email & Phone -->
-                        <div class="md:w-1/2 flex flex-col gap-6">
+                        <div class="md:w-1/3 flex flex-col gap-6">
                             <p><?php echo wp_kses_post(nl2br($phone_and_email)); ?></p>
                         </div>
                     </div>
