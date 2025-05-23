@@ -9,7 +9,6 @@ $story_text = get_field('our_story');
 $story_button_text = get_field('our_story_button_text');
 $story_button_link = get_field('our_story_button_link');
 $equipment_title = get_field('equipment_title');
-$photo_gallery_title = get_field('photo_gallery_title');
 $timeline_image = get_field('timeline_image');
 ?>
 <section class="flex flex-col gap-24">

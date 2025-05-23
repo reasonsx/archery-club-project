@@ -10,6 +10,7 @@ $about_image = get_field('about_image');
 $about_title = get_field('about_title');
 $about_description = get_field('about_description');
 $benefits_title = get_field('benefits_title');
+$photo_gallery_title = get_field('photo_gallery_title');
 ?>
 
     <section class="flex flex-col gap-24">
