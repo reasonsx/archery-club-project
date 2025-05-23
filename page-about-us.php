@@ -161,9 +161,7 @@ $timeline_image = get_field('timeline_image');
     ?>
     <section class="max-w-screen-xl mx-auto px-4">
         <!-- Section Heading -->
-        <h1 class="mb-8">
-            <?php echo esc_html($section_title); ?>
-        </h1>
+        <h1 class="mb-8"><?php echo esc_html($section_title); ?></h1>
 
         <!-- Values Grid -->
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -183,7 +181,7 @@ $timeline_image = get_field('timeline_image');
                         <!-- “┐” corner accent -->
                         <span class="absolute top-6 right-6 w-10 h-10 border-t-4 border-r-4 border-black"></span>
 
-                        <h3 class="text-2xl font-semibold my-4"><?php the_title(); ?></h3>
+                        <h3 class="my-4"><?php the_title(); ?></h3>
                         <p>  <?php echo wp_kses_post(get_field('value_description')); ?></p>
                     </div>
                 <?php
@@ -200,7 +198,7 @@ $timeline_image = get_field('timeline_image');
     <section class="w-full h-auto bg-[#8DB7E1] py-16">
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-3xl font-semibold mb-6">What types of bows we use?</h1>
+                <h1 class="mb-6">What types of bows we use?</h1>
             </div>
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -245,7 +243,6 @@ $timeline_image = get_field('timeline_image');
     <!-- EQUIPMENT -->
     <section class="max-w-screen-xl mx-auto px-4">
         <h1 class="mb-8"><?php echo esc_html($equipment_title); ?></h1>
-
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
             <?php
@@ -276,9 +273,7 @@ $timeline_image = get_field('timeline_image');
                             <?php endif; ?>
                         </div>
 
-                        <h3 class="mb-1 text-2xl font-bold tracking-tight">
-                            <?php the_title(); ?>
-                        </h3>
+                        <h3 class="mb-1"><?php the_title(); ?></h3>
 
                         <?php if ($description) : ?>
                             <p><?php echo wp_kses_post(nl2br($description)); ?></p>
@@ -304,18 +299,13 @@ $timeline_image = get_field('timeline_image');
     $button_text = get_field('archery_guide_button_text');
     ?>
     <section class="max-w-screen-xl mx-auto px-4">
-        <h1>
-            <?php echo esc_html($title); ?>
-        </h1>
+        <h1><?php echo esc_html($title); ?></h1>
 
         <?php if ($description): ?>
-            <p class="my-8 text-lg">
-                <?php echo nl2br(esc_html($description)); ?>
-            </p>
+            <p class="my-8 text-lg"><?php echo nl2br(esc_html($description)); ?></p>
         <?php endif; ?>
 
-        <a href="<?php echo esc_url($pdf['url']); ?>"
-           class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
+        <a href="<?php echo esc_url($pdf['url']); ?>" class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
