@@ -35,9 +35,7 @@ $timeline_image = get_field('timeline_image');
             <div class="relative md:w-[20vw]">
                 <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
                 <span class="absolute inset-0 flex items-center justify-center rotate-270">
-        <h1 class="text-[120px] md:text-[140px] font-extrabold leading-none">
-          <?php echo esc_html($year); ?>
-        </h1>
+        <h1 class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1>
       </span>
             </div>
 
@@ -53,7 +51,7 @@ $timeline_image = get_field('timeline_image');
 
                 <?php if ($story_button_text) : ?>
                     <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-                       class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
+                       class="inline-flex items-center justify-center max-w-max px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
                         <?php echo esc_html($story_button_text); ?>
                     </a>
                 <?php endif; ?>
