@@ -140,7 +140,7 @@ $timeline_image = get_field('timeline_image');
 
             <div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
                 <?php if ($story_title): ?>
-                    <h3 class="text-xl font-semibold mb-1"><?php echo esc_html($story_title); ?></h3>
+                    <h3 class="mb-1"><?php echo esc_html($story_title); ?></h3>
                 <?php endif; ?>
                 <?php if ($subtitle): ?>
                     <p class="text-sm mb-4"><?php echo esc_html($subtitle); ?></p>
@@ -225,7 +225,7 @@ $timeline_image = get_field('timeline_image');
                                      alt="<?php echo esc_attr($bow_image_alt); ?>"
                                      class="max-w-[70%] max-h-[70%] object-contain"/>
                             </div>
-                            <h3 class="text-2xl font-bold"><?php echo esc_html($bow_name); ?></h3>
+                            <h3><?php echo esc_html($bow_name); ?></h3>
                             <p class="mt-2 max-w-xs"><?php echo esc_html($bow_description); ?></p>
                         </div>
                     <?php
