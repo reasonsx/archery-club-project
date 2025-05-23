@@ -63,20 +63,18 @@ $timeline_image = get_field('timeline_image');
     </section>
 
     <!-- TIMELINE -->
-    <section class="max-w-screen-xl mx-auto px-4 py-16">
-        <div class="bg-[#8DB7E1] rounded-xl overflow-hidden shadow-md md:flex">
-
+    <section class="max-w-screen-xl mx-auto px-4 py-12">
+        <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px]">
             <!-- Left Image -->
-            <div class="md:w-1/2 h-64 md:h-auto">
+            <div class="md:w-1/2 h-[400px] md:h-auto">
                 <img src="<?php echo esc_url($timeline_image['url']); ?>"
                      alt="<?php echo esc_attr($timeline_image['alt']); ?>"
-                     class="w-full h-full object-cover rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+                     class="w-full h-full object-cover">
             </div>
 
             <!-- Right Timeline -->
-            <div class="md:w-1/2 px-6 py-10 md:py-12 overflow-y-auto">
-                <h2 class="text-3xl font-bold text-white mb-8 border-b-2 border-white inline-block pb-2">Timeline</h2>
-                <ol class="relative border-s border-white/50 pl-4">
+            <div class="md:w-1/2 px-8 py-8 overflow-y-auto">
+                <ol class="relative border-s border-white">
                     <?php
                     $timeline_query = new WP_Query([
                         'post_type' => 'timeline',
@@ -92,15 +90,15 @@ $timeline_image = get_field('timeline_image');
                             $timeline_title = get_field('timeline_title');
                             $timeline_description = get_field('timeline_description');
                             ?>
-                            <li class="mb-10 ms-2">
-                                <div class="absolute w-4 h-4 bg-white border-4 border-[#8DB7E1] rounded-full -start-3.5 top-1"></div>
-                                <time class="block mb-1 text-sm font-medium text-white opacity-80">
+                            <li class="mb-10 ms-4">
+                                <div class="absolute w-3 h-3 bg-[#8DB7E1] rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                                <time class="mb-1 text-sm font-normal leading-none text-gray-900">
                                     <?php echo esc_html($timeline_date); ?>
                                 </time>
-                                <h3 class="text-lg font-bold text-white mb-1">
+                                <h3 class="text-lg font-semibold">
                                     <?php echo esc_html($timeline_title); ?>
                                 </h3>
-                                <p class="text-white/90 text-sm leading-relaxed">
+                                <p class="mb-4 text-base font-normal">
                                     <?php echo wp_kses_post(nl2br($timeline_description)); ?>
                                 </p>
                             </li>
@@ -108,7 +106,7 @@ $timeline_image = get_field('timeline_image');
                         endwhile;
                         wp_reset_postdata();
                     else:
-                        echo '<p class="text-white">No timeline events found.</p>';
+                        echo '<p>No timeline events found.</p>';
                     endif;
                     ?>
                 </ol>
