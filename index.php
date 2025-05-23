@@ -228,8 +228,8 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
             </div>
         </section>
 
-
-        <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
+<section id="contact"></section>
+        <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
             <div class="mx-auto mb-8 max-w-screen-sm text-center">
                 <h1 class="mb-4"><?php echo esc_html($contact_us_title); ?></h1>
             </div>
