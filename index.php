@@ -15,7 +15,7 @@ $contact_us_title = get_field('contact_us_title');
 $blog_shortcuts_title = get_field('blog_shortcuts_title');
 ?>
 
-    <section class="flex flex-col gap-24">
+    <section class="flex flex-col gap-18">
 
         <!-- HERO SECTION -->
         <div class="bg-white">
@@ -240,7 +240,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 </div>
 
                 <!-- Right column -->
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-6">
 
                     <div class="flex flex-col md:flex-row gap-6">
                         <!-- Left: Address -->
@@ -250,7 +250,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                         </div>
 
                         <!-- Right: Email & Phone -->
-                        <div class="md:w-1/2 flex flex-col gap-4">
+                        <div class="md:w-1/2 flex flex-col gap-6">
                             <div>
                                 <h5>Email:</h5>
                                 <a href="mailto:formand@s-bl.dk" class="text-blue-600 underline">formand@s-bl.dk</a>
