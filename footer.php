@@ -8,17 +8,17 @@
                 <?php
                 // Query custom post type 'footer' to dynamically populate footer columns
                 $footer = new WP_Query([
-                    'post_type'      => 'footer',
+                    'post_type' => 'footer',
                     'posts_per_page' => 4,
-                    'orderby'        => 'menu_order',
-                    'order'          => 'ASC',
+                    'orderby' => 'menu_order',
+                    'order' => 'ASC',
                 ]);
 
                 if ($footer->have_posts()) :
                     while ($footer->have_posts()) : $footer->the_post();
 
                         // Get ACF fields for each footer item
-                        $footer_title   = get_field('footer_title');
+                        $footer_title = get_field('footer_title');
                         $footer_content = get_field('footer_content');
                         ?>
 
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Divider line -->
-        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
 
         <!-- Footer bottom section: copyright -->
         <div class="sm:flex sm:items-center sm:justify-between">
