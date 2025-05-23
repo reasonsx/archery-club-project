@@ -114,7 +114,7 @@ $timeline_image = get_field('timeline_image');
 
 
     <!-- MEET OUR MEMBERS -->
-    <section class="max-w-screen-xl mx-auto flex flex-col gap-8 px-4 sm:px-0">
+    <section class="max-w-screen-xl mx-auto flex flex-col gap-8">
         <?php
         $title = get_field('members_title');
         $story_title = get_field('member_story_title');
@@ -127,7 +127,7 @@ $timeline_image = get_field('timeline_image');
             <h1><?php echo esc_html($title); ?></h1>
         <?php endif; ?>
 
-        <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex">
+        <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex px-4 sm:px-0">
             <?php if ($image): ?>
                 <div class="md:w-1/2">
                     <img src="<?php echo esc_url($image['url']); ?>"
