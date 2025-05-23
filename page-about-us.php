@@ -51,7 +51,7 @@ $timeline_image = get_field('timeline_image');
 
                 <?php if ($story_button_text) : ?>
                     <a href="<?php echo esc_url($story_button_link ?: '#'); ?>"
-                       class="inline-flex items-center justify-center max-w-max px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6 mx-auto">
+                       class="inline-flex items-center justify-center max-w-max px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mx-auto">
                         <?php echo esc_html($story_button_text); ?>
                     </a>
                 <?php endif; ?>
