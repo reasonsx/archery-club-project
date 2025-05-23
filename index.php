@@ -121,7 +121,7 @@ $contact_us_title = get_field('contact_us_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl mx-auto px-4">
+        <section class="max-w-screen-xl mx-auto">
             <h1 class="mb-12"><?php echo esc_html($photo_gallery_title); ?></h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
