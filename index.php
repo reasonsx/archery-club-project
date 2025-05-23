@@ -18,31 +18,33 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
     <section class="flex flex-col gap-24">
 
         <!-- HERO SECTION -->
-        <section class="relative h-[40rem] w-full overflow-hidden">
-            <!-- Background image -->
-            <?php if ($hero_image): ?>
-                <img src="<?php echo esc_url($hero_image['url']); ?>"
-                     alt="<?php echo esc_attr($hero_image['alt']); ?>"
-                     class="absolute inset-0 w-full h-full object-cover"
-                     draggable="false">
-            <?php endif; ?>
+        <div class="bg-white">
+            <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2400px]">
+                <!-- Background image -->
+                <?php if ($hero_image): ?>
+                    <img src="<?php echo esc_url($hero_image['url']); ?>"
+                         alt="<?php echo esc_attr($hero_image['alt']); ?>"
+                         class="absolute inset-0 w-full h-full object-cover"
+                         draggable="false">
+                <?php endif; ?>
 
-            <!-- Overlay content -->
-            <div class="relative z-10 h-full flex items-center">
-                <div class="mx-auto w-full max-w-[1600px] px-4">
-                    <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
-                        <h1 class="text-4xl font-bold drop-shadow-lg mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
-                        <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
-                        <div class="w-32">
-                            <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
-                               class="text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
-                                Join Now
-                            </a>
+                <!-- Overlay content -->
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="mx-auto w-full max-w-screen-xl px-4">
+                        <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
+                            <h1 class="text-4xl font-bold drop-shadow-lg mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
+                            <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
+                            <div class="w-32">
+                                <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
+                                   class="text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                                    Join Now
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col sm:flex-row justify-center">
