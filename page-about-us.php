@@ -159,7 +159,7 @@ $timeline_title = get_field('timeline_title');
     ?>
     <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <!-- Section Heading -->
-        <h1 class="mb-8"><?php echo esc_html($section_title); ?></h1>
+        <h1><?php echo esc_html($section_title); ?></h1>
 
         <!-- Values Grid -->
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
