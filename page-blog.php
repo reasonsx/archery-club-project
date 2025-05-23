@@ -32,7 +32,7 @@ $title = get_field('blog_page_title');
 
         if ($blog_posts->have_posts()):
             while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-                <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[520px]">
+                <div class="bg-[#8DB7E1] border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[520px]">
                     <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail()): ?>
                             <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-56 object-cover']); ?>
