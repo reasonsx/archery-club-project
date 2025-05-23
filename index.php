@@ -189,7 +189,7 @@ $contact_us_title = get_field('contact_us_title');
 
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-40 object-cover']); ?>
@@ -199,13 +199,13 @@ $contact_us_title = get_field('contact_us_title');
                                          alt="<?php the_title_attribute(); ?>" />
                                 <?php endif; ?>
                             </a>
-                            <div class="p-5">
+                            <div class="p-5 flex flex-col flex-grow">
                                 <a href="<?php the_permalink(); ?>">
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
                                 </a>
-                                <p class="mb-3 font-normal text-gray-900"><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></p>
+                                <p class="mb-3 font-normal text-gray-900 flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
-                                   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                   class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
                                     Read more
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg"
@@ -224,6 +224,7 @@ $contact_us_title = get_field('contact_us_title');
                 <?php endif; ?>
             </div>
         </section>
+
 
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
