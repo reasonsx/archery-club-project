@@ -294,7 +294,7 @@ $timeline_image = get_field('timeline_image');
     $pdf = get_field('archery_guide_pdf'); // returns array
     $button_text = get_field('archery_guide_button_text');
     ?>
-    <section class="max-w-screen-xl mx-auto px-4">
+    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <h1><?php echo esc_html($title); ?></h1>
 
         <?php if ($description): ?>
