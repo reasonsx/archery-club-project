@@ -194,7 +194,7 @@ $contact_us_title = get_field('contact_us_title');
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-40 object-cover']); ?>
                                 <?php else: ?>
-                                    <img class="rounded-t-lg w-full h-40 object-cover"
+                                    <img class="rounded-t-lg w-full h-56 object-cover"
                                          src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
                                          alt="<?php the_title_attribute(); ?>" />
                                 <?php endif; ?>
