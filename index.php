@@ -15,7 +15,7 @@ $contact_us_title = get_field('contact_us_title');
 $blog_shortcuts_title = get_field('blog_shortcuts_title');
 ?>
 
-    <section class="flex flex-col gap-18">
+    <section class="flex flex-col gap-24">
 
         <!-- HERO SECTION -->
         <div class="bg-white">
