@@ -15,6 +15,7 @@ $contact_us_title = get_field('contact_us_title');
 $blog_shortcuts_title = get_field('blog_shortcuts_title');
 $address = get_field('address');
 $phone_and_email = get_field('phone_and_email');
+$contact_form_title = get_field('contact_form_title');
 ?>
 
     <section class="flex flex-col gap-24">
@@ -239,7 +240,7 @@ $phone_and_email = get_field('phone_and_email');
             <section class="h-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
                 <!-- Left column -->
                 <div class="flex flex-col relative z-10">
-                    <h3 class="pb-3">Write to us</h3>
+                    <h3 class="pb-3"><?php echo esc_html($contact_form_title); ?></h3>
                     <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
                 </div>
 
