@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
   font-size: 1rem;
   resize: vertical; /* only textarea can resize vertically */
+  outline: none;
 }
 
 /* Remove margin-bottom for invalid fields when the form is not valid */
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Submit button styling */
 .wpcf7 input[type="submit"] {
-  width: auto; /* or 100% if you want full width */
+  width: 100%; /* or 100% if you want full width */
   color: black;
   font-weight: 500;
   font-size: 0.875rem; /* ~text-sm */
