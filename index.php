@@ -63,7 +63,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
-                    Read more
+                     <?php echo pll__('Read more'); ?>
                 </a>
             </div>
         </section>
@@ -209,7 +209,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                 <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
                                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
-                                    Read more
+                                     <?php echo pll__('Read more'); ?>
                                     <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg"
                                          fill="none" viewBox="0 0 14 10">
