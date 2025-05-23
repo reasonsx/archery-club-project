@@ -61,7 +61,7 @@ $timeline_image = get_field('timeline_image');
 
         </div>
     </section>
-    
+
     <!-- TIMELINE -->
     <section class="max-w-screen-xl mx-auto px-4 py-12">
         <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px]">
@@ -223,7 +223,9 @@ $timeline_image = get_field('timeline_image');
                         ?>
                         <div class="flex flex-col items-center text-center">
                             <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
-                                <img src="<?php echo esc_url($bow_image_url); ?>" alt="<?php echo esc_attr($bow_image_alt); ?>" class="max-w-[70%] max-h-[70%] object-contain" />
+                                <img src="<?php echo esc_url($bow_image_url); ?>"
+                                     alt="<?php echo esc_attr($bow_image_alt); ?>"
+                                     class="max-w-[70%] max-h-[70%] object-contain"/>
                             </div>
                             <h3 class="text-2xl font-bold text-gray-900"><?php echo esc_html($bow_name); ?></h3>
                             <p class="mt-2 max-w-xs"><?php echo esc_html($bow_description); ?></p>
@@ -238,9 +240,6 @@ $timeline_image = get_field('timeline_image');
             </div>
         </section>
     </section>
-
-
-
 
 
     <!-- EQUIPMENT -->
