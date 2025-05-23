@@ -206,7 +206,7 @@ $timeline_image = get_field('timeline_image');
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <?php
                 $args = array(
-                    'post_type' => 'bow_types',
+                    'post_type' => 'bow-types',
                     'posts_per_page' => 3, // limit to max 3 posts
                 );
                 $bows_query = new WP_Query($args);
