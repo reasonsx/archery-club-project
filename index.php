@@ -29,17 +29,16 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
 
             <!-- Overlay content -->
             <div class="relative z-10 h-full flex items-center">
-                <div class="max-w-screen-lg mx-auto w-full">
+                <div class="mx-auto w-full max-w-[1600px] px-4">
                     <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
                         <h1 class="text-4xl font-bold drop-shadow-lg mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                         <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                         <div class="w-32">
                             <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
-                               class=" text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                               class="text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                                 Join Now
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
