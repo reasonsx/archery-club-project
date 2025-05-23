@@ -114,7 +114,7 @@ $timeline_image = get_field('timeline_image');
 
 
     <!-- MEET OUR MEMBERS -->
-    <section class="max-w-screen-xl mx-auto flex flex-col gap-12">
+    <section class="max-w-screen-xl mx-auto flex flex-col gap-8">
         <?php
         $title = get_field('members_title');
         $story_title = get_field('member_story_title');
