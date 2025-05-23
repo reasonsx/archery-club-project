@@ -301,7 +301,7 @@ $bows_title = get_field('bows_title');
         <h1><?php echo esc_html($title); ?></h1>
 
         <?php if ($description): ?>
-            <p class="my-8 text-lg"><?php echo nl2br(esc_html($description)); ?></p>
+            <p class="text-lg"><?php echo nl2br(esc_html($description)); ?></p>
         <?php endif; ?>
 
         <a href="<?php echo esc_url($pdf['url']); ?>"
