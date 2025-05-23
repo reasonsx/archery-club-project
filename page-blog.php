@@ -37,7 +37,7 @@ $title = get_field('blog_page_title');
                         <?php if (has_post_thumbnail()): ?>
                             <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-64 object-cover']); ?>
                         <?php else: ?>
-                            <img class="rounded-t-lg w-full h-64 object-cover"
+                            <img class="rounded-t-lg w-full h-56 object-cover"
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
                                  alt="<?php the_title_attribute(); ?>"/>
                         <?php endif; ?>
