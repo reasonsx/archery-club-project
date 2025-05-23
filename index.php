@@ -189,7 +189,7 @@ $contact_us_title = get_field('contact_us_title');
 
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
+                        <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-40 object-cover']); ?>
