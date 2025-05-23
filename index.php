@@ -12,6 +12,7 @@ $about_description = get_field('about_description');
 $benefits_title = get_field('benefits_title');
 $photo_gallery_title = get_field('photo_gallery_title');
 $contact_us_title = get_field('contact_us_title');
+$blog_shortcuts_title = get_field('blog_shortcuts_title');
 ?>
 
     <section class="flex flex-col gap-24">
@@ -175,11 +176,11 @@ $contact_us_title = get_field('contact_us_title');
                 ?>
             </div>
         </section>
-        
+
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900">Learn more about archery</h1>
+                <h1 class="text-gray-900"><?php echo esc_html($blog_shortcuts_title); ?></h1>
             </div>
             <div class="grid gap-8 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
                 <?php
