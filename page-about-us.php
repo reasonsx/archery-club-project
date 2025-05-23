@@ -237,7 +237,7 @@ $timeline_image = get_field('timeline_image');
 
 
     <!-- EQUIPMENT -->
-    <section class="max-w-screen-xl mx-auto px-4">
+    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <h1 class="mb-8"><?php echo esc_html($equipment_title); ?></h1>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
