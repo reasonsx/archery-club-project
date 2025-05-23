@@ -40,12 +40,12 @@ $timeline_image = get_field('timeline_image');
             </div>
 
             <!-- STORY CONTENT -->
-            <div>
-                <h1 class="mb-6">
+            <div class="flex flex-col gap-6">
+                <h1>
                     <?php echo esc_html($story_title); ?>
                 </h1>
 
-                <div class="prose max-w-none mb-8">
+                <div class="prose max-w-none">
                     <?php if ($story_text) echo nl2br(esc_html($story_text)); ?>
                 </div>
 
