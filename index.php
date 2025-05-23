@@ -189,7 +189,7 @@ $contact_us_title = get_field('contact_us_title');
 
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-48 object-cover']); ?>
@@ -224,8 +224,6 @@ $contact_us_title = get_field('contact_us_title');
                 <?php endif; ?>
             </div>
         </section>
-
-
 
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
