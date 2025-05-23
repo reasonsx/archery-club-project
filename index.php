@@ -123,8 +123,8 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl mx-auto">
-            <h1 class="mb-12"><?php echo esc_html($photo_gallery_title); ?></h1>
+        <section class="max-w-screen-xl mx-auto flex flex-col gap-12">
+            <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <?php
