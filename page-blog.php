@@ -35,7 +35,7 @@ $title = get_field('blog_page_title');
                 <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[520px]">
                     <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail()): ?>
-                            <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-64 object-cover']); ?>
+                            <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-56 object-cover']); ?>
                         <?php else: ?>
                             <img class="rounded-t-lg w-full h-56 object-cover"
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
