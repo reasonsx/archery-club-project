@@ -58,7 +58,7 @@ $contact_us_title = get_field('contact_us_title');
             <!-- Right: Text content -->
             <div class="sm:max-w-xl sm:w-1/2 w-full flex flex-col gap-6">
                 <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
-                <p class="text-lg text-gray-900"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
+                <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
                    class=" text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
                     Read more
@@ -162,10 +162,10 @@ $contact_us_title = get_field('contact_us_title');
                             <div class="absolute inset-0 bg-[#FDD576] text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
                                 <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
-                                    <p class="text-sm text-gray-900 italic mb-1"><?php echo esc_html($date); ?></p>
+                                    <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
                                 <?php endif; ?>
                                 <?php if ($description): ?>
-                                    <p class="text-sm text-gray-900"><?php echo esc_html($description); ?></p>
+                                    <p class="text-sm"><?php echo esc_html($description); ?></p>
                                 <?php endif; ?>
                             </div>
                         </div>
