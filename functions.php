@@ -19,4 +19,5 @@ add_action('after_setup_theme', 'boilerplate_add_support');
 if (function_exists('pll_register_string')) {
     pll_register_string('Read More Button Label', 'Read more', 'Theme Strings');
     pll_register_string('Back to Blog Button Label', '← Back to Blog', 'Theme Strings');
+    pll_register_string('Join Now Button Label', 'Join Now', 'Theme Strings');
 }
