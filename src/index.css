@@ -5,7 +5,7 @@
 
 @layer base {
     p {
-        @apply text-gray-500;
+        @apply text-gray-900;
     }
     h1 {
         @apply text-3xl md:text-4xl font-bold;
