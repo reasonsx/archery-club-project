@@ -7,21 +7,15 @@ function boilerplate_load_assets() {
 
     wp_localize_script('ourmainjs', 'ourData', array('root_url' => get_site_url()));
 }
-
 add_action('wp_enqueue_scripts', 'boilerplate_load_assets');
 
 function boilerplate_add_support() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 }
-
 add_action('after_setup_theme', 'boilerplate_add_support');
 
-function add_adobe_fonts() {
-    wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/egv6raj.css', false);
-}
-add_action('wp_enqueue_scripts', 'add_adobe_fonts');
-
+// Register translatable strings for Polylang
 if (function_exists('pll_register_string')) {
     pll_register_string('Read More Button Label', 'Read more', 'Theme Strings');
     pll_register_string('Back to Blog Button Label', '← Back to Blog', 'Theme Strings');
