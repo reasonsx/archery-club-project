@@ -4,20 +4,37 @@
 @tailwind utilities;
 
 @layer base {
-    p {
+    /* Apply gray-900 text color to most common text elements */
+    p,
+    h1, h2, h3, h4, h5, h6,
+    li,
+    a,
+    span,
+    div {
         @apply text-gray-900;
     }
+
     h1 {
         @apply text-3xl md:text-4xl font-bold;
     }
+
+    h2 {
+        @apply text-2xl font-semibold; /* Add if you want */
+    }
+
     h3 {
-        @apply text-2xl;
-        @apply font-bold;
+        @apply text-2xl font-bold;
+    }
+
+    h4 {
+        @apply text-xl font-semibold; /* Optional */
     }
 
     h5 {
         @apply text-xl;
     }
+
+    /* button.dark stays as you have it */
     button.dark {
         @apply text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer w-auto;
     }
