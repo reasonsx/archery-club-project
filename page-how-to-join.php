@@ -64,7 +64,7 @@ get_header(); ?>
                 <div class="inline-block bg-[#FDD576] rounded-md px-3 py-1 font-semibold mb-2">
                     <?php echo esc_html(get_the_title()); ?>
                 </div>
-                <h3 class="text-xl font-semibold mb-2"><?php echo esc_html($step_title); ?></h3>
+                <h3 class="mb-2"><?php echo esc_html($step_title); ?></h3>
                 <p><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
             </div>
         <?php endwhile;
@@ -92,7 +92,7 @@ get_header(); ?>
 </section>
 
 <section class="max-w-screen-xl mx-auto pt-24">
-    <h1 class="text-3xl font-bold mb-6">
+    <h1 class="mb-6">
         <p><?php if ($pricing_title) echo wp_kses_post(nl2br($pricing_title)); ?></p>
     </h1>
     <?php
@@ -149,7 +149,7 @@ get_header(); ?>
     ));
 
     if ($post_type_obj): ?>
-        <h1 class="text-3xl font-bold mb-6">
+        <h1 class="mb-6">
             <?php echo esc_html($post_type_obj->labels->singular_name); ?>
         </h1>
     <?php endif;
