@@ -204,7 +204,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                             </a>
                             <div class="p-5 flex flex-col flex-grow">
                                 <a href="<?php the_permalink(); ?>">
-                                    <h5 class="  font-bold mb-3"><?php the_title(); ?></h5>
+                                    <h5 class="font-black mb-3"><?php the_title(); ?></h5>
                                 </a>
                                 <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
