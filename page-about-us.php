@@ -62,7 +62,7 @@ $bows_title = get_field('bows_title');
 
     <!-- TIMELINE -->
     <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
-            <h1><?php echo esc_html($timeline_title); ?></h1>
+        <h1><?php echo esc_html($timeline_title); ?></h1>
         <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px] rounded-xl">
             <!-- Left Image -->
             <div class="md:w-1/2 h-[400px] md:h-auto">
