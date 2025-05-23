@@ -62,7 +62,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
-                   class=" text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+                   class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                     Read more
                 </a>
             </div>
