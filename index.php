@@ -73,7 +73,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($benefits_title); ?></h1>
             </div>
-            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="grid gap-6 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
                 <?php
                 $benefits = new WP_Query([
                     'post_type' => 'benefit',
@@ -183,7 +183,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($blog_shortcuts_title); ?></h1>
             </div>
-            <div class="grid gap-8 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
+            <div class="grid gap-6 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
                 <?php
                 $latest_posts = new WP_Query([
                     'post_type' => 'post',
@@ -242,7 +242,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <!-- Right column -->
                 <div class="flex flex-col gap-4">
 
-                    <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex flex-col md:flex-row gap-6">
                         <!-- Left: Address -->
                         <div class="md:w-1/2">
                             <h5>Address:</h5>
