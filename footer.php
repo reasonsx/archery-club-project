@@ -17,7 +17,7 @@
                         ?>
                         <div>
                             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase"><?php echo esc_html($footer_title); ?></h2>
-                            <ul class="text-gray-600">
+                            <ul class="text-gray-900">
                                 <?php echo wp_kses_post(nl2br($footer_content)); ?>
                             </ul>
                         </div>
