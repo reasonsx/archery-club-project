@@ -64,7 +64,7 @@ $timeline_image = get_field('timeline_image');
     
     <!-- TIMELINE -->
     <section class="max-w-screen-xl mx-auto px-4 py-12">
-        <div class="bg-[#8DB7E1] rounded-xl overflow-hidden md:flex h-full min-h-[500px]">
+        <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px]">
             <!-- Left Image -->
             <div class="md:w-1/2 h-[400px] md:h-auto">
                 <img src="<?php echo esc_url($timeline_image['url']); ?>"
