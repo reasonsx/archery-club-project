@@ -45,12 +45,15 @@ $title = get_field('blog_page_title');
               <p class="text-sm line-clamp-3"><?php echo get_the_excerpt(); ?></p>
             </div>
 
-            <a href="<?php the_permalink(); ?>" class="cursor-pointer inline-flex items-end mt-4 text-gray-900 hover:text-white font-semibold">
-                <?php echo pll__('Read more'); ?>
-              <svg class="ml-2 w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" >
-                <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+              <a href="<?php the_permalink(); ?>"
+                 class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
+                  <?php echo pll__('Read more'); ?>
+                  <svg class="ms-2 w-4 h-4 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                      <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+
           </div>
         </article>
       <?php endwhile;
