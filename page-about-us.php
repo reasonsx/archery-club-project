@@ -28,7 +28,7 @@ $timeline_image = get_field('timeline_image');
     </section>
 
     <!-- OUR STORY -->
-    <section class="max-w-screen-xl mx-auto px-4 h-auto">
+    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col h-auto">
         <div class="flex flex-row gap-8 items-start">
 
             <!-- BIG YEAR BAR -->
@@ -112,7 +112,7 @@ $timeline_image = get_field('timeline_image');
 
 
     <!-- MEET OUR MEMBERS -->
-    <section class="max-w-screen-xl mx-auto flex flex-col gap-8 px-4 lg:px-0">
+    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <?php
         $title = get_field('members_title');
         $story_title = get_field('member_story_title');
@@ -155,7 +155,7 @@ $timeline_image = get_field('timeline_image');
     $type_object = get_post_type_object($post_type);
     $section_title = $type_object ? $type_object->labels->name : 'Core Values';
     ?>
-    <section class="max-w-screen-xl mx-auto px-4">
+    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <!-- Section Heading -->
         <h1 class="mb-8"><?php echo esc_html($section_title); ?></h1>
 
