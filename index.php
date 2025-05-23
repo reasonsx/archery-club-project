@@ -65,38 +65,6 @@ $photo_gallery_title = get_field('photo_gallery_title');
             </div>
         </section>
 
-        <!-- IMAGES SECTION -->
-        <section class="w-full py-12 bg-white">
-            <div class="swiper mySwiper w-[90vw] max-w-screen-xl mx-auto">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                             class="w-full h-72 rounded-lg"/>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-                             class="w-full h-72 rounded-lg"/>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                             class="w-full h-72 rounded-lg"/>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                             class="w-full h-72 rounded-lg"/>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button -->
-            <div class="text-center mt-8">
-                <a href="/full-gallery"
-                   class=" text-center cursor-pointer focus:outline-none text-black bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
-                    See Full Gallery
-                </a>
-            </div>
-        </section>
-
         <!-- BENEFITS SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
