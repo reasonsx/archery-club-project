@@ -114,7 +114,7 @@ $timeline_image = get_field('timeline_image');
 
 
     <!-- MEET OUR MEMBERS -->
-    <section class="max-w-screen-xl mx-auto px-4">
+    <section class="max-w-screen-xl mx-auto flex flex-col gap-12">
         <?php
         $title = get_field('members_title');
         $story_title = get_field('member_story_title');
@@ -124,7 +124,7 @@ $timeline_image = get_field('timeline_image');
         ?>
 
         <?php if ($title): ?>
-            <h1 class="mb-8"><?php echo esc_html($title); ?></h1>
+            <h1><?php echo esc_html($title); ?></h1>
         <?php endif; ?>
 
         <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex">
