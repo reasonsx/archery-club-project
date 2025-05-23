@@ -196,62 +196,60 @@ $timeline_image = get_field('timeline_image');
             ?>
         </div>
     </section>
+    <!-- BOWS SECTION -->
+    <section class="w-full h-auto bg-[#8DB7E1] py-16">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col ">
+            <div class="mx-auto max-w-screen-sm text-center">
+                <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
+            </div>
 
-    <!-- PHOTO GALLERY -->
-    <section class="max-w-screen-xl mx-auto px-4">
-        <h1 class="mb-12"><?php echo esc_html($photo_gallery_title); ?></h1>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <?php
-            $photos = new WP_Query([
-                'post_type' => 'photo',
-                'posts_per_page' => -1,
-            ]);
-
-            $total = $photos->post_count;
-            $index = 0;
-
-            if ($photos->have_posts()) :
-                while ($photos->have_posts()) : $photos->the_post();
-                    $index++;
-                    $image = get_field('image'); // ACF image field
-                    $date = get_field('date'); // ACF date field
-                    $description = get_field('description'); // ACF description field
-
-                    $is_last = ($index === $total);
-                    $items_in_last_row = $total % 3;
-                    $is_last_row = ($index > $total - $items_in_last_row);
-                    $class = 'relative group overflow-hidden h-[400px]';
-
-                    // Stretch last item if it's in incomplete last row
-                    if ($is_last && $items_in_last_row !== 0) {
-                        $span = 3 - $items_in_last_row + 1;
-                        $class .= " col-span-{$span}";
-                    }
-                    ?>
-                    <div class="<?php echo esc_attr($class); ?>">
-                        <?php if ($image) : ?>
-                            <img src="<?php echo esc_url($image['url']); ?>"
-                                 alt="<?php echo esc_attr(get_the_title()); ?>"
-                                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
-                        <?php endif; ?>
-
-                        <div class="absolute inset-0 bg-[#FDD576] text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                            <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
-                            <?php if ($date): ?>
-                                <p class="text-sm text-black italic mb-1"><?php echo esc_html($date); ?></p>
-                            <?php endif; ?>
-                            <?php if ($description): ?>
-                                <p class="text-sm text-black"><?php echo esc_html($description); ?></p>
-                            <?php endif; ?>
-                        </div>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Bow 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Compound_bow_transparent.png"
+                                alt="Bow 1"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
                     </div>
-                <?php endwhile;
-                wp_reset_postdata();
-            endif;
-            ?>
-        </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #1</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Learn from professional archery coaches with years of
+                        experience guiding beginners and pros alike.</p>
+                </div>
+
+                <!-- Bow 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/8/81/Recurve_bow_transparent.png"
+                                alt="Bow 2"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #2</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Participate in fun competitions and social events to
+                        connect with fellow archery enthusiasts.</p>
+                </div>
+
+                <!-- Bow 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="mx-auto mb-4 w-40 h-40 rounded-full bg-[#FDD576] flex items-center justify-center overflow-hidden">
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Longbow_transparent.png"
+                                alt="Bow 3"
+                                class="max-w-[70%] max-h-[70%] object-contain"
+                        />
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bow #3</h3>
+                    <p class="mt-2 text-gray-700 max-w-xs">Access the latest bows and gear to improve your skills
+                        and enjoy the sport safely.</p>
+                </div>
+            </div>
+        </section>
     </section>
+
+
 
 
     <!-- EQUIPMENT -->
