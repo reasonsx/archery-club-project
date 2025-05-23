@@ -32,7 +32,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <div class="relative z-10 h-full flex items-center">
                     <div class="mx-auto w-full max-w-screen-xl px-4">
                         <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
-                            <h1 class="text-4xl font-bold drop-shadow-lg mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
+                            <h1 class="mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                             <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                             <div class="w-32">
                                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
@@ -59,7 +59,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
 
             <!-- Right: Text content -->
             <div class="sm:max-w-xl sm:w-1/2 w-full flex flex-col gap-6">
-                <h1 class="text-4xl font-bold"><?php echo esc_html($about_title); ?></h1>
+                <h1><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
@@ -162,7 +162,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                             <?php endif; ?>
 
                             <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                                <h3 class="text-xl font-semibold mb-2"><?php the_title(); ?></h3>
+                                <h3 class="mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
                                     <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
                                 <?php endif; ?>
@@ -204,7 +204,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                             </a>
                             <div class="p-5 flex flex-col flex-grow">
                                 <a href="<?php the_permalink(); ?>">
-                                    <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
+                                    <h5 class="mb-3"><?php the_title(); ?></h5>
                                 </a>
                                 <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
