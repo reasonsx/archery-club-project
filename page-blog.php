@@ -17,59 +17,63 @@ $title = get_field('blog_page_title');
 </section>
 
 
-<section class="max-w-screen-lg mx-auto pt-16 sm:pt-24 px-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <?php
-    $blog_posts = new WP_Query(array(
-      'post_type' => 'post',
-      'posts_per_page' => 10,
-      'paged' => get_query_var('paged') ?: 1,
-    ));
+<section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
+    <div class="mx-auto max-w-screen-sm text-center">
+        <h1><?php echo esc_html(get_the_title(get_option('page_for_posts'))); ?></h1>
+    </div>
 
-    if ($blog_posts->have_posts()):
-      while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-        <article class="rounded-lg overflow-hidden group">
-          <!-- Image Top Half -->
-          <?php if (has_post_thumbnail()): ?>
-            <div class="h-48 overflow-hidden">
-              <?php the_post_thumbnail('medium_large', ['class' => 'w-full h-full object-cover transition-transform duration-300 group-hover:scale-105']); ?>
-            </div>
-          <?php else: ?>
-            <div class="h-48 bg-gray-300"></div>
-          <?php endif; ?>
+    <div class="grid gap-8 lg:gap-12 sm:grid-cols-1 lg:grid-cols-3">
+        <?php
+        $blog_posts = new WP_Query(array(
+            'post_type' => 'post',
+            'posts_per_page' => 10,
+            'paged' => get_query_var('paged') ?: 1,
+        ));
 
-          <!-- Blue Bottom Half -->
-          <div class="bg-[#8DB7E1] p-6 flex flex-col justify-between h-56">
-            <div>
-              <h2 class="text-xl font-semibold mb-2"><?php the_title(); ?></h2>
-              <p class="text-sm line-clamp-3"><?php echo get_the_excerpt(); ?></p>
-            </div>
+        if ($blog_posts->have_posts()):
+            while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php if (has_post_thumbnail()): ?>
+                            <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-48 object-cover']); ?>
+                        <?php else: ?>
+                            <img class="rounded-t-lg w-full h-48 object-cover"
+                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
+                                 alt="<?php the_title_attribute(); ?>"/>
+                        <?php endif; ?>
+                    </a>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <a href="<?php the_permalink(); ?>">
+                            <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
+                        </a>
+                        <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
+                        <a href="<?php the_permalink(); ?>"
+                           class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
+                            <?php echo pll__('Read more'); ?>
+                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            <?php endwhile;
 
-              <a href="<?php the_permalink(); ?>"
-                 class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
-                  <?php echo pll__('Read more'); ?>
-                  <svg class="ms-2 w-4 h-4 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
-                      <path d="M8.16659 24.5L40.8333 24.5M40.8333 24.5L28.5833 36.75M40.8333 24.5L28.5833 12.25"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-              </a>
+            // Pagination
+            echo '<div class="mt-12 text-center">' . paginate_links([
+                    'total' => $blog_posts->max_num_pages
+                ]) . '</div>';
 
-          </div>
-        </article>
-      <?php endwhile;
-
-      // Pagination (if needed)
-      echo paginate_links(array(
-        'total' => $blog_posts->max_num_pages
-      ));
-
-      wp_reset_postdata();
-    else:
-      echo '<p>No blog posts found.</p>';
-    endif;
-    ?>
-  </div>
+            wp_reset_postdata();
+        else:
+            echo '<p>No blog posts found.</p>';
+        endif;
+        ?>
+    </div>
 </section>
+
 
 
 <?php get_footer(); ?>
