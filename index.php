@@ -199,7 +199,7 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                                 <?php else: ?>
                                     <img class="rounded-t-lg w-full h-48 object-cover"
                                          src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
-                                         alt="<?php the_title_attribute(); ?>" />
+                                         alt="<?php the_title_attribute(); ?>"/>
                                 <?php endif; ?>
                             </a>
                             <div class="p-5 flex flex-col flex-grow">
@@ -227,8 +227,6 @@ $blog_shortcuts_title = get_field('blog_shortcuts_title');
                 <?php endif; ?>
             </div>
         </section>
-
-
 
 
         <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 lg:p-0">
