@@ -21,7 +21,7 @@ $timeline_image = get_field('timeline_image');
         <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
 
         <!-- Page title -->
-        <h1 class="text-gray-900 text-right font-extrabold z-10 leading-none
+        <h1 class="text-right font-extrabold z-10 leading-none
               text-[6rem] md:text-[8rem] tracking-wide">
             <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
         </h1>
@@ -95,7 +95,7 @@ $timeline_image = get_field('timeline_image');
                                 <time class="mb-1 text-sm font-normal leading-none text-gray-900">
                                     <?php echo esc_html($timeline_date); ?>
                                 </time>
-                                <h3 class="text-lg font-semibold text-gray-900">
+                                <h3 class="text-lg font-semibold">
                                     <?php echo esc_html($timeline_title); ?>
                                 </h3>
                                 <p class="mb-4 text-base font-normal">
@@ -179,7 +179,7 @@ $timeline_image = get_field('timeline_image');
                 while ($values->have_posts()) : $values->the_post();
                     ?>
                     <!-- Card -->
-                    <div class="relative bg-[#8DB7E1] text-gray-900 p-8 md:p-10 min-h-[280px]">
+                    <div class="relative bg-[#8DB7E1] p-8 md:p-10 min-h-[280px]">
                         <!-- “┐” corner accent -->
                         <span class="absolute top-6 right-6 w-10 h-10 border-t-4 border-r-4 border-black"></span>
 
@@ -200,7 +200,7 @@ $timeline_image = get_field('timeline_image');
     <section class="w-full h-auto bg-[#8DB7E1] py-16">
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="text-gray-900 text-3xl font-semibold mb-6">What types of bows we use?</h1>
+                <h1 class="text-3xl font-semibold mb-6">What types of bows we use?</h1>
             </div>
 
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -227,7 +227,7 @@ $timeline_image = get_field('timeline_image');
                                      alt="<?php echo esc_attr($bow_image_alt); ?>"
                                      class="max-w-[70%] max-h-[70%] object-contain"/>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900"><?php echo esc_html($bow_name); ?></h3>
+                            <h3 class="text-2xl font-bold"><?php echo esc_html($bow_name); ?></h3>
                             <p class="mt-2 max-w-xs"><?php echo esc_html($bow_description); ?></p>
                         </div>
                     <?php
@@ -266,7 +266,7 @@ $timeline_image = get_field('timeline_image');
                     $img_url = $img ? (is_array($img) ? $img['url'] : $img) : '';
                     ?>
                     <!-- CARD -->
-                    <div class="text-center text-gray-900">
+                    <div class="text-center">
                         <!-- blue circle with transparent-bg image -->
                         <div class="mx-auto mb-4 w-36 h-36 rounded-full bg-[#8DB7E1] flex items-center justify-center">
                             <?php if ($img_url) : ?>
@@ -276,7 +276,7 @@ $timeline_image = get_field('timeline_image');
                             <?php endif; ?>
                         </div>
 
-                        <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight">
                             <?php the_title(); ?>
                         </h3>
 
@@ -315,7 +315,7 @@ $timeline_image = get_field('timeline_image');
         <?php endif; ?>
 
         <a href="<?php echo esc_url($pdf['url']); ?>"
-           class=" text-center cursor-pointer focus:outline-none text-text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
+           class=" text-center cursor-pointer focus:outline-none text-gray-900 bg-[#FDD576] focus:ring-4 focus:ring-[#fdd576]/50 font-medium rounded-lg text-base px-6 py-2 transition">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
