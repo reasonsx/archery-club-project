@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-/* Target all CF7 input text, email, number, and textarea inside any CF7 form */
+/* CF7 form */
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"],
 .wpcf7 input[type="number"],
