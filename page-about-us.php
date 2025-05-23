@@ -305,7 +305,7 @@ $bows_title = get_field('bows_title');
         <?php endif; ?>
 
         <a href="<?php echo esc_url($pdf['url']); ?>"
-           class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6">
+           class="inline-flex w-fit items-center px-6 py-3 text-sm font-semibold text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 mt-6">
             <?php echo esc_html($button_text ?: 'Download PDF'); ?>
         </a>
     </section>
