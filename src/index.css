@@ -15,7 +15,8 @@
     }
 
     h1 {
-        @apply text-3xl md:text-4xl font-black;
+        @apply text-3xl md:text-4xl;
+        font-weight: 700;
     }
 
     h2 {
