@@ -156,7 +156,7 @@ $bows_title = get_field('bows_title');
     <?php
     $post_type = 'core_value';
     $type_object = get_post_type_object($post_type);
-    $section_title = $type_object ? $type_object->labels->name : 'Core Values';
+    $section_title = get_field('our_core_values_title');
     ?>
     <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
         <!-- Section Heading -->
