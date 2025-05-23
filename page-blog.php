@@ -32,12 +32,12 @@ $title = get_field('blog_page_title');
 
         if ($blog_posts->have_posts()):
             while ($blog_posts->have_posts()): $blog_posts->the_post(); ?>
-                <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[520px]">
                     <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail()): ?>
-                            <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-48 object-cover']); ?>
+                            <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-64 object-cover']); ?>
                         <?php else: ?>
-                            <img class="rounded-t-lg w-full h-48 object-cover"
+                            <img class="rounded-t-lg w-full h-64 object-cover"
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
                                  alt="<?php the_title_attribute(); ?>"/>
                         <?php endif; ?>
@@ -50,15 +50,14 @@ $title = get_field('blog_page_title');
                         <a href="<?php the_permalink(); ?>"
                            class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
                             <?php echo pll__('Read more'); ?>
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 fill="none" viewBox="0 0 14 10">
+                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                       stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                         </a>
                     </div>
                 </div>
+
             <?php endwhile;
 
             // Pagination
