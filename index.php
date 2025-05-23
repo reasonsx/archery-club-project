@@ -180,7 +180,7 @@ $contact_us_title = get_field('contact_us_title');
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1 class="text-gray-900">Learn more about archery</h1>
             </div>
-            <div class="grid gap-8 lg:gap-16 sm:grid-cols-1 lg:grid-cols-3">
+            <div class="grid gap-8 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
                 <?php
                 $latest_posts = new WP_Query([
                     'post_type' => 'post',
@@ -189,25 +189,25 @@ $contact_us_title = get_field('contact_us_title');
 
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
-                        <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
-                                    <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-40 object-cover']); ?>
+                                    <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-48 object-cover']); ?>
                                 <?php else: ?>
-                                    <img class="rounded-t-lg w-full h-56 object-cover"
+                                    <img class="rounded-t-lg w-full h-48 object-cover"
                                          src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
                                          alt="<?php the_title_attribute(); ?>" />
                                 <?php endif; ?>
                             </a>
                             <div class="p-5 flex flex-col flex-grow">
                                 <a href="<?php the_permalink(); ?>">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
+                                    <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900"><?php the_title(); ?></h5>
                                 </a>
-                                <p class="mb-3 font-normal text-gray-900 flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></p>
+                                <p class="mb-4 font-normal text-gray-900 flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
-                                   class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
+                                   class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-full mt-auto">
                                     Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg"
                                          fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -224,6 +224,7 @@ $contact_us_title = get_field('contact_us_title');
                 <?php endif; ?>
             </div>
         </section>
+
 
 
         <!-- Shortcut to blog posts -->
