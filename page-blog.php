@@ -48,14 +48,6 @@ $title = get_field('blog_page_title');
                         </a>
                         <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                         <a href="<?php the_permalink(); ?>"
-                           class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-white bg-[#8DB7E1] rounded-lg hover:bg-[#74A3D3] focus:ring-4 focus:outline-none focus:ring-[#8DB7E1]/50 shadow transition-all duration-200 w-full mt-auto">
-                            <?php echo pll__('Read more'); ?>
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                        <a href="<?php the_permalink(); ?>"
                            class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                             <?php echo pll__('Read more'); ?>
                             <svg class="rtl:rotate-180 w-4 h-4 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -63,8 +55,6 @@ $title = get_field('blog_page_title');
                                       stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                             </svg>
                         </a>
-
-
                     </div>
                 </div>
 
