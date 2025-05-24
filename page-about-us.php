@@ -47,11 +47,11 @@ $bows_title = get_field('bows_title');
                 <h1>
                     <?php echo esc_html($story_title); ?>
                 </h1>
-                <div class="w-full block md:hidden py-6">
-                <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
-                <span class="flex items-center justify-center"><h1
-                            class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
-            </div>
+                <div class=" relative w-full block md:hidden py-6">
+                    <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
+                        <span class=" absolute flex items-center justify-center"><h1
+                                class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
+                    </div>
                 <div class="prose max-w-none">
                     <?php if ($story_text) echo nl2br(esc_html($story_text)); ?>
                 </div>
