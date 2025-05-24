@@ -46,7 +46,7 @@ get_header(); ?>
   <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
   <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  <div class="grid grid-cols-1 gap-10">
     <?php
     $steps = new WP_Query([
         'post_type' => 'how_to_join_step',
