@@ -27,10 +27,8 @@ $contact_form_title = get_field('contact_form_title');
                 <?php if ($hero_image): ?>
                     <img src="<?php echo esc_url($hero_image['url']); ?>"
                          alt="<?php echo esc_attr($hero_image['alt']); ?>"
-                         class="absolute inset-0 w-full h-full object-cover"
+                         class="absolute inset-0 w-full h-full object-cover brightness-50""
                          draggable="false">
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                 <?php endif; ?>
 
                 <!-- Overlay content -->
