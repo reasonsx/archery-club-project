@@ -28,7 +28,7 @@
     <ul class="flex flex-row space-x-8 font-medium text-gray-900">
     <?php
     $menu_query = new WP_Query([
-        'post_type' => 'header_link',
+        'post_type' => 'menu-item',
         'posts_per_page' => -1,
         'orderby' => 'menu_order',
         'order' => 'ASC',
