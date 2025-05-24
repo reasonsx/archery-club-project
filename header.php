@@ -25,30 +25,51 @@
 
         <!-- Center: Main Navigation (Desktop only) -->
         <div class="hidden lg:flex lg:gap-x-12">
-            <ul class="flex flex-row space-x-8 font-medium text-gray-900">
-                <li><a href="<?php echo esc_url(home_url()); ?>" class="hover:text-blue-400">Home</a></li>
-                <li>
-                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('about-us')->ID))); ?>" class="hover:text-blue-400">
-                        About us
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('blog')->ID))); ?>" class="hover:text-blue-400">
-                        Blog
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('join-us')->ID))); ?>" class="hover:text-blue-400">
-                        Join us
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="hover:text-blue-400">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <ul class="flex flex-row space-x-8 font-medium text-gray-900">
+    <?php
+    $menu_query = new WP_Query([
+        'post_type' => 'header_link',
+        'posts_per_page' => -1,
+        'orderby' => 'menu_order',
+        'order' => 'ASC',
+    ]);
+
+    if ($menu_query->have_posts()) :
+        while ($menu_query->have_posts()) : $menu_query->the_post();
+            $name = get_field('link_name') ?: get_the_title();
+            $link_type = get_field('link_type');
+            $link = get_field('link_url');
+
+           if (empty($link)) {
+                // If no link specified, link to homepage
+                $link_url = esc_url(home_url('/'));
+            } elseif ($link_type === 'slug' && $link) {
+                // Get permalink by slug (support polylang if used)
+                $page = get_page_by_path($link);
+                if ($page) {
+                    $link_url = esc_url(get_permalink(pll_get_post($page->ID)));
+                } else {
+                    $link_url = '#';
+                }
+            } elseif ($link_type === 'section_id' && $link) {
+                // Anchor link to section on current page
+                $link_url = esc_url(home_url('/#' . ltrim($link, '#')));
+            } elseif ($link_type === 'link' && $link) {
+                // Full URL provided
+                $link_url = esc_url($link);
+            } else {
+                $link_url = '#';
+            }
+            ?>
+            <li><a href="<?php echo $link_url; ?>" class="hover:text-blue-400"><?php echo esc_html($name); ?></a></li>
+        <?php
+        endwhile;
+        wp_reset_postdata();
+    endif;
+    ?>
+    </ul>
+</div>
+
 
 
         <!-- Language Switcher -->
