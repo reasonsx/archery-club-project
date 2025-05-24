@@ -27,7 +27,7 @@ $contact_form_title = get_field('contact_form_title');
                 <?php if ($hero_image): ?>
                     <img src="<?php echo esc_url($hero_image['url']); ?>"
                          alt="<?php echo esc_attr($hero_image['alt']); ?>"
-                         class="absolute inset-0 w-full h-full object-cover brightness-90"
+                         class="absolute inset-0 w-full h-full object-cover brightness-75"
                          draggable="false">
                 <?php endif; ?>
 
