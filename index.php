@@ -50,7 +50,7 @@ $contact_form_title = get_field('contact_form_title');
         </div>
 
         <!-- ABOUT SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col sm:flex-row justify-center">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col md:flex-row justify-center">
             <!-- Left: Circle Image -->
             <div class="w-full sm:w-1/2 aspect-square flex justify-center items-center">
                 <div class="w-full aspect-square rounded-full overflow-hidden">
