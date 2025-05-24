@@ -154,7 +154,7 @@ $contact_form_title = get_field('contact_form_title');
                         // Stretch last item if it's in incomplete last row
                        if ($is_last && $items_in_last_row !== 0) {
                             $span = 3 - $items_in_last_row + 1;
-                            $class .= " lg:col-span-{$span}";
+                            $class .= " col-span-{$span}";
                         }
 
                         ?>
