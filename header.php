@@ -36,9 +36,9 @@
 
     if ($menu_query->have_posts()) :
         while ($menu_query->have_posts()) : $menu_query->the_post();
-            $name = get_field('link_name') ?: get_the_title();
+            $name = get_field('name') ?: get_the_title();
             $link_type = get_field('link_type');
-            $link = get_field('link_url');
+            $link = get_field('link_valule');
 
            if (empty($link)) {
                 // If no link specified, link to homepage
