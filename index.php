@@ -52,7 +52,7 @@ $contact_form_title = get_field('contact_form_title');
         <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col sm:flex-row justify-center">
             <!-- Left: Circle Image -->
-             <div class=" w-1/2 flex justify-center items-center">
+             <div class=" w-1/2 h-auto flex justify-center items-center">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
