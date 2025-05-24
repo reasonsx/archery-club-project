@@ -147,14 +147,16 @@ $contact_form_title = get_field('contact_form_title');
                 $description = get_field('description'); // ACF description field
 
                 $is_last = ($index === $total);
-                $items_in_last_row = $total % 3;
-                $is_last_row = ($index > $total - $items_in_last_row);
                 $class = 'relative group overflow-hidden h-[400px]';
 
-                // Stretch last item in incomplete last row (desktop only)
-                if ($is_last && $items_in_last_row !== 0) {
-                    $span = 3 - $items_in_last_row + 1;
-                    $class .= " md:col-span-{$span}";
+                // Stretch last item if incomplete row on md (3-cols)
+                if ($is_last) {
+                    // how many items in last row on md?
+                    $items_in_last_row_md = $total % 3;
+                    if ($items_in_last_row_md !== 0) {
+                        $span = 3 - $items_in_last_row_md + 1;
+                        $class .= " md:col-span-{$span}";
+                    }
                 }
                 ?>
                 <div class="<?php echo esc_attr($class); ?>">
