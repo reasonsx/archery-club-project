@@ -118,9 +118,9 @@ $contact_form_title = get_field('contact_form_title');
                     <?php
                     endwhile;
                     wp_reset_postdata();
-                endif;
-                ?>
-
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
             </div>
         </section>
 
@@ -177,8 +177,9 @@ $contact_form_title = get_field('contact_form_title');
                         </div>
                     <?php endwhile;
                     wp_reset_postdata();
-                endif;
-                ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
             </div>
         </section>
 
@@ -226,8 +227,9 @@ $contact_form_title = get_field('contact_form_title');
                         </div>
                     <?php endwhile;
                     wp_reset_postdata();
-                endif;
-                ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
             </div>
         </section>
 
