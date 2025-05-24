@@ -142,19 +142,19 @@ $contact_form_title = get_field('contact_form_title');
                 if ($photos->have_posts()) :
                     while ($photos->have_posts()) : $photos->the_post();
                         $index++;
-                        $image = get_field('image'); // ACF image field
-                        $date = get_field('date'); // ACF date field
-                        $description = get_field('description'); // ACF description field
+                        $image = get_field('image');
+                        $date = get_field('date');
+                        $description = get_field('description');
 
                         $is_last = ($index === $total);
                         $items_in_last_row = $total % 3;
                         $class = 'relative group overflow-hidden h-[400px] w-full';
 
-                        // Stretch last item only on md+ if it's in incomplete last row
-                        if ($is_last && $items_in_last_row !== 0) {
-                            $span = 3 - $items_in_last_row + 1;
-                            $class .= " md:col-span-{$span}";
+                        // If it's the last item AND the only one in the last row → span full width
+                        if ($is_last && $items_in_last_row === 1) {
+                            $class .= ' md:col-span-3';
                         }
+
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
