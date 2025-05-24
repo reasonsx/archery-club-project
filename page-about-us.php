@@ -104,10 +104,9 @@ $bows_title = get_field('bows_title');
                         <?php
                         endwhile;
                         wp_reset_postdata();
-                    else:
-                        echo '<p>No timeline events found.</p>';
-                    endif;
-                    ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
                 </ol>
             </div>
         </div>
@@ -186,10 +185,9 @@ $bows_title = get_field('bows_title');
                 <?php
                 endwhile;
                 wp_reset_postdata();
-            else :
-                echo '<p class="col-span-full text-center text-gray-500">No core values found.</p>';
-            endif;
-            ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+            <?php endif; ?>
         </div>
     </section>
 
@@ -230,10 +228,9 @@ $bows_title = get_field('bows_title');
                     <?php
                     endwhile;
                     wp_reset_postdata();
-                else :
-                    echo '<p class="text-center col-span-full">No bow types found.</p>';
-                endif;
-                ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
             </div>
         </section>
     </section>
@@ -281,10 +278,9 @@ $bows_title = get_field('bows_title');
                 <?php
                 endwhile;
                 wp_reset_postdata();
-            else :
-                echo '<p class="col-span-full text-center text-gray-500">No equipment found.</p>';
-            endif;
-            ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
 
         </div>
     </section>
