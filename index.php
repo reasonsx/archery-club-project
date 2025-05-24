@@ -33,8 +33,8 @@ $contact_form_title = get_field('contact_form_title');
 
                 <!-- Overlay content -->
                 <div class="relative z-10 h-full flex items-center">
-                    <div class="mx-auto w-full max-w-screen-xl px-4">
-                        <div class="p-4 flex flex-col w-full md:w-2/3 space-y-6 mx-auto">
+                    <div class="mx-auto w-full max-w-screen-xl px-4 flex">
+                        <div class="p-4 flex flex-col w-full md:w-2/3 space-y-6">
                             <h1 class="mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                             <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                             <div class="w-36">
@@ -45,6 +45,7 @@ $contact_form_title = get_field('contact_form_title');
                             </div>
                         </div>
                     </div>
+                    <div class="hidden md:block w-1/3"></div>
                 </div>
             </section>
         </div>
