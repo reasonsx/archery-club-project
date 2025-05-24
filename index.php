@@ -52,7 +52,7 @@ $contact_form_title = get_field('contact_form_title');
         <!-- ABOUT SECTION -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col sm:flex-row justify-center">
             <!-- Left: Circle Image -->
-             <div class="w-1/2 aspect-square flex justify-center items-center mb-6 sm:mb-0">
+             <div class=" w-1/2 aspect-square flex justify-center items-center mb-6 sm:mb-0">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
@@ -126,63 +126,60 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl mx-auto flex flex-col gap-8 px-4">
-    <h1><?php echo esc_html($photo_gallery_title); ?></h1>
+        <section class="max-w-screen-xl mx-auto flex flex-col gap-8">
+            <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <?php
-        $photos = new WP_Query([
-            'post_type' => 'photo',
-            'posts_per_page' => -1,
-        ]);
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <?php
+                $photos = new WP_Query([
+                    'post_type' => 'photo',
+                    'posts_per_page' => -1,
+                ]);
 
-        $total = $photos->post_count;
-        $index = 0;
+                $total = $photos->post_count;
+                $index = 0;
 
-        if ($photos->have_posts()) :
-            while ($photos->have_posts()) : $photos->the_post();
-                $index++;
-                $image = get_field('image'); // ACF image field
-                $date = get_field('date'); // ACF date field
-                $description = get_field('description'); // ACF description field
+                if ($photos->have_posts()) :
+                    while ($photos->have_posts()) : $photos->the_post();
+                        $index++;
+                        $image = get_field('image'); // ACF image field
+                        $date = get_field('date'); // ACF date field
+                        $description = get_field('description'); // ACF description field
 
-                $is_last = ($index === $total);
-                $class = 'relative group overflow-hidden h-[400px]';
+                        $is_last = ($index === $total);
+                        $items_in_last_row = $total % 3;
+                        $is_last_row = ($index > $total - $items_in_last_row);
+                        $class = 'relative group overflow-hidden h-[400px]';
 
-                // Stretch last item if incomplete row on md (3-cols)
-                if ($is_last) {
-                    // how many items in last row on md?
-                    $items_in_last_row_md = $total % 3;
-                    if ($items_in_last_row_md !== 0) {
-                        $span = 3 - $items_in_last_row_md + 1;
-                        $class .= " md:col-span-{$span}";
-                    }
-                }
+                        // Stretch last item if it's in incomplete last row
+                        if ($is_last && $items_in_last_row !== 0) {
+                            $span = 3 - $items_in_last_row + 1;
+                            $class .= " col-span-{$span}";
+                        }
+                        ?>
+                        <div class="<?php echo esc_attr($class); ?>">
+                            <?php if ($image) : ?>
+                                <img src="<?php echo esc_url($image['url']); ?>"
+                                     alt="<?php echo esc_attr(get_the_title()); ?>"
+                                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+                            <?php endif; ?>
+
+                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                                <h3 class="mb-2"><?php the_title(); ?></h3>
+                                <?php if ($date): ?>
+                                    <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
+                                <?php endif; ?>
+                                <?php if ($description): ?>
+                                    <p class="text-sm"><?php echo esc_html($description); ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endwhile;
+                    wp_reset_postdata();
+                endif;
                 ?>
-                <div class="<?php echo esc_attr($class); ?>">
-                    <?php if ($image) : ?>
-                        <img src="<?php echo esc_url($image['url']); ?>"
-                             alt="<?php echo esc_attr(get_the_title()); ?>"
-                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
-                    <?php endif; ?>
-
-                    <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                        <h3 class="mb-2"><?php the_title(); ?></h3>
-                        <?php if ($date): ?>
-                            <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
-                        <?php endif; ?>
-                        <?php if ($description): ?>
-                            <p class="text-sm"><?php echo esc_html($description); ?></p>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            <?php endwhile;
-            wp_reset_postdata();
-        endif;
-        ?>
-    </div>
-</section>
-
+            </div>
+        </section>
 
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-8 flex flex-col">
