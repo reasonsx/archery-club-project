@@ -199,7 +199,7 @@ $bows_title = get_field('bows_title');
 
     <!-- BOWS SECTION -->
     <section class="w-full h-auto bg-[#8DB7E1] py-12">
-        <section class="max-w-screen-xl mx-autop-4 sm:p-6 xl:p-0 gap-12 flex flex-col">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-12 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($bows_title); ?></h1>
             </div>
