@@ -243,7 +243,7 @@ $bows_title = get_field('bows_title');
 
 
     <!-- EQUIPMENT -->
-    <section class="max-w-screen-xl mx-autop-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <h1><?php echo esc_html($equipment_title); ?></h1>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
