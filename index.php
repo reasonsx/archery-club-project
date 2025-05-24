@@ -186,7 +186,7 @@ $contact_form_title = get_field('contact_form_title');
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($blog_shortcuts_title); ?></h1>
             </div>
-            <div class="grid gap-6 lg:gap-12 sm:grid-cols-1 lg:grid-cols-4">
+            <div class="grid gap-6 lg:gap-12 sm:grid-cols-1 lg:grid-cols-3">
                 <?php
                 $latest_posts = new WP_Query([
                     'post_type' => 'post',
