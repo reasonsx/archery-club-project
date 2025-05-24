@@ -21,4 +21,7 @@ if (function_exists('pll_register_string')) {
     pll_register_string('Back to Blog Button Label', '← Back to Blog', 'Theme Strings');
     pll_register_string('Join Now Button Label', 'Join Now', 'Theme Strings');
     pll_register_string('No Items Found Message', 'No items found.', 'Theme Strings');
+    pll_register_string('404_label', 'Page not found', 'Theme Strings');
+    pll_register_string('404_message', 'Sorry, we couldn’t find the page you’re looking for.', 'Theme Strings');
+    pll_register_string('404_button', 'Go back home', 'Theme Strings');
 }
