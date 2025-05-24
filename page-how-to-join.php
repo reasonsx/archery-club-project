@@ -127,7 +127,7 @@ get_header(); ?>
             wp_reset_postdata(); ?>
         </div>
     <?php else: ?>
-        <p class="text-center text-gray-900">No pricing info found.</p>
+        <p class="text-center text-gray-900"><?php echo pll__('No posts found.'); ?></p>
     <?php endif; ?>
 
     <p class="text-sm mt-4 font-medium">
@@ -192,7 +192,7 @@ get_header(); ?>
             wp_reset_postdata(); ?>
         </div>
     <?php else: ?>
-        <p class="text-center">Ingen spørgsmål fundet.</p>
+        <p class="text-center"><?php echo pll__('No posts found.'); ?></p>
     <?php endif; ?>
 </section>
 
