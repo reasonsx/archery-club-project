@@ -42,7 +42,7 @@ get_header(); ?>
 
     </div>
 </section>
-<section class="max-w-screen-xl mx-auto px-4 py-20">
+<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 py-20">
   <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
   <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
 
@@ -74,7 +74,7 @@ get_header(); ?>
   </div>
 </section>
 
-<section class="max-w-screen-xl mx-auto pt-24">
+<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
     <h1 class="mb-5"><?php if ($where_and_when_title) echo wp_kses_post(nl2br($where_and_when_title)); ?></h1>
     <div class="flex flex-col sm:flex-row gap-5">
         <img
@@ -91,7 +91,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="max-w-screen-xl mx-auto pt-24">
+<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
     <h1 class="mb-6">
         <p><?php if ($pricing_title) echo wp_kses_post(nl2br($pricing_title)); ?></p>
     </h1>
@@ -137,7 +137,7 @@ get_header(); ?>
 </section>
 
 
-<section class="max-w-screen-xl mx-auto pt-24">
+<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
     <?php
     $post_type = 'faq';
     $post_type_obj = get_post_type_object($post_type);

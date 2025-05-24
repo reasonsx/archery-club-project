@@ -17,7 +17,7 @@ $title = get_field('blog_page_title');
 </section>
 
 
-<section class="max-w-screen-lg mx-auto p-4 sm:p-6 lg:p-0 gap-16 flex flex-col">
+<section class="max-w-screen-lg mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col">
     <div class="mx-auto max-w-screen-sm text-center">
         <h1><?php echo esc_html(get_the_title(get_option('page_for_posts'))); ?></h1>
     </div>
