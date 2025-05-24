@@ -48,7 +48,7 @@ $bows_title = get_field('bows_title');
                     <?php echo esc_html($story_title); ?>
                 </h1>
                 <div class=" relative w-full block md:hidden py-6">
-                    <div class="bg-[#8DB7E1] w-full h-[150px] min-h-[500px]"></div>
+                    <div class="bg-[#8DB7E1] w-full"></div>
                         <span class=" absolute inset-0 flex items-center justify-center"><h1
                                 class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
                     </div>
