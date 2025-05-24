@@ -66,10 +66,9 @@ $title = get_field('blog_page_title');
                 ]) . '</div>';
 
             wp_reset_postdata();
-        else:
-            echo '<p>No blog posts found.</p>';
-        endif;
-        ?>
+                else: ?>
+                    <p><?php echo pll__('No posts found.'); ?></p>
+                <?php endif; ?>
     </div>
 </section>
 
