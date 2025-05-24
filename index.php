@@ -126,10 +126,10 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl p-4 sm:p-6 xl:p-0 mx-auto flex flex-col gap-8">
+        <section class="max-w-screen-xl px-0 pt-4 pb-4 sm:px-6 sm:pt-6 sm:pb-6 xl:px-0 mx-auto flex flex-col gap-8">
             <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
-            <div class="grid grid-cols-0 grid-rows-4 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full overflow-hidden">
                 <?php
                 $photos = new WP_Query([
                     'post_type' => 'photo',
@@ -148,15 +148,13 @@ $contact_form_title = get_field('contact_form_title');
 
                         $is_last = ($index === $total);
                         $items_in_last_row = $total % 3;
-                        $is_last_row = ($index > $total - $items_in_last_row);
-                        $class = 'relative group overflow-hidden h-[400px]';
+                        $class = 'relative group overflow-hidden h-[400px] w-full';
 
-                        // Stretch last item if it's in incomplete last row
-                       if ($is_last && $items_in_last_row !== 0) {
+                        // Stretch last item only on md+ if it's in incomplete last row
+                        if ($is_last && $items_in_last_row !== 0) {
                             $span = 3 - $items_in_last_row + 1;
-                            $class .= " col-span-{$span}";
+                            $class .= " md:col-span-{$span}";
                         }
-
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
@@ -168,7 +166,7 @@ $contact_form_title = get_field('contact_form_title');
                             <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
                                 <h3 class="mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
-                                    <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
+                                    <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
                                 <?php endif; ?>
                                 <?php if ($description): ?>
                                     <p class="text-sm"><?php echo esc_html($description); ?></p>
@@ -182,6 +180,7 @@ $contact_form_title = get_field('contact_form_title');
                 <?php endif; ?>
             </div>
         </section>
+
 
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
