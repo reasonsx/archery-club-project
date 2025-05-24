@@ -30,7 +30,7 @@ $bows_title = get_field('bows_title');
     </section>
 
     <!-- OUR STORY -->
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col h-auto">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col h-auto">
         <div class="flex flex-row gap-8 items-start">
 
             <!-- BIG YEAR BAR -->
@@ -61,7 +61,7 @@ $bows_title = get_field('bows_title');
     </section>
 
     <!-- TIMELINE -->
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <h1><?php echo esc_html($timeline_title); ?></h1>
         <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px] rounded-xl">
             <!-- Left Image -->
@@ -114,7 +114,7 @@ $bows_title = get_field('bows_title');
 
 
     <!-- MEET OUR MEMBERS -->
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <?php
         $title = get_field('members_title');
         $story_title = get_field('member_story_title');
@@ -157,7 +157,7 @@ $bows_title = get_field('bows_title');
     $type_object = get_post_type_object($post_type);
     $section_title = get_field('our_core_values_title');
     ?>
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <!-- Section Heading -->
         <h1><?php echo esc_html($section_title); ?></h1>
 
@@ -193,7 +193,7 @@ $bows_title = get_field('bows_title');
 
     <!-- BOWS SECTION -->
     <section class="w-full h-auto bg-[#8DB7E1] py-12">
-        <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-12 flex flex-col">
+        <section class="max-w-screen-xl mx-autop-4 sm:p-6 xl:p-0 gap-12 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($bows_title); ?></h1>
             </div>
@@ -237,7 +237,7 @@ $bows_title = get_field('bows_title');
 
 
     <!-- EQUIPMENT -->
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-autop-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <h1><?php echo esc_html($equipment_title); ?></h1>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
@@ -293,7 +293,7 @@ $bows_title = get_field('bows_title');
     $pdf = get_field('archery_guide_pdf'); // returns array
     $button_text = get_field('archery_guide_button_text');
     ?>
-    <section class="max-w-screen-xl mx-auto p-4 md:p-0 gap-8 flex flex-col">
+    <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
         <h1><?php echo esc_html($title); ?></h1>
 
         <?php if ($description): ?>
