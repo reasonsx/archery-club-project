@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('how-to-join')->ID))); ?>" class="hover:text-blue-400">
+                    <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('join-us')->ID))); ?>" class="hover:text-blue-400">
                         Join us
                     </a>
                 </li>
