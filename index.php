@@ -50,13 +50,13 @@ $contact_form_title = get_field('contact_form_title');
         </div>
 
         <!-- ABOUT SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col sm:flex-row justify-center items-center sm:items-start">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col sm:flex-row justify-center">
             <!-- Left: Circle Image -->
-            <div class="flex justify-center items-center mb-6 sm:mb-0">
+             <div class=" w-1/2 aspect-square flex justify-center items-center">
                 <img
                         src="<?php echo esc_url($about_image['url']); ?>"
                         alt="<?php echo esc_attr($about_image['alt']); ?>"
-                        class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover"
+                        class="w-full h-full rounded-full object-cover"
                 />
             </div>
 
@@ -66,7 +66,7 @@ $contact_form_title = get_field('contact_form_title');
                 <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
-                    <?php echo pll__('Read more'); ?>
+                     <?php echo pll__('Read more'); ?>
                 </a>
             </div>
         </section>
