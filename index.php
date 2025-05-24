@@ -152,10 +152,11 @@ $contact_form_title = get_field('contact_form_title');
                         $class = 'relative group overflow-hidden h-[400px]';
 
                         // Stretch last item if it's in incomplete last row
-                        if ($is_last && $items_in_last_row !== 0) {
+                       if ($is_last && $items_in_last_row !== 0) {
                             $span = 3 - $items_in_last_row + 1;
-                            $class .= " col-span-{$span}";
+                            $class .= " lg:col-span-{$span}";
                         }
+
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
