@@ -129,7 +129,7 @@ $contact_form_title = get_field('contact_form_title');
         <section class="max-w-screen-xl p-4 sm:p-6 xl:p-0 mx-auto flex flex-col gap-8">
             <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-0 grid-rows-4 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <?php
                 $photos = new WP_Query([
                     'post_type' => 'photo',
