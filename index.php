@@ -198,23 +198,23 @@ $contact_form_title = get_field('contact_form_title');
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
                         <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[500px]">
-                        <a href="<?php the_permalink(); ?>">
+                            <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-56 object-cover']); ?>
                                 <?php else: ?>
-                                    <img class="rounded-t-lg w-full h-48 object-cover"
+                                    <img class="rounded-t-lg w-full h-56 object-cover"
                                          src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder-image.png"
                                          alt="<?php the_title_attribute(); ?>"/>
                                 <?php endif; ?>
                             </a>
-                            <div class="p-5 flex flex-col flex-grow">
+                            <div class="p-5 flex flex-col flex-grow justify-between">
                                 <a href="<?php the_permalink(); ?>">
                                     <h5 class="font-black mb-3"><?php the_title(); ?></h5>
                                 </a>
                                 <p class="mb-4 font-normal flex-grow"><?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?></p>
                                 <a href="<?php the_permalink(); ?>"
                                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
-                                     <?php echo pll__('Read more'); ?>
+                                    <?php echo pll__('Read more'); ?>
                                     <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg"
                                          fill="none" viewBox="0 0 14 10">
