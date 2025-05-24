@@ -52,8 +52,8 @@
                     $link_url = '#';
                 }
             } elseif ($link_type === 'section_id') {
-    $link_url = apply_filters('wpml_home_url', home_url()) . '#' . $link;
-}
+                $link_url = apply_filters('wpml_home_url', home_url()) . '#' . $link;
+            }
             elseif ($link_type === 'link' && $link) {
                 // Full URL provided
                 $link_url = esc_url($link);
