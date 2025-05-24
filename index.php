@@ -45,7 +45,6 @@ $contact_form_title = get_field('contact_form_title');
                             </div>
                         </div>
                     </div>
-                    <div class="hidden md:block w-1/3"></div>
                 </div>
             </section>
         </div>
