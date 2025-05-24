@@ -44,7 +44,6 @@ $contact_form_title = get_field('contact_form_title');
                                 </a>
                             </div>
                         </div>
-                        <div class="w-1/3"></div>
                     </div>
                 </div>
             </section>
