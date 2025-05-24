@@ -126,7 +126,7 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl px-0 pt-4 pb-4 sm:px-6 sm:pt-6 sm:pb-6 xl:px-0 mx-auto flex flex-col gap-8">
+        <section class="max-w-screen-xl p-4 sm:p-6 xl:p-0 mx-auto flex flex-col gap-8">
             <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full overflow-hidden">
