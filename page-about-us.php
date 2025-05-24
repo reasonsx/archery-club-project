@@ -34,7 +34,7 @@ $bows_title = get_field('bows_title');
         <div class="flex flex-row gap-8 items-start">
 
             <!-- BIG YEAR BAR -->
-            <div class="relative md:w-[20vw] hidden md:block">
+            <div class="relative md:w-[30vw] hidden md:block">
                 <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
                 <span class="absolute inset-0 flex items-center justify-center rotate-270"><h1
                             class="text-[120px] md:text-[140px] font-extrabold leading-none"><?php echo esc_html($year); ?></h1></span>
