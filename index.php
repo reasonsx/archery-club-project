@@ -37,7 +37,7 @@ $contact_form_title = get_field('contact_form_title');
                         <div class="p-4 flex flex-col sm:p-0 md:w-1/2 w-full space-y-6">
                             <h1 class="mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                             <p class="text-lg text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
-                            <div class="w-32">
+                            <div class="w-auto">
                                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
                                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                                     <?php echo pll__('Join Now'); ?>
