@@ -226,9 +226,8 @@ $contact_form_title = get_field('contact_form_title');
                         </div>
                     <?php endwhile;
                     wp_reset_postdata();
-                else: ?>
-                    <p>No posts found.</p>
-                <?php endif; ?>
+                endif;
+                ?>
             </div>
         </section>
 
