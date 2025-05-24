@@ -126,60 +126,61 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl mx-auto flex flex-col gap-8">
-            <h1><?php echo esc_html($photo_gallery_title); ?></h1>
+        <section class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-8">
+    <h1 class="text-2xl sm:text-3xl font-bold text-center"><?php echo esc_html($photo_gallery_title); ?></h1>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <?php
-                $photos = new WP_Query([
-                    'post_type' => 'photo',
-                    'posts_per_page' => -1,
-                ]);
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+        <?php
+        $photos = new WP_Query([
+            'post_type' => 'photo',
+            'posts_per_page' => -1,
+        ]);
 
-                $total = $photos->post_count;
-                $index = 0;
+        $total = $photos->post_count;
+        $index = 0;
 
-                if ($photos->have_posts()) :
-                    while ($photos->have_posts()) : $photos->the_post();
-                        $index++;
-                        $image = get_field('image'); // ACF image field
-                        $date = get_field('date'); // ACF date field
-                        $description = get_field('description'); // ACF description field
+        if ($photos->have_posts()) :
+            while ($photos->have_posts()) : $photos->the_post();
+                $index++;
+                $image = get_field('image');
+                $date = get_field('date');
+                $description = get_field('description');
 
-                        $is_last = ($index === $total);
-                        $items_in_last_row = $total % 3;
-                        $is_last_row = ($index > $total - $items_in_last_row);
-                        $class = 'relative group overflow-hidden h-[400px]';
+                $is_last = ($index === $total);
+                $items_in_last_row = $total % 3;
+                $is_last_row = ($index > $total - $items_in_last_row);
+                $class = 'relative group overflow-hidden aspect-[3/4]'; // more responsive than fixed height
 
-                        // Stretch last item if it's in incomplete last row
-                        if ($is_last && $items_in_last_row !== 0) {
-                            $span = 3 - $items_in_last_row + 1;
-                            $class .= " col-span-{$span}";
-                        }
-                        ?>
-                        <div class="<?php echo esc_attr($class); ?>">
-                            <?php if ($image) : ?>
-                                <img src="<?php echo esc_url($image['url']); ?>"
-                                     alt="<?php echo esc_attr(get_the_title()); ?>"
-                                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
-                            <?php endif; ?>
-
-                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                                <h3 class="mb-2"><?php the_title(); ?></h3>
-                                <?php if ($date): ?>
-                                    <p class="text-sm  italic mb-1"><?php echo esc_html($date); ?></p>
-                                <?php endif; ?>
-                                <?php if ($description): ?>
-                                    <p class="text-sm"><?php echo esc_html($description); ?></p>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                    <?php endwhile;
-                    wp_reset_postdata();
-                endif;
+                // Stretch last item if it's in an incomplete row (desktop only)
+                if ($is_last && $items_in_last_row !== 0) {
+                    $span = 3 - $items_in_last_row + 1;
+                    $class .= " md:col-span-{$span}";
+                }
                 ?>
-            </div>
-        </section>
+                <div class="<?php echo esc_attr($class); ?>">
+                    <?php if ($image) : ?>
+                        <img src="<?php echo esc_url($image['url']); ?>"
+                             alt="<?php echo esc_attr(get_the_title()); ?>"
+                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+                    <?php endif; ?>
+
+                    <div class="absolute inset-0 bg-[#FDD576] bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-lg font-semibold mb-1"><?php the_title(); ?></h3>
+                        <?php if ($date): ?>
+                            <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
+                        <?php endif; ?>
+                        <?php if ($description): ?>
+                            <p class="text-sm"><?php echo esc_html($description); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            <?php endwhile;
+            wp_reset_postdata();
+        endif;
+        ?>
+    </div>
+</section>
+
 
         <!-- Shortcut to blog posts -->
         <section class="max-w-screen-xl mx-auto p-4 sm:p-6 lg:p-0 gap-8 flex flex-col">
