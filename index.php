@@ -232,8 +232,7 @@ $contact_form_title = get_field('contact_form_title');
                 <?php endif; ?>
             </div>
         </section>
-
-<section id="contact"></section>
+        <!-- CONTACT US SECTION -->
         <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 flex flex-col gap-12">
 
             <div class="mx-auto max-w-screen-sm text-center">
