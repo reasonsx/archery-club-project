@@ -141,25 +141,46 @@
     <!-- Mobile Navigation -->
     <div class="hidden justify-between items-center w-full lg:hidden py-2" id="mobile-menu-2">
         <ul class="flex flex-col font-medium text-gray-700 space-y-2">
-            <li>
-                <a href="<?php echo esc_url(home_url()); ?>" class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Home</a>
-            </li>
-            <li>
-                <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('about-us')->ID))); ?>"
-                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">About us</a>
-            </li>
-            <li>
-                <a href="<?php echo esc_url(get_permalink(pll_get_post(get_option('page_for_posts')))); ?>"
-                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Blog</a>
-            </li>
-            <li>
-                <a href="<?php echo esc_url(get_permalink(pll_get_post(get_page_by_path('how-to-join')->ID))); ?>"
-                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">How to join</a>
-            </li>
-            <li>
-                <a href="<?php echo esc_url(home_url('/#contact')); ?>"
-                   class="block py-2 px-4 hover:bg-gray-100 rounded-lg">Contact</a>
-            </li>
+            <?php
+            $menu_query = new WP_Query([
+                'post_type' => 'menu-item',
+                'posts_per_page' => -1,
+                'orderby' => 'menu_order',
+                'order' => 'ASC',
+            ]);
+
+            if ($menu_query->have_posts()) :
+                while ($menu_query->have_posts()) : $menu_query->the_post();
+                    $name = get_field('name') ?: get_the_title();
+                    $link_type = get_field('link_type');
+                    $link = get_field('link_value');
+
+                    if (empty($link)) {
+                        $link_url = esc_url(home_url('/'));
+                    } elseif ($link_type === 'slug' && $link) {
+                        $page = get_page_by_path($link);
+                        if ($page) {
+                            $link_url = esc_url(get_permalink(pll_get_post($page->ID)));
+                        } else {
+                            $link_url = '#';
+                        }
+                    } elseif ($link_type === 'section_id') {
+                        $link_url = apply_filters('wpml_home_url', home_url()) . '#' . $link;
+                    } elseif ($link_type === 'link' && $link) {
+                        $link_url = esc_url($link);
+                    } else {
+                        $link_url = '#';
+                    }
+                    ?>
+                    <li>
+                        <a href="<?php echo $link_url; ?>"
+                           class="block py-2 px-4 hover:bg-gray-100 rounded-lg"><?php echo esc_html($name); ?></a>
+                    </li>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
         </ul>
         <div class="mx-4">
             <hr class="my-4 border-gray-200 w-full"/>
