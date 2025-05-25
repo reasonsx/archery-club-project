@@ -230,7 +230,7 @@ $contact_form_title = get_field('contact_form_title');
 
                 if ($latest_posts->have_posts()):
                     while ($latest_posts->have_posts()): $latest_posts->the_post(); ?>
-                        <div class="rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[500px]" style="background-color: rgba(141, 183, 225, 0.45);">
+                        <div class="bg-[#8DB7E1] rounded-lg shadow-sm flex flex-col w-full min-w-0 min-h-[500px]">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('medium_large', ['class' => 'rounded-t-lg w-full h-56 object-cover']); ?>
