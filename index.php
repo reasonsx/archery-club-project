@@ -184,8 +184,8 @@ $contact_form_title = get_field('contact_form_title');
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
 
-                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
-                                <h3 class="mb-2"><?php the_title(); ?></h3>
+                            <div class="bg-[#FDD576] p-4 text-center md:absolute md:inset-0 md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-300 md:flex md:flex-col md:justify-center md:items-center">
+                            <h3 class="mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
                                     <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
                                 <?php endif; ?>
