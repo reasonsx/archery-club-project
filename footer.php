@@ -53,9 +53,7 @@
                 © 1954 - <?php echo date('Y'); ?>
 
                 <!-- Link to homepage -->
-                <a href="<?php echo esc_url(home_url()); ?>" class="hover:underline">
-                    Sønderborg Bueskyttelaug
-                </a>
+                <p>Sønderborg Bueskyttelaug</p>
             </span>
         </div>
 
