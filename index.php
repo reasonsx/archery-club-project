@@ -115,7 +115,7 @@ $contact_form_title = get_field('contact_form_title');
                         <div class="flex flex-col items-center text-center">
                             <?php if ($image) : ?>
                                 <div class="mx-auto mb-4 w-40 h-40 flex items-center justify-center overflow-hidden">
-                                    <img src="<?php echo esc_url($image['url']['sizes']['small']); ?>"
+                                    <img src="<?php echo esc_url($image['url']['sizes']['thumbnail']); ?>"
                                          alt="<?php echo esc_attr($image['alt']); ?>"
                                          class="max-w-full max-h-full"/>
                                 </div>
@@ -179,7 +179,7 @@ $contact_form_title = get_field('contact_form_title');
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
-                                <img src="<?php echo esc_url($image['url']['sizes']['small']); ?>"
+                                <img src="<?php echo esc_url($image['url']['sizes']['thumbnail']); ?>"
                                      alt="<?php echo esc_attr(get_the_title()); ?>"
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
