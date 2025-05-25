@@ -54,8 +54,14 @@ $bows_title = get_field('bows_title');
                     <?php if ($story_text) echo nl2br(esc_html($story_text)); ?>
                 </div>
 
+                <?php
+                $join_us_page = get_page_by_path('join-us'); // Always use the EN slug
+                $translated_page_id = $join_us_page ? pll_get_post($join_us_page->ID) : null;
+                $translated_page_url = $translated_page_id ? get_permalink($translated_page_id) : '#';
+                ?>
+
                 <?php if ($story_button_text) : ?>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('join-us'))); ?>"
+                    <a href="<?php echo esc_url($translated_page_url); ?>"
                        class="inline-flex items-center justify-center max-w-max px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200">
                         <?php echo esc_html($story_button_text); ?>
                     </a>
