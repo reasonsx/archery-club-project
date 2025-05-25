@@ -252,9 +252,7 @@ $contact_form_title = get_field('contact_form_title');
             </div>
         </section>
 
-<section id="contact"></section>
-        <section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 flex flex-col gap-12 my-12">
-
+        <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 flex flex-col gap-12 my-12">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($contact_us_title); ?></h1>
             </div>
