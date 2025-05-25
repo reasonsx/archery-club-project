@@ -25,7 +25,7 @@ $contact_form_title = get_field('contact_form_title');
             <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
                 <!-- Background image -->
                 <?php if ($hero_image): ?>
-                    <img src="<?php echo esc_url($hero_image['url']); ?>"
+                    <img src="<?php echo esc_url($hero_image['url']['sizes']['large']); ?>"
                          alt="<?php echo esc_attr($hero_image['alt']); ?>"
                          class="absolute inset-0 w-full h-full object-cover brightness-75"
                          draggable="false">
@@ -67,7 +67,7 @@ $contact_form_title = get_field('contact_form_title');
             <div class="w-full sm:w-1/2 aspect-square flex justify-center items-center">
                 <div class="w-full aspect-square rounded-full overflow-hidden">
                     <img
-                            src="<?php echo esc_url($about_image['url']); ?>"
+                            src="<?php echo esc_url($about_image['url']['sizes']['medium']); ?>"
                             alt="<?php echo esc_attr($about_image['alt']); ?>"
                             class="w-full h-full object-cover"
                     />
@@ -115,7 +115,7 @@ $contact_form_title = get_field('contact_form_title');
                         <div class="flex flex-col items-center text-center">
                             <?php if ($image) : ?>
                                 <div class="mx-auto mb-4 w-40 h-40 flex items-center justify-center overflow-hidden">
-                                    <img src="<?php echo esc_url($image['url']); ?>"
+                                    <img src="<?php echo esc_url($image['url']['sizes']['small']); ?>"
                                          alt="<?php echo esc_attr($image['alt']); ?>"
                                          class="max-w-full max-h-full"/>
                                 </div>
@@ -179,7 +179,7 @@ $contact_form_title = get_field('contact_form_title');
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
-                                <img src="<?php echo esc_url($image['url']); ?>"
+                                <img src="<?php echo esc_url($image['url']['sizes']['small']); ?>"
                                      alt="<?php echo esc_attr(get_the_title()); ?>"
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
