@@ -25,7 +25,7 @@ $contact_form_title = get_field('contact_form_title');
             <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
                 <!-- Background image -->
                 <?php if ($hero_image): ?>
-                    <img src="<?php echo esc_url($hero_image['url']['sizes']['large']); ?>"
+                    <img src="<?php echo esc_url($hero_image['sizes']['large']); ?>"
                          alt="<?php echo esc_attr($hero_image['alt']); ?>"
                          class="absolute inset-0 w-full h-full object-cover brightness-75"
                          draggable="false">
