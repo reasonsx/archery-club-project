@@ -16,7 +16,7 @@ $bows_title = get_field('bows_title');
 <section class="flex flex-col gap-24">
     <!-- HERO -->
     <section
-            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40 max-w-[2560px]"
+            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40 max-w-[2560px] mx-auto"
             style="background-image:url('<?php echo esc_url($hero_image['url']); ?>');">
 
         <!-- White circle behind title -->
