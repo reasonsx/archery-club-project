@@ -72,7 +72,7 @@ get_header(); ?>
     <h1 class="mb-5"><?php if ($where_and_when_title) echo wp_kses_post(nl2br($where_and_when_title)); ?></h1>
     <div class="flex flex-col sm:flex-row gap-5 items-center">
         <img
-                src="<?php echo $where_and_when_image['sizes']['medium']; ?>"
+                src="<?php echo $where_and_when_image['sizes']['medium_large']; ?>"
                 alt="<?php echo $where_and_when_image['alt']; ?>"
                 class="rounded-full w-64 h-64 object-cover"
         />
