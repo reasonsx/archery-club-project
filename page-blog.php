@@ -5,7 +5,7 @@ Template Name: Blog Overview
 get_header();
 $title = get_field('blog_page_title');
 ?>
-<section class="h-[12rem] sm:h-[25vh] md:h-[40vh] bg-no-repeat bg-center bg-cover relative flex items-center justify-center text-white"
+<section class="h-[12rem] sm:h-[25vh] md:h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-center text-white"
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
   <!-- Blue circle behind text -->
