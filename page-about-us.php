@@ -266,7 +266,7 @@ $bows_title = get_field('bows_title');
                     $img = get_field('equip_image');        // returns array or URL
                     $subtitle = get_field('equip_subtitle');     // e.g. “Mandatory”
                     $description = get_field('equip_description');  // textarea / WYSIWYG
-                    $img_url = $img ? (is_array($img) ? $img['sizes']['thumbnail'] : $img) : '';
+                    $img_url = $img ? (is_array($img) ? $img['sizes']['medium'] : $img) : '';
                     ?>
                     <!-- CARD -->
                     <div class="text-center">
