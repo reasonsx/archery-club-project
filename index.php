@@ -66,7 +66,13 @@ $contact_form_title = get_field('contact_form_title');
             <div class="md:max-w-xl md:w-1/2 w-full flex flex-col gap-6">
                 <h1><?php echo esc_html($about_title); ?></h1>
                 <p class="text-lg"><?php echo wp_kses_post(nl2br($about_description)); ?></p>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>"
+                <?php
+                $about_page = get_page_by_path('about-us');
+                $translated_about_page_id = function_exists('pll_get_post') ? pll_get_post($about_page->ID) : $about_page->ID;
+                $about_url = get_permalink($translated_about_page_id);
+                ?>
+
+                <a href="<?php echo esc_url($about_url); ?>"
                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                     <?php echo pll__('Read more'); ?>
                 </a>
