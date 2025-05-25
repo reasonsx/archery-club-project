@@ -33,8 +33,6 @@ $bows_title = get_field('bows_title');
     <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col h-auto">
         <div class="flex flex-row gap-8 items-start">
 
-            
-
             <!-- BIG YEAR BAR -->
             <div class="relative md:w-[40vw] lg:w-[30vw] hidden md:block">
                 <div class="bg-[#8DB7E1] w-full h-full min-h-[500px]"></div>
@@ -57,7 +55,7 @@ $bows_title = get_field('bows_title');
                 </div>
 
                 <?php if ($story_button_text) : ?>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('join-us'))); ?>"
                        class="inline-flex items-center justify-center max-w-max px-6 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200">
                         <?php echo esc_html($story_button_text); ?>
                     </a>
