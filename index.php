@@ -263,7 +263,11 @@ $contact_form_title = get_field('contact_form_title');
                 <!-- Left column -->
                 <div class="flex flex-col relative z-10">
                     <h3 class="pb-3"><?php echo esc_html($contact_form_title); ?></h3>
-                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form EN"]'); ?>
+                    if (pll_current_language() === 'da') {
+                    echo do_shortcode('[contact-form-7 id="0d3954f" title="Contact form (Dansk)"]');
+                    } else {
+                    echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form (English)"]');
+                    }
                 </div>
 
                 <!-- Right column -->
