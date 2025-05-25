@@ -18,6 +18,7 @@ $phone_and_email = get_field('phone_and_email');
 $contact_form_title = get_field('contact_form_title');
 ?>
 
+    <section class="flex flex-col gap-24">
 
         <!-- HERO SECTION -->
         <div class="bg-white">
@@ -61,7 +62,7 @@ $contact_form_title = get_field('contact_form_title');
         </div>
 
         <!-- ABOUT SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col md:flex-row justify-center my-12">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-16 flex flex-col md:flex-row justify-center">
             <!-- Left: Circle Image -->
             <div class="w-full sm:w-1/2 aspect-square flex justify-center items-center">
                 <div class="w-full aspect-square rounded-full overflow-hidden">
@@ -92,7 +93,7 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- BENEFITS SECTION -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col my-12">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($benefits_title); ?></h1>
             </div>
@@ -146,7 +147,7 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- PHOTO GALLERY -->
-        <section class="max-w-screen-xl p-4 sm:p-6 xl:p-0 mx-auto flex flex-col gap-8 my-12">
+        <section class="max-w-screen-xl p-4 sm:p-6 xl:p-0 mx-auto flex flex-col gap-8">
             <h1><?php echo esc_html($photo_gallery_title); ?></h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full overflow-hidden">
@@ -203,7 +204,7 @@ $contact_form_title = get_field('contact_form_title');
 
 
         <!-- Shortcut to blog posts -->
-        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col my-12">
+        <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 gap-8 flex flex-col">
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($blog_shortcuts_title); ?></h1>
             </div>
@@ -252,7 +253,8 @@ $contact_form_title = get_field('contact_form_title');
             </div>
         </section>
 
-        <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 flex flex-col gap-12 my-12">
+        <section id="contact" class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 flex flex-col gap-12">
+
             <div class="mx-auto max-w-screen-sm text-center">
                 <h1><?php echo esc_html($contact_us_title); ?></h1>
             </div>
@@ -297,4 +299,5 @@ $contact_form_title = get_field('contact_form_title');
             </section>
         </section>
 
+    </section>
 <?php get_footer();
