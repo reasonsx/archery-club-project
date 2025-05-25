@@ -179,7 +179,7 @@ $contact_form_title = get_field('contact_form_title');
                         ?>
                         <div class="<?php echo esc_attr($class); ?>">
                             <?php if ($image) : ?>
-                                <img src="<?php echo esc_url($image['sizes']['medium']); ?>"
+                                <img src="<?php echo esc_url($image['sizes']['large']); ?>"
                                      alt="<?php echo esc_attr(get_the_title()); ?>"
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
