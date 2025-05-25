@@ -169,7 +169,7 @@ $contact_form_title = get_field('contact_form_title');
 
                         $is_last = ($index === $total);
                         $items_in_last_row = $total % 3;
-                        $class = 'relative group overflow-hidden h-[400px] w-full';
+                        $class = 'group w-full md:relative md:h-[400px] overflow-hidden';
 
                         // If it's the last item AND the only one in the last row → span full width
                         if ($is_last && $items_in_last_row === 1) {
