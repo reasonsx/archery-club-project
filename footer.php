@@ -50,10 +50,7 @@
         <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-gray-900 sm:text-center">
                 <!-- Static founding year and dynamic current year -->
-                © 1954 - <?php echo date('Y'); ?>
-
-                <!-- Link to homepage -->
-                <p>Sønderborg Bueskyttelaug</p>
+                © 1954 - <?php echo date('Y'); ?> Sønderborg Bueskyttelaug
             </span>
         </div>
 
