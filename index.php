@@ -184,7 +184,8 @@ $contact_form_title = get_field('contact_form_title');
                                      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <?php endif; ?>
 
-                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                            <!-- Desktop Hover Overlay -->
+                            <div class="absolute inset-0 bg-[#FDD576] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-center items-center text-center p-4 hidden md:flex">
                                 <h3 class="mb-2"><?php the_title(); ?></h3>
                                 <?php if ($date): ?>
                                     <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
@@ -193,6 +194,18 @@ $contact_form_title = get_field('contact_form_title');
                                     <p class="text-sm"><?php echo esc_html($description); ?></p>
                                 <?php endif; ?>
                             </div>
+
+                            <!-- Mobile Static Box -->
+                            <div class="bg-[#FDD576] text-center p-4 md:hidden">
+                                <h3 class="mb-2"><?php the_title(); ?></h3>
+                                <?php if ($date): ?>
+                                    <p class="text-sm italic mb-1"><?php echo esc_html($date); ?></p>
+                                <?php endif; ?>
+                                <?php if ($description): ?>
+                                    <p class="text-sm"><?php echo esc_html($description); ?></p>
+                                <?php endif; ?>
+                            </div>
+
                         </div>
                     <?php endwhile;
                     wp_reset_postdata();
