@@ -143,34 +143,37 @@
         <ul class="flex flex-col font-medium text-gray-700 space-y-2">
             <?php
             $menu_query = new WP_Query([
-                'post_type' => 'menu-item',
+                'post_type'      => 'menu-item',
                 'posts_per_page' => -1,
-                'orderby' => 'menu_order',
-                'order' => 'ASC',
+                'orderby'        => 'menu_order',
+                'order'          => 'ASC',
             ]);
 
             if ($menu_query->have_posts()) :
                 while ($menu_query->have_posts()) : $menu_query->the_post();
-                    $name = get_field('name') ?: get_the_title();
+                    $name      = get_field('name') ?: get_the_title();
                     $link_type = get_field('link_type');
-                    $link = get_field('link_value');
+                    $link      = get_field('link_value');
+                    $link_url  = '#';
 
                     if (empty($link)) {
+                        // Default to homepage
                         $link_url = esc_url(home_url('/'));
                     } elseif ($link_type === 'slug' && $link) {
+                        // Page slug (e.g., 'about-us')
                         $page = get_page_by_path($link);
                         if ($page) {
-                            $link_url = esc_url(get_permalink(pll_get_post($page->ID)));
-                        } else {
-                            $link_url = '#';
+                            $translated_id = function_exists('pll_get_post') ? pll_get_post($page->ID) : $page->ID;
+                            $link_url = esc_url(get_permalink($translated_id));
                         }
-                    } elseif ($link_type === 'section_id') {
-                        $link_url = apply_filters('wpml_home_url', home_url()) . '#' . $link;
+                    } elseif ($link_type === 'section_id' && $link) {
+                        // Section ID (e.g., 'contact' => /en/#contact or /da/#contact)
+                        $link_url = trailingslashit(apply_filters('wpml_home_url', home_url())) . '#' . esc_attr($link);
                     } elseif ($link_type === 'link' && $link) {
+                        // Absolute URL
                         $link_url = esc_url($link);
-                    } else {
-                        $link_url = '#';
                     }
+
                     ?>
                     <li>
                         <a href="<?php echo $link_url; ?>"
