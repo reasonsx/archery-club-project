@@ -131,7 +131,7 @@ get_header(); ?>
 </section>
 
 
-<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
+<section class="w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
     <?php
     $post_type = 'faq';
     $post_type_obj = get_post_type_object($post_type);
