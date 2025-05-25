@@ -14,6 +14,7 @@ get_header(); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 <?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
 <?php $pricing_title = get_field('pricing_title'); ?>
+<!--HERO SECTION-->
 <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
     <!-- Background image -->
     <?php if ($hero_image): ?>
@@ -33,34 +34,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<section class="h-[40rem] bg-no-repeat bg-center bg-cover relative"
-         style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
-    <div class="flex flex-col-reverse md:flex-row items-center md:justify-between w-full h-full px-8 relative">
-
-
-        <!-- Image on Right with Yellow Circle Background -->
-        <div class="md:w-1/2 md:h-1/2 relative flex items-end justify-center h-full">
-            <!-- Yellow Circle -->
-            <div class="w-96 h-96 bg-[#FDD576] rounded-full absolute top-1/2 md:top-auto md:bottom-0 transform -translate-y-1/2 md:translate-y-0 z-0"></div>
-
-            <!-- Image -->
-            <img src="<?php echo $hero_image['sizes']['large']; ?>" alt="<?php echo $hero_image['alt']; ?>"
-                 class="w-[50%] md:w-auto h-auto md:h-[90vh] object-contain relative z-10"/>
-        </div>
-
-        <!-- Text on Left (stacks on top in mobile) -->
-        <div class="w-full md:w-1/2 text-center md:text-left">
-            <h1 class="lg:text-7xl text-black font-bold mb-4">
-                <?php if ($hero_title) echo nl2br(esc_html($hero_title)); ?>
-            </h1>
-            <h2 class="text-lg">
-                <?php if ($hero_description) echo nl2br(esc_html($hero_description)); ?>
-            </h2>
-        </div>
-
-    </div>
-</section>
 <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 py-20">
     <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
     <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
