@@ -28,7 +28,7 @@ get_header(); ?>
     <!-- Overlay content -->
     <div class="relative z-10 h-full flex items-center">
         <div class="mx-auto w-full max-w-screen-lg px-4 flex">
-            <div class="p-4 flex flex-col w-full md:w-2/3 space-y-6">
+            <div class="p-4 flex flex-col w-full space-y-6">
                 <h1 class="mb-4 text-[6rem] text-white"><?php echo esc_html($hero_title); ?></h1>
                 <p class="text-lg font-semibold text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
             </div>
