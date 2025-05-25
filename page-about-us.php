@@ -76,7 +76,7 @@ $bows_title = get_field('bows_title');
         <div class="bg-[#8DB7E1] overflow-hidden md:flex h-full min-h-[500px] rounded-xl">
             <!-- Left Image -->
             <div class="md:w-1/2 h-[400px] md:h-auto">
-                <img src="<?php echo esc_url($timeline_image['url']); ?>"
+                <img src="<?php echo esc_url($timeline_image['sizes']['medium_large']); ?>"
                      alt="<?php echo esc_attr($timeline_image['alt']); ?>"
                      class="w-full h-full object-cover">
             </div>
@@ -140,7 +140,7 @@ $bows_title = get_field('bows_title');
         <div class="bg-[#FDD576] md:h-[70vh] overflow-hidden md:flex rounded-xl">
             <?php if ($image): ?>
                 <div class="md:w-1/2">
-                    <img src="<?php echo esc_url($image['url']); ?>"
+                    <img src="<?php echo esc_url($image['sizes']['medium_large']); ?>"
                          alt="<?php echo esc_attr($image['alt']); ?>"
                          class="w-full h-full object-cover">
                 </div>
@@ -223,7 +223,7 @@ $bows_title = get_field('bows_title');
                         $bow_name = get_field('bow_name');
                         $bow_description = get_field('bow_description');
                         $bow_image = get_field('bow_image');
-                        $bow_image_url = $bow_image['url'];
+                        $bow_image_url = $bow_image['sizes']['thumbnail'];
                         $bow_image_alt = $bow_image['alt'];
                         ?>
                         <div class="flex flex-col items-center text-center">
@@ -266,7 +266,7 @@ $bows_title = get_field('bows_title');
                     $img = get_field('equip_image');        // returns array or URL
                     $subtitle = get_field('equip_subtitle');     // e.g. “Mandatory”
                     $description = get_field('equip_description');  // textarea / WYSIWYG
-                    $img_url = $img ? (is_array($img) ? $img['url'] : $img) : '';
+                    $img_url = $img ? (is_array($img) ? $img['sizes']['thumbnail'] : $img) : '';
                     ?>
                     <!-- CARD -->
                     <div class="text-center">
