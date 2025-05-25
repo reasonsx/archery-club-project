@@ -67,7 +67,7 @@ $contact_form_title = get_field('contact_form_title');
             <div class="w-full sm:w-1/2 aspect-square flex justify-center items-center">
                 <div class="w-full aspect-square rounded-full overflow-hidden">
                     <img
-                            src="<?php echo esc_url($about_image['url']['sizes']['medium']); ?>"
+                            src="<?php echo esc_url($about_image['sizes']['medium']); ?>"
                             alt="<?php echo esc_attr($about_image['alt']); ?>"
                             class="w-full h-full object-cover"
                     />
