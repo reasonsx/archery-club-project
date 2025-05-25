@@ -223,7 +223,7 @@ $bows_title = get_field('bows_title');
                         $bow_name = get_field('bow_name');
                         $bow_description = get_field('bow_description');
                         $bow_image = get_field('bow_image');
-                        $bow_image_url = $bow_image['sizes']['thumbnail'];
+                        $bow_image_url = $bow_image['sizes']['medium'];
                         $bow_image_alt = $bow_image['alt'];
                         ?>
                         <div class="flex flex-col items-center text-center">
