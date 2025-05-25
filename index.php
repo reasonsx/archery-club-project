@@ -263,7 +263,7 @@ $contact_form_title = get_field('contact_form_title');
                 <!-- Left column -->
                 <div class="flex flex-col relative z-10">
                     <h3 class="pb-3"><?php echo esc_html($contact_form_title); ?></h3>
-                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form 1"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="f89891b" title="Contact form EN"]'); ?>
                 </div>
 
                 <!-- Right column -->
