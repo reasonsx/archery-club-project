@@ -14,7 +14,7 @@ get_header(); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 <?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
 <?php $pricing_title = get_field('pricing_title'); ?>
-<section class="h-[40rem] bg-no-repeat bg-center bg-cover relative max-w-[2560px]"
+<section class="h-[40rem] bg-no-repeat bg-center bg-cover relative"
          style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
     <div class="flex flex-col-reverse md:flex-row items-center md:justify-between w-full h-full px-8 relative">
