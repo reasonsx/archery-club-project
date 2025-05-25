@@ -68,7 +68,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
+<section class="max-w-screen-xl w-full mx-auto p-4 sm:p-6 xl:p-0 pt-24">
     <h1 class="mb-5"><?php if ($where_and_when_title) echo wp_kses_post(nl2br($where_and_when_title)); ?></h1>
     <div class="flex flex-col sm:flex-row gap-5 items-center">
         <img
