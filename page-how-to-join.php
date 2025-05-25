@@ -14,6 +14,25 @@ get_header(); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 <?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
 <?php $pricing_title = get_field('pricing_title'); ?>
+<section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
+    <!-- Background image -->
+    <?php if ($hero_image): ?>
+        <img src="<?php echo esc_url($hero_image['sizes']['large']); ?>"
+             alt="<?php echo esc_attr($hero_image['alt']); ?>"
+             class="absolute inset-0 w-full h-full object-cover brightness-75"
+             draggable="false">
+    <?php endif; ?>
+
+    <!-- Overlay content -->
+    <div class="relative z-10 h-full flex items-center">
+        <div class="mx-auto w-full max-w-screen-lg px-4 flex">
+            <div class="p-4 flex flex-col w-full md:w-2/3 space-y-6">
+                <h1 class="mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
+                <p class="text-lg font-semibold text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="h-[40rem] bg-no-repeat bg-center bg-cover relative"
          style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/svgs/pattern_big.svg');">
 
