@@ -3,6 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="archery, bow and arrow, archery club, Sønderborg Bueskyttelaug, target shooting, compound bow, recurve bow, archery competition, Danish archery, bueskydning, outdoor sports, precision shooting, archery training, archery Denmark, arrow practice">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
