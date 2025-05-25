@@ -43,35 +43,35 @@ get_header(); ?>
     </div>
 </section>
 <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 py-20">
-  <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
-  <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
+    <h1 class="mb-4"><?php the_field('how_to_join_title'); ?></h1>
+    <p class="mb-12 text-lg"><?php the_field('how_to_join_description'); ?></p>
 
-  <div class="grid grid-cols-1 gap-10">
-    <?php
-    $steps = new WP_Query([
-        'post_type' => 'how_to_join_step',
-        'posts_per_page' => -1,
-        'orderby' => 'title',
-        'order' => 'ASC',
-    ]);
+    <div class="grid grid-cols-1 gap-10">
+        <?php
+        $steps = new WP_Query([
+            'post_type' => 'how_to_join_step',
+            'posts_per_page' => -1,
+            'orderby' => 'title',
+            'order' => 'ASC',
+        ]);
 
-    if ($steps->have_posts()) :
-        while ($steps->have_posts()) : $steps->the_post();
-            $step_title = get_field('step_title');
-            $step_description = get_field('step_description');
-            ?>
-            <div>
-                <div class="inline-block bg-[#FDD576] rounded-md px-3 py-1 font-semibold mb-2">
-                    <?php echo esc_html(get_the_title()); ?>
+        if ($steps->have_posts()) :
+            while ($steps->have_posts()) : $steps->the_post();
+                $step_title = get_field('step_title');
+                $step_description = get_field('step_description');
+                ?>
+                <div>
+                    <div class="inline-block bg-[#FDD576] rounded-md px-3 py-1 font-semibold mb-2">
+                        <?php echo esc_html(get_the_title()); ?>
+                    </div>
+                    <h3 class="mb-2"><?php echo esc_html($step_title); ?></h3>
+                    <p><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
                 </div>
-                <h3 class="mb-2"><?php echo esc_html($step_title); ?></h3>
-                <p><?php echo wp_kses_post(nl2br(($step_description))); ?></p>
-            </div>
-        <?php endwhile;
-        wp_reset_postdata();
-    endif;
-    ?>
-  </div>
+            <?php endwhile;
+            wp_reset_postdata();
+        endif;
+        ?>
+    </div>
 </section>
 
 <section class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-0 pt-24">
