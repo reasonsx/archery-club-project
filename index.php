@@ -38,7 +38,19 @@ $contact_form_title = get_field('contact_form_title');
                             <h1 class="mb-4 text-white"><?php echo esc_html($hero_title); ?></h1>
                             <p class="text-lg font-semibold text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
                             <div class="w-36">
-                                <a href="<?php echo esc_url(get_permalink(get_page_by_path('how-to-join'))); ?>"
+                                <?php
+                                $page = get_page_by_path('join-us');
+
+                                if ($page) {
+                                    // Get the translated page ID for current language
+                                    $translated_id = pll_get_post($page->ID);
+                                    $url = $translated_id ? get_permalink($translated_id) : '#';
+                                } else {
+                                    $url = '#';
+                                }
+                                ?>
+
+                                <a href="<?php echo esc_url($url); ?>"
                                    class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-center text-gray-900 bg-[#FDD576] rounded-lg hover:bg-[#e6c55e] focus:ring-4 focus:outline-none focus:ring-[#FDD576]/50 shadow transition-all duration-200 w-full mt-auto">
                                     <?php echo pll__('Join Now'); ?>
                                 </a>
