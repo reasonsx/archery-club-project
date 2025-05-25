@@ -14,6 +14,7 @@ get_header(); ?>
 <?php $where_and_when_image = get_field('where_and_when_image'); ?>
 <?php $equipment_rental_info = get_field('equipment_rental_info'); ?>
 <?php $pricing_title = get_field('pricing_title'); ?>
+<section class="flex flex-col gap-24">
 <!--HERO SECTION-->
 <section class="relative h-[40rem] w-full overflow-hidden mx-auto max-w-[2560px]">
     <!-- Background image -->
@@ -188,6 +189,6 @@ get_header(); ?>
         <p class="text-center"><?php echo pll__('No posts found.'); ?></p>
     <?php endif; ?>
 </section>
-
+</section>
 
 <?php get_footer(); ?>
