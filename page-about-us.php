@@ -16,15 +16,15 @@ $bows_title = get_field('bows_title');
 <section class="flex flex-col gap-24">
     <!-- HERO -->
     <section
-            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
+            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-center sm:justify-end sm:pr-40"
             style="background-image:url('<?php echo esc_url($hero_image['url']); ?>');">
 
         <!-- White circle behind title -->
-        <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
+        <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:left-auto sm:top-auto sm:translate-x-0 sm:translate-y-0 sm:-translate-x-8 sm:-translate-y-6 z-0"></div>
 
         <!-- Page title -->
-        <h1 class="text-right font-extrabold z-10 leading-none
-              text-[6rem] md:text-[8rem] tracking-wide">
+        <h1 class="text-center sm:text-right font-extrabold z-10 leading-none
+          text-[4rem] sm:text-[6rem] md:text-[8rem] tracking-wide">
             <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
         </h1>
     </section>
