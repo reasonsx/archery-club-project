@@ -29,7 +29,7 @@ get_header(); ?>
     <div class="relative z-10 h-full flex items-center">
         <div class="mx-auto w-full max-w-screen-lg px-4 flex">
             <div class="p-4 flex flex-col w-full space-y-6">
-                <h1 class="mb-4 text-[5rem] text-white"><?php echo esc_html($hero_title); ?></h1>
+                <h1 class="mb-4 text-[3rem] sm:text-[5rem] text-white"><?php echo esc_html($hero_title); ?></h1>
                 <p class="text-xl font-semibold text-white"><?php echo wp_kses_post(nl2br($hero_description)); ?></p>
             </div>
         </div>
