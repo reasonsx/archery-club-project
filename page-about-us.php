@@ -20,7 +20,7 @@ $bows_title = get_field('bows_title');
             style="background-image:url('<?php echo esc_url($hero_image['url']); ?>');">
 
         <!-- White circle behind title -->
-        <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:left-auto sm:top-auto sm:translate-x-0 sm:translate-y-0 sm:-translate-x-8 sm:-translate-y-6 z-0"></div>
+        <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:static sm:transform-none sm:-translate-x-8 sm:-translate-y-6 z-0"></div>
 
         <!-- Page title -->
         <h1 class="text-center sm:text-right font-extrabold z-10 leading-none
