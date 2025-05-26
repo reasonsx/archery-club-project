@@ -16,17 +16,21 @@ $bows_title = get_field('bows_title');
 <section class="flex flex-col gap-24">
     <!-- HERO -->
     <section
-            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-end sm:pr-40"
+            class="h-[40rem] bg-no-repeat bg-center bg-cover relative flex items-center justify-center"
             style="background-image:url('<?php echo esc_url($hero_image['url']); ?>');">
 
-        <!-- White circle behind title -->
-        <div class="absolute w-96 h-96 opacity-50 bg-white rounded-full -translate-x-8 -translate-y-6 z-0"></div>
+        <!-- Wrapper to center circle and text together -->
+        <div class="relative w-96 h-96 flex items-center justify-center z-10">
+            <!-- White circle -->
+            <div class="absolute inset-0 opacity-50 bg-white rounded-full z-0"></div>
 
-        <!-- Page title -->
-        <h1 class="text-center font-extrabold z-10
-              text-[6rem] md:text-[8rem] tracking-wide">
-            <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
-        </h1>
+            <!-- Page title centered inside the circle -->
+            <h1 class="text-center font-extrabold leading-none z-10
+                   text-[4rem] sm:text-[6rem] md:text-[8rem] tracking-wide">
+                <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
+            </h1>
+        </div>
+
     </section>
 
     <!-- OUR STORY -->
