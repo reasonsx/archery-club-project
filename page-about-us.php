@@ -26,7 +26,7 @@ $bows_title = get_field('bows_title');
 
             <!-- Page title centered inside the circle -->
             <h1 class="text-center font-extrabold leading-none z-10
-                   text-[6rem] tracking-wide">
+                   text-[4rem] tracking-wide">
                 <?php if ($about_us_title) echo nl2br(esc_html($about_us_title)); ?>
             </h1>
         </div>
