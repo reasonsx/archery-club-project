@@ -13,7 +13,7 @@ $title = get_field('blog_page_title');
     <div class="absolute right-[20rem] w-32 h-32 sm:!w-56 sm:!h-56 bg-[#8DB7E1] rounded-full z-0"></div>
 
     <!-- Text on top -->
-    <h1 class="text-gray-900 text-center text-[6rem] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
+    <h1 class="text-gray-900 text-center text-[5rem] font-bold z-10"><?php echo nl2br(esc_html($title)); ?></h1>
 
 </section>
 
